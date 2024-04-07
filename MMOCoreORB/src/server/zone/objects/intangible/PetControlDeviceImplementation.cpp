@@ -259,10 +259,10 @@ void PetControlDeviceImplementation::callObject(CreatureObject* player) {
 		Reference<CallPetTask*> callPet = new CallPetTask(_this.getReferenceUnsafeStaticCast(), player, "call_pet");
 
 		StringIdChatParameter message("pet/pet_menu", "call_pet_delay"); // Calling pet in %DI seconds. Combat will terminate pet call.
-		message.setDI(15);
+		message.setDI(3);
 		player->sendSystemMessage(message);
 
-		player->addPendingTask("call_pet", callPet, 15 * 1000);
+		player->addPendingTask("call_pet", callPet, 3 * 1000);
 
 		if (petControlObserver == nullptr) {
 			petControlObserver = new PetControlObserver(_this.getReferenceUnsafeStaticCast());
@@ -565,9 +565,9 @@ void PetControlDeviceImplementation::storeObject(CreatureObject* player, bool fo
 		// Cross lock the pet to add the task
 		Locker playerLock(pet, _this.getReferenceUnsafeStaticCast());
 
-		player->sendSystemMessage( "Storing pet in 60 seconds");
+		player->sendSystemMessage( "Storing pet in 10 seconds");
 
-		pet->addPendingTask("store_pet", task, 60 * 1000);
+		pet->addPendingTask("store_pet", task, 10 * 1000);
 	} else {
 		AtomicTime nextExecution;
 
@@ -603,7 +603,8 @@ bool PetControlDeviceImplementation::growPet(CreatureObject* player, bool force,
 
 	Time currentTime;
 	uint32 timeDelta = currentTime.getTime() - lastGrowth.getTime();
-	int stagesToGrow = timeDelta / 43200; // 12 hour
+	//int stagesToGrow = timeDelta / 43200; // 12 hour
+	int stagesToGrow = timeDelta / 10800; // 3 hours
 
 	if (adult)
 		stagesToGrow = 10;

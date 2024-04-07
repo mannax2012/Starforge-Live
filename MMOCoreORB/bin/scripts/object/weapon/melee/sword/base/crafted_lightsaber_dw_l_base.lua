@@ -41,27 +41,11 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_weapon_melee_sword_base_crafted_lightsaber_dw_l_base = object_weapon_melee_sword_base_shared_crafted_lightsaber_dw_l_base:new {
+	weaponType = ONEHANDJEDIWEAPON,
 
---Children folder includes
+	objectMenuComponent = "LightsaberObjectMenuComponent",
+	--gameObjectType = 131088,
+}
 
--- Server Objects
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_r_unstable_s01_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_l_unstable_s01_gen4.lua")
-
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen1.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen2.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen3.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen5.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen1.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen2.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen3.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen5.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_refined_crystal_pack.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_training.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen1.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen2.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen3.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen5.lua")
+ObjectTemplates:addTemplate(object_weapon_melee_sword_base_crafted_lightsaber_dw_l_base, "object/weapon/melee/sword/base/crafted_lightsaber_dw_l_base.iff")

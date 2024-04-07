@@ -14,7 +14,7 @@ public:
 		buffCRC = BuffCRC::JEDI_FORCE_SHIELD_1;
 		blockingCRCs.add(BuffCRC::JEDI_FORCE_SHIELD_2);
 		singleUseEventTypes.add(ObserverEventType::FORCESHIELD);
-		skillMods.put("force_shield", 25);
+		skillMods.put("force_shield", 45);
 	}
 
 	int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const override {

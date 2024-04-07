@@ -38,7 +38,7 @@ public:
 
 		auto object = zoneServer->getObject(target);
 
-		bool galaxyWide = ConfigManager::instance()->getBool("Core3.PlayerManager.GalaxyWideGrouping", false);
+		bool galaxyWide = ConfigManager::instance()->getBool("Core3.PlayerManager.GalaxyWideGrouping", true);
 
 		if (galaxyWide && (object == nullptr || !object->isPlayerCreature())) {
 			StringTokenizer args(arguments.toString());

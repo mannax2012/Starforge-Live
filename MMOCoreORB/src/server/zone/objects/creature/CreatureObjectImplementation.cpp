@@ -4298,3 +4298,53 @@ bool CreatureObjectImplementation::checkInConversationRange(SceneObject* targetO
 
 	return sqDistance < distanceToCheck;
 }
+bool CreatureObjectImplementation::isDualWieldingLightsabers() {
+
+	ManagedReference<WeaponObject*> wep = getWeapon();
+	ManagedReference<WeaponObject*> offHand = getOffHandWeapon();
+	if (wep != nullptr && wep->isJediWeapon() && offHand != nullptr && offHand->isJediWeapon() && offHand != wep) {
+		return true;
+	}
+
+	return false;
+}
+
+bool CreatureObjectImplementation::isDualWielding() {
+
+	ManagedReference<WeaponObject*> wep = getWeapon();
+	ManagedReference<WeaponObject*> offHand = getOffHandWeapon();
+	if (wep != nullptr && offHand != nullptr && wep != offHand) {
+		return true;
+	}
+
+	return false;
+}
+
+bool CreatureObjectImplementation::hasOffHandWeapon() {
+
+	ManagedReference<WeaponObject*> offHand = getOffHandWeapon();
+	if (offHand != nullptr) {
+		return true;
+	}
+	return false;
+
+}
+
+Reference<WeaponObject*> CreatureObjectImplementation::getOffHandWeapon() {
+
+	ManagedReference<WeaponObject*> offHand = getSlottedObject("hold_l").castTo<WeaponObject*>();
+	if (offHand != nullptr) {
+		int arrangementSize = offHand->getArrangementDescriptorSize();
+		for (int i = 0; i < arrangementSize; ++i) {
+			const Vector<String>* descriptors = offHand->getArrangementDescriptor(i);
+			for (int j = 0; j < descriptors->size(); ++j) {
+				const String& childArrangement = descriptors->get(j);
+				if (childArrangement.contains("hold_r")) {
+					return nullptr;
+				}
+			}
+		}
+		return offHand;
+	}
+	return nullptr;
+}

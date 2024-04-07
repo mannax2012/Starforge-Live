@@ -42,7 +42,7 @@ void GroupManager::inviteToGroup(CreatureObject* leader, CreatureObject* target)
 	// Pre: leader locked
 	// Post: player invited to leader's group, leader locked
 
-	bool galaxyWide = ConfigManager::instance()->getBool("Core3.PlayerManager.GalaxyWideGrouping", false);
+	bool galaxyWide = ConfigManager::instance()->getBool("Core3.PlayerManager.GalaxyWideGrouping", true);
 
 	Locker clocker(target, leader);
 

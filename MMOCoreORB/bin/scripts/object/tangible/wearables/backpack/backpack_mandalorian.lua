@@ -41,27 +41,37 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_wearables_backpack_backpack_mandalorian = object_tangible_wearables_backpack_shared_backpack_mandalorian:new {
+	playerRaces = { "object/creature/player/bothan_male.iff",
+				"object/creature/player/bothan_female.iff",
+				"object/creature/player/human_male.iff",
+				"object/creature/player/human_female.iff",
+				"object/creature/player/ithorian_male.iff",
+				"object/creature/player/ithorian_female.iff",
+				"object/creature/player/moncal_male.iff",
+				"object/creature/player/moncal_female.iff",
+				"object/creature/player/rodian_male.iff",
+				"object/creature/player/rodian_female.iff",
+				"object/creature/player/sullustan_male.iff",
+				"object/creature/player/sullustan_female.iff",
+				"object/creature/player/trandoshan_male.iff",
+				"object/creature/player/trandoshan_female.iff",
+				"object/creature/player/twilek_male.iff",
+				"object/creature/player/twilek_female.iff",
+				"object/creature/player/wookiee_male.iff",
+				"object/creature/player/wookiee_female.iff",
+				"object/creature/player/zabrak_male.iff",
+				"object/creature/player/zabrak_female.iff" },
 
---Children folder includes
+	numberExperimentalProperties = {1, 1, 1, 1},
+	experimentalProperties = {"XX", "XX", "XX", "XX"},
+	experimentalWeights = {1, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "null", "null"},
+	experimentalSubGroupTitles = {"null", "null", "sockets", "hitpoints"},
+	experimentalMin = {0, 0, 0, 1000},
+	experimentalMax = {0, 0, 0, 1000},
+	experimentalPrecision = {0, 0, 0, 0},
+	experimentalCombineType = {0, 0, 4, 4},
+}
 
--- Server Objects
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_r_unstable_s01_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_l_unstable_s01_gen4.lua")
-
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen1.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen2.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen3.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen5.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen1.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen2.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen3.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_gen5.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_refined_crystal_pack.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_training.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen1.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen2.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen3.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen4.lua")
-includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_gen5.lua")
+ObjectTemplates:addTemplate(object_tangible_wearables_backpack_backpack_mandalorian, "object/tangible/wearables/backpack/backpack_mando_cape.iff")
