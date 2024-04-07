@@ -46,9 +46,9 @@ ActionShot1Command = {
 
 	damageMultiplier = 1.0,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0,
+	healthCostMultiplier = 1.75,
 	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0,
+	mindCostMultiplier = 0.5,
 	accuracyBonus = 25,
 
 	poolsToDamage = ACTION_ATTRIBUTE,

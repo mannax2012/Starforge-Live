@@ -46,9 +46,9 @@ DisarmingShot1Command = {
 
 	damageMultiplier = 2.0,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.75,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 0.5,
+	actionCostMultiplier = 0.75,
+	mindCostMultiplier = 0.5,
 	accuracyBonus = 50,
 
 	animation = "fire_3_single",

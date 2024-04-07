@@ -46,9 +46,9 @@ StrafeShot2Command = {
 
 	damageMultiplier = 5.0,
 	speedMultiplier = 2.0,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 0.5,
+	actionCostMultiplier = 0.5,
+	mindCostMultiplier = 2.0,
 	accuracyBonus = 5,
 
 	coneAngle = 60,

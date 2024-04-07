@@ -46,9 +46,9 @@ UnarmedCombo1Command = {
 
 	damageMultiplier = 2.0,
 	speedMultiplier = 2.0,
-	healthCostMultiplier = 0,
+	healthCostMultiplier = 1.5,
 	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 0,
+	mindCostMultiplier = 1.5,
         accuracyBonus = 15,
 
 	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE + MIND_ATTRIBUTE,

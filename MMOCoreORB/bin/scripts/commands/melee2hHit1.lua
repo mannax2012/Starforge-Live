@@ -48,9 +48,9 @@ Melee2hHit1Command = {
 	speedMultiplier = 1.5,
 	accuracyBonus = 10,
 	
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.0,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 0.5,
+	actionCostMultiplier = 1.0,
+	mindCostMultiplier = 0.5,
 
 	animation = "combo_2c", 
 	animType = GENERATE_INTENSITY,

@@ -44,7 +44,7 @@
 ForceResistStatesCommand = {
 	name = "forceresiststates",
 	forceCost = 250,
-	duration = 10800,
+	duration = 900,
 	--animationCRC = hashCode()
 	clientEffect = "clienteffect/pl_force_resist_states_self.cef",
 	frsLightBuffModifier = 0.35,

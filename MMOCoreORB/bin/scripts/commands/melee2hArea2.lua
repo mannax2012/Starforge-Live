@@ -45,9 +45,9 @@ Melee2hArea2Command = {
         name = "melee2harea2",
 	damageMultiplier = 3.0,
 	speedMultiplier = 2.0,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.8,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 1.0,
+	actionCostMultiplier = 2.0,
+	mindCostMultiplier = 1.0,
         accuracyBonus = 10,
 
 	stateEffects = {

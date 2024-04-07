@@ -46,9 +46,9 @@ FireAcidCone1Command = {
 	
 	damageMultiplier = 5,
 	speedMultiplier = 4,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 3.5,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 1.5,
+	actionCostMultiplier = 0.5,
+	mindCostMultiplier = 0.5,
 	accuracyBonus = 0,
 
 	coneAngle = 45,

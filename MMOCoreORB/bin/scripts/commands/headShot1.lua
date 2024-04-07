@@ -46,12 +46,12 @@ HeadShot1Command = {
 
 	damageMultiplier = 1.5,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 0.5,
+	actionCostMultiplier = 0.5,
+	mindCostMultiplier = 1,
 	accuracyBonus = 5,
 
-	poolsToDamage = HEALTH_ATTRIBUTE,
+	poolsToDamage = MIND_ATTRIBUTE,
 
 	animation = "fire_1_special_single", 
 	animType = GENERATE_RANGED,

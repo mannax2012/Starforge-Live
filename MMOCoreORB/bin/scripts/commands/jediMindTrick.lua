@@ -45,7 +45,7 @@ JediMindTrickCommand = {
     name = "jedimindtrick",
 
 	damageMultiplier = 0,
-	speed = 2.0,
+	speed = 4.0,
 	forceCost = 600,
 	accuracySkillMod = "",
 	coneAngle = 0,

@@ -45,7 +45,7 @@ AnimalScareCommand = {
 	name = "animalscare",
 
 	damageMultiplier = 0,
-	speed = 2.5,
+	speed = 4.0,
 	forceCost = 200,
 	accuracySkillMod = "",
 	coneAngle = 0,

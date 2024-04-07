@@ -43,7 +43,7 @@
 
 DrainForceCommand = {
 	name = "drainforce",
-	defaultTime = 3,
+	defaultTime = 5,
 	maxDamage = 250,
 	forceCost = 50,
 	visMod = 25,

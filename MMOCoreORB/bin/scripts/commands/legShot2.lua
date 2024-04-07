@@ -46,9 +46,9 @@ LegShot2Command = {
 
 	damageMultiplier = 2,
 	speedMultiplier = 2,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 0.5,
+	actionCostMultiplier = 1.5,
+	mindCostMultiplier = 1.5,
 	accuracyBonus = 25,
 
 	stateEffects = {

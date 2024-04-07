@@ -43,7 +43,7 @@
 
 HealEnhanceCommand = {
         name = "healenhance",
-        defaultTime = 1,
+        defaultTime = 2,
 }
 
 AddCommand(HealEnhanceCommand)

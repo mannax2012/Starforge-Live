@@ -1,7 +1,7 @@
 qa = {
 	level = 13,
 	name = "qa",
-	tag = "Starforge-QA",
+	tag = "SWGEmu-QA",
 	skills = {
 		"admin_base",
 		"admin_debug_01",

@@ -1,7 +1,7 @@
 qa_basilisk = {
 	level = 2,
 	name = "qa_basilisk",
-	tag = "Starforge-QA",
+	tag = "SWGEmu-QA",
 	skills = {
 		"admin_base",
 		"admin_qa_basilisk",

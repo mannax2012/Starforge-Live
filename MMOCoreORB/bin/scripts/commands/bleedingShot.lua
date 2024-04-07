@@ -46,9 +46,9 @@ BleedingShotCommand = {
 
 	damageMultiplier = 2.0,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0,
+	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
-	mindCostMultiplier = 0,
+	mindCostMultiplier = 1,
 
 	animation = "fire_3_single", 
 	animType = GENERATE_RANGED,
@@ -59,7 +59,7 @@ BleedingShotCommand = {
 	  DotEffect( 
 		BLEEDING, 
 		{ "resistance_bleeding", "bleed_resist" },
-		HEALTH,
+		MIND,
 		true,
 		0,
 		100,

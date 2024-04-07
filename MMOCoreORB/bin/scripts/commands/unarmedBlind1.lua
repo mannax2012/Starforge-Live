@@ -48,9 +48,9 @@ UnarmedBlind1Command = {
 	speedMultiplier = 2.0,
 	accuracyBonus = 15,
 	
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 1.5,
+	actionCostMultiplier = 1.5,
+	mindCostMultiplier = 1.5,
 
 	animation = "attack_high_center_light_1",
 

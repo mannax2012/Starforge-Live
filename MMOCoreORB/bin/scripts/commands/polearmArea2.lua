@@ -46,9 +46,9 @@ PolearmArea2Command = {
 
 	damageMultiplier = 2.75,
 	speedMultiplier = 2.5,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0,
+	healthCostMultiplier = 2.0,
+	actionCostMultiplier = 1.5,
+	mindCostMultiplier = 1.5,
 	accuracyBonus = 10,
 
 	areaRange = 16,

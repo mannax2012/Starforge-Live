@@ -46,10 +46,10 @@ FlameSingle2Command = {
 
 	damageMultiplier = 8,
 	speedMultiplier = 4,
-	healthCostMultiplier = 0,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0,
-	accuracyBonus = 5,
+	healthCostMultiplier = 2.0,
+	actionCostMultiplier = 0.5,
+	mindCostMultiplier = 0.5,
+	accuracyBonus = 0,
 
 	poolsToDamage = RANDOM_ATTRIBUTE,
 

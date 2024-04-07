@@ -45,7 +45,7 @@ AimCommand = {
         name = "aim",
 
 	damageMultiplier = 0,
-	actionCostMultiplier = 3,
+	healthCostMultiplier = 3,
 
 	combatSpam = "aim",
 	weaponType = RANGEDWEAPON,
