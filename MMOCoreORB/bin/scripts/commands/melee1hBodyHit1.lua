@@ -46,9 +46,9 @@ Melee1hBodyHit1Command = {
 
 	damageMultiplier = 1.5,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.625,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.5,
+	mindCostMultiplier = 0,
         accuracyBonus = 25,
 
 	poolsToDamage = HEALTH_ATTRIBUTE,

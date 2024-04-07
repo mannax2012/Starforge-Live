@@ -48,9 +48,9 @@ Melee2hSweep1Command = {
 	speedMultiplier = 1.5,
 	accuracyBonus = 10,
 	
-	healthCostMultiplier = 0.75,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 0.75,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.5,
+	mindCostMultiplier = 0,
 
 	animation = "lower_posture_2hmelee_3",
 

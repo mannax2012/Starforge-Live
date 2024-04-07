@@ -1,7 +1,7 @@
 dev_basilisk = {
 	level = 3,
 	flag = 2, -- Developer
-	name = "dev_basilisk",
+	name = "dev_Starforge,
 	tag = "SWGEmu-Dev",
 	skills = {
 		"admin_base",

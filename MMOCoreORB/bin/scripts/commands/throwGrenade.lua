@@ -46,9 +46,9 @@ ThrowGrenadeCommand = {
 
 	damageMultiplier = 1.0,
 	speedMultiplier = 1.0,
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 1.0,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.0,
+	mindCostMultiplier = 0,
 
 	range = 64,
 	areaAction = true,

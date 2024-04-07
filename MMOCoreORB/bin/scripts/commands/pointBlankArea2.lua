@@ -46,9 +46,9 @@ PointBlankArea2Command = {
 
 	damageMultiplier = 4.0,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 0.5,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.5,
+	mindCostMultiplier = 0,
 	accuracyBonus = 50,
 
 	coneAngle = 60,

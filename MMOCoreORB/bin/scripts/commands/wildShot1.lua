@@ -46,9 +46,9 @@ WildShot1Command = {
 
 	damageMultiplier = 2.25,
 	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.75,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 3.25,
+	mindCostMultiplier = 0,
 	accuracyBonus = 25,
 
 	animation = "fire_7_single", 

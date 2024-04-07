@@ -46,9 +46,9 @@ Melee1hLunge2Command = {
 
 	damageMultiplier = 3.0,
 	speedMultiplier = 2.5,
-	healthCostMultiplier = 0.625,
-	actionCostMultiplier = 0.625,
-	mindCostMultiplier = 1.5,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.625,
+	mindCostMultiplier = 0,
         accuracyBonus = 25,
 
 	animation = "knockdown_1hmelee_1",

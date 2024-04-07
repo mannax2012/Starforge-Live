@@ -46,9 +46,9 @@ PistolMeleeDefense1Command = {
 
 	damageMultiplier = 3.0,
 	speedMultiplier = 2.0,
-	healthCostMultiplier = 0.50,
-	actionCostMultiplier = 0.75,
-	mindCostMultiplier = 0.50,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.75,
+	mindCostMultiplier = 0,
         accuracyBonus = 50,
 
 	stateEffects = {

@@ -42,14 +42,14 @@
 --true = 1, false = 0
 
 UnarmedLegHit1Command = {
-        name = "unarmedleghit1",
+    name = "unarmedleghit1",
 
 	damageMultiplier = 2.5,
 	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.75,
-	actionCostMultiplier = 1.75,
-	mindCostMultiplier = 1.75,
-        accuracyBonus = 15,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.75,
+	mindCostMultiplier = 0,
+    accuracyBonus = 15,
 
 	poolsToDamage = ACTION_ATTRIBUTE,
 

@@ -46,9 +46,9 @@ DiveShotCommand = {
 
 	damageMultiplier = 2.5,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.75,
-	mindCostMultiplier = 0.5,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2,
+	mindCostMultiplier = 0,
 	accuracyBonus = 50,
 
 	animation = "fire_acrobatic",
