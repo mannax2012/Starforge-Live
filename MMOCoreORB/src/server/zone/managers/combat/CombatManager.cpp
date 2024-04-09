@@ -494,6 +494,7 @@ int CombatManager::creoTargetCombatAction(CreatureObject* attacker, WeaponObject
 	}
 	case RICOCHET:
 		damageMultiplier = 0.0f;
+		defender->inflictDamage(defender, CreatureAttribute::ACTION, 200, true, true, true);
 		break;
 	default:
 		break;
@@ -663,6 +664,7 @@ int CombatManager::tanoTargetCombatAction(TangibleObject* attacker, WeaponObject
 		break;
 	case RICOCHET:
 		damageMultiplier = 0.0f;
+		defenderObject->inflictDamage(defenderObject, CreatureAttribute::ACTION, 200, true, true, true);
 		break;
 	default:
 		break;
@@ -2511,8 +2513,8 @@ int CombatManager::getArmorReduction(TangibleObject* attacker, WeaponObject* wea
 			float splitDmg = feedbackDmg / 3;
 
 			attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
-			attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
-			attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
+			//attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
+			//attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
 			defender->notifyObservers(ObserverEventType::FORCEFEEDBACK, attacker, feedbackDmg);
 			defender->playEffect("clienteffect/pl_force_feedback_block.cef", "");
 			hitList->setForceFeedback(feedbackDmg);
@@ -2742,7 +2744,7 @@ float CombatManager::doDroidDetonation(CreatureObject* droid, CreatureObject* de
 				return (int)actionDamage * 0.1;
 			}
 		}
-		if ((pool & HEALTH)) {
+		if ((pool & ACTION)) {
 			defender->inflictDamage(droid, CreatureAttribute::HEALTH, (int)actionDamage, true, true, false);
 			return (int)actionDamage;
 		}
@@ -2750,7 +2752,7 @@ float CombatManager::doDroidDetonation(CreatureObject* droid, CreatureObject* de
 			defender->inflictDamage(droid, CreatureAttribute::HEALTH, (int)healthDamage, true, true, false);
 			return (int)healthDamage;
 		}
-		if ((pool & HEALTH)) {
+		if ((pool & MIND)) {
 			defender->inflictDamage(droid, CreatureAttribute::HEALTH, (int)mindDamage, true, true, false);
 			return (int)mindDamage;
 		}
@@ -2901,28 +2903,28 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 			return false;
 		}
 	}
-
+/*
 	health = attacker->calculateCostAdjustment(CreatureAttribute::STRENGTH, health);
 	action = attacker->calculateCostAdjustment(CreatureAttribute::QUICKNESS, action);
 	mind = attacker->calculateCostAdjustment(CreatureAttribute::FOCUS, mind);
-
+*/
 	if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
 		return false;
 
-	if (attacker->getHAM(CreatureAttribute::HEALTH) <= action)
+	if (attacker->getHAM(CreatureAttribute::ACTION) <= action)
 		return false;
 
-	if (attacker->getHAM(CreatureAttribute::HEALTH) <= mind)
+	if (attacker->getHAM(CreatureAttribute::MIND) <= mind)
 		return false;
 
 	if (health > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, health, true, true, true);
+		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, health, true, true, true);
 
 	if (action > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, action, true, true, true);
+		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
 
 	if (mind > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, mind, true, true, true);
+		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, mind, true, true, true);
 
 	return true;
 }

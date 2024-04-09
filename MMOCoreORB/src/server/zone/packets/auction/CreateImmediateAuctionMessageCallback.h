@@ -37,7 +37,15 @@ public:
 
 		message->parseUnicode(description);
 
-		premium = message->parseByte(); // Preium Sale flag
+		if (description.length() > 2048) {			//Infinity:  Let's cap item descriptions at 2048 characters
+
+			description = description.substr(0, 2048);
+
+			Logger::console.error("CreateImmediateAuctionMessageCallback - Item description too long, size = " + String::valueOf(description.length()) + ", accountID = " +
+				String::valueOf(client->getAccountID()) + ", IP = " + client->getIPAddress());
+		}
+
+		premium = message->parseByte(); // Premium Sale flag
 
 	}
 
