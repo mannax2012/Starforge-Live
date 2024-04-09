@@ -101,9 +101,9 @@ object_weapon_melee_special_blacksun_razor = object_weapon_melee_special_shared_
 	       
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 35,
-	actionAttackCost = 50,
-	mindAttackCost = 40,
+	healthAttackCost = 0,
+	actionAttackCost = 350,
+	mindAttackCost = 0,
 	forceCost = 0,
 	
 	pointBlankAccuracy = 0,
