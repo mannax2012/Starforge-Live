@@ -50,9 +50,9 @@ UnarmedSpinAttack1Command = {
 	areaRange = 16,
 	accuracyBonus = 15,
 	
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.5,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 1.8,
+	mindCostMultiplier = 0,
 
 	animation = "combo_3c", 
 	animType = GENERATE_INTENSITY,

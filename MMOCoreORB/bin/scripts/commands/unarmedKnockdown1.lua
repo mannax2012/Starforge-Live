@@ -46,9 +46,9 @@ UnarmedKnockdown1Command = {
 
 	damageMultiplier = 1.0,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 1.5,
+	mindCostMultiplier = 0,
         accuracyBonus = 15,
 
 	stateEffects = {
