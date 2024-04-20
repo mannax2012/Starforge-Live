@@ -46,9 +46,9 @@ BodyShot3Command = {
 
 	damageMultiplier = 4,
 	speedMultiplier = 1,
-	healthCostMultiplier = 0.75,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.75,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.25,
+	mindCostMultiplier = 0,
         accuracyBonus = 50,
 
 	poolsToDamage = HEALTH_ATTRIBUTE,

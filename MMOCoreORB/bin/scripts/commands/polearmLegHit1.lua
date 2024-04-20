@@ -48,9 +48,9 @@ PolearmLegHit1Command = {
 	speedMultiplier = 1.25,
 	accuracyBonus = 10,
 	
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.5,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 1.5,
+	mindCostMultiplier = 0,
 
 	animation = "attack_low_left_medium_0",
 

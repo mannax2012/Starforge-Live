@@ -46,9 +46,9 @@ BleedingShotCommand = {
 
 	damageMultiplier = 2.0,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 1.5,
+	mindCostMultiplier = 0,
 
 	animation = "fire_3_single", 
 	animType = GENERATE_RANGED,
