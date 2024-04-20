@@ -425,6 +425,9 @@
 #include "server/zone/objects/creature/commands/MildPoisonCommand.h"
 #include "server/zone/objects/creature/commands/StrongPoisonCommand.h"
 #include "server/zone/objects/creature/commands/StrongDiseaseCommand.h"
+#include "server/zone/objects/creature/commands/RegrantSkillsCommand.h"
+#include "server/zone/objects/creature/commands/VillageCommand.h"
+#include "server/zone/objects/creature/commands/FindStructureCommand.h"
 
 using namespace server::zone::managers::objectcontroller::command;
 
@@ -830,4 +833,7 @@ void CommandConfigManager::registerCommands2() {
 	commandFactory.registerCommand<MaxStatsCommand>(String("maxStats").toLowerCase());
 	commandFactory.registerCommand<MedicalForageCommand>(String("medicalForage").toLowerCase());
 	commandFactory.registerCommand<MeditateCommand>(String("meditate").toLowerCase());
+	commandFactory.registerCommand<RegrantSkillsCommand>(String("regrantSkills").toLowerCase());
+	commandFactory.registerCommand<VillageCommand>(String("village").toLowerCase());
+	commandFactory.registerCommand<FindStructureCommand>(String("findStructure").toLowerCase());
 }

@@ -45,10 +45,10 @@ LastDitchCommand = {
         name = "lastditch",
 
 	damageMultiplier = 6.0,
-	speedMultiplier = 4.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
+	speedMultiplier = 5.0,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.5,
+	mindCostMultiplier = 0,
 	accuracyBonus = 50,
 
 	stateEffects = {

@@ -46,9 +46,9 @@ DoubleTapCommand = {
 
 	damageMultiplier = 2.8,
 	speedMultiplier = 2.1,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.75,
-	mindCostMultiplier = 0.5,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.75,
+	mindCostMultiplier = 0,
         accuracyBonus = 50,
 
 	poolsToDamage = RANDOM_ATTRIBUTE,

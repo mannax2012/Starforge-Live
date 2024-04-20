@@ -47,7 +47,7 @@ Intimidate2Command = {
 	damageMultiplier = 0,
 	speedMultiplier = 1,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 0,
+	actionCostMultiplier = 1,
 	mindCostMultiplier = 0,
 	
 	accuracySkillMod = "intimidate",

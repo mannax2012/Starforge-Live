@@ -48,9 +48,9 @@ Melee2hSpinAttack1Command = {
 	speedMultiplier = 1.5,
 	accuracyBonus = 10,
 	
-	healthCostMultiplier = 1.0,
+	healthCostMultiplier = 0,
 	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.0,
+	mindCostMultiplier = 0,
 
 	areaAction = true,
 	areaRange = 16,

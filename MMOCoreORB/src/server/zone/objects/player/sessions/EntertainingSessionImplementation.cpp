@@ -697,7 +697,7 @@ void EntertainingSessionImplementation::addEntertainerBuffDuration(CreatureObjec
 	buffDuration += duration;
 
 	if (buffDuration > (120.0f + (10.0f / 60.0f)) ) // 2 hrs 10 seconds
-		buffDuration = (120.0f + (10.0f / 60.0f)); // 2hrs 10 seconds
+		buffDuration = (210.0f); // 3hrs 30 minutes
 
 	setEntertainerBuffDuration(creature, performanceType, buffDuration);
 }
@@ -890,16 +890,51 @@ void EntertainingSessionImplementation::activateEntertainerBuff(CreatureObject* 
 			return;
 
 		ManagedReference<PerformanceBuff*> oldBuff = nullptr;
+
+		if (entertainer->hasSkill("social_musician_master") && entertainer->hasSkill("social_dancer_master"))
+		{
+
+		uint32 mindBuffCRC = STRING_HASHCODE("medical_enhance_action");
+		uint32 focusBuffCRC = STRING_HASHCODE("enhance_music_focus");
+		uint32 willBuffCRC = STRING_HASHCODE("medical_enhance_stamina");
+
+
+		oldBuff = cast<PerformanceBuff*>(creature->getBuff(mindBuffCRC));
+
+		if (oldBuff != nullptr && oldBuff->getBuffStrength() > buffStrength)
+			return;
+
+		if (oldBuff != nullptr && (oldBuff->getBuffDuration() > buffDuration * 105) && (oldBuff->getBuffStrength() <= buffStrength))
+			return;
+
+		ManagedReference<PerformanceBuff*> mindBuff = new PerformanceBuff(creature, mindBuffCRC, buffStrength, buffDuration * 105, PerformanceBuffType::DANCE_MIND);							
+		ManagedReference<PerformanceBuff*> focusBuff = new PerformanceBuff(creature, focusBuffCRC, buffStrength, buffDuration * 105, PerformanceBuffType::MUSIC_FOCUS);
+		ManagedReference<PerformanceBuff*> willBuff = new PerformanceBuff(creature, willBuffCRC, buffStrength, buffDuration * 105, PerformanceBuffType::MUSIC_WILLPOWER);
+
+
+		Locker locker(mindBuff);
+		creature->addBuff(mindBuff);
+		locker.release();
+
+		Locker locker2(focusBuff);
+		creature->addBuff(focusBuff);
+		locker.release();
+
+		Locker locker3(willBuff);
+		creature->addBuff(willBuff);
+
+	
+		}else{
 		switch (performanceType) {
 		case PerformanceType::MUSIC:
 		{
-			uint32 focusBuffCRC = STRING_HASHCODE("performance_enhance_music_focus");
-			uint32 willBuffCRC = STRING_HASHCODE("performance_enhance_music_willpower");
+			uint32 focusBuffCRC = STRING_HASHCODE("medical_enhance_action");
+			uint32 willBuffCRC = STRING_HASHCODE("medical_enhance_stamina");
 			oldBuff = cast<PerformanceBuff*>(creature->getBuff(focusBuffCRC));
 			if (oldBuff != nullptr && oldBuff->getBuffStrength() > buffStrength)
 				return;
-			ManagedReference<PerformanceBuff*> focusBuff = new PerformanceBuff(creature, focusBuffCRC, buffStrength, buffDuration * 60, PerformanceBuffType::MUSIC_FOCUS);
-			ManagedReference<PerformanceBuff*> willBuff = new PerformanceBuff(creature, willBuffCRC, buffStrength, buffDuration * 60, PerformanceBuffType::MUSIC_WILLPOWER);
+			ManagedReference<PerformanceBuff*> focusBuff = new PerformanceBuff(creature, focusBuffCRC, buffStrength, buffDuration * 105, PerformanceBuffType::MUSIC_FOCUS);
+			ManagedReference<PerformanceBuff*> willBuff = new PerformanceBuff(creature, willBuffCRC, buffStrength, buffDuration * 105, PerformanceBuffType::MUSIC_WILLPOWER);
 
 			Locker locker(focusBuff);
 			creature->addBuff(focusBuff);
@@ -911,23 +946,23 @@ void EntertainingSessionImplementation::activateEntertainerBuff(CreatureObject* 
 		}
 		case PerformanceType::DANCE:
 		{
-			uint32 mindBuffCRC = STRING_HASHCODE("performance_enhance_dance_mind");
+			uint32 mindBuffCRC = STRING_HASHCODE("medical_enhance_action");
 			oldBuff = cast<PerformanceBuff*>(creature->getBuff(mindBuffCRC));
 			if (oldBuff != nullptr && oldBuff->getBuffStrength() > buffStrength)
 				return;
-			ManagedReference<PerformanceBuff*> mindBuff = new PerformanceBuff(creature, mindBuffCRC, buffStrength, buffDuration * 60, PerformanceBuffType::DANCE_MIND);
+			ManagedReference<PerformanceBuff*> mindBuff = new PerformanceBuff(creature, mindBuffCRC, buffStrength, buffDuration * 105, PerformanceBuffType::DANCE_MIND);
 
 			Locker locker(mindBuff);
 			creature->addBuff(mindBuff);
 			break;
 		}
 		}
-
-
+		}
+		
 	} catch(Exception& e) {
 
 	}
-
+	
 }
 
 void EntertainingSessionImplementation::updateEntertainerMissionStatus(bool entertaining, const int missionType) {

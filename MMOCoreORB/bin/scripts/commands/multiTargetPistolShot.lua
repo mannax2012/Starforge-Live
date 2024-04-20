@@ -46,9 +46,9 @@ MultiTargetPistolShotCommand = {
 
 	damageMultiplier = 4.2,
 	speedMultiplier = 3.5,
-	healthCostMultiplier = 0.5,
+	healthCostMultiplier = 0,
 	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 0.5,
+	mindCostMultiplier = 0,
 	accuracyBonus = 50,
 
 	areaAction = true,

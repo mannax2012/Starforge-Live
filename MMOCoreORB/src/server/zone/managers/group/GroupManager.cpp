@@ -42,7 +42,7 @@ void GroupManager::inviteToGroup(CreatureObject* inviter, CreatureObject* target
 	// Pre: inviter locked
 	// Post: player invited to inviter's group and inviter locked
 
-	bool galaxyWide = ConfigManager::instance()->getBool("Core3.PlayerManager.GalaxyWideGrouping", false);
+	bool galaxyWide = ConfigManager::instance()->getBool("Core3.PlayerManager.GalaxyWideGrouping", true);
 
 	if (target == inviter) {
 		inviter->sendSystemMessage("@group:invite_no_target_self");

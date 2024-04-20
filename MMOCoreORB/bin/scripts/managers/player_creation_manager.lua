@@ -45,16 +45,18 @@ slitherhorn = "object/tangible/instrument/slitherhorn.iff"
 
 marojMelon = "object/tangible/food/foraged/foraged_fruit_s1.iff"
 
-x31Speeder = "object/tangible/deed/vehicle_deed/landspeeder_x31_deed.iff"
+speederBike = "object/tangible/deed/vehicle_deed/speederbike_deed.iff"
+
+backpack = "object/tangible/wearables/backpack/starforge_backpack.iff"
 
 professionSpecificItems = {
 	combat_brawler = { brawlerOneHander, brawlerTwoHander, brawlerPolearm },
 	combat_marksman = { marksmanPistol, marksmanCarbine, marksmanRifle },
 	crafting_artisan = { genericTool, mineralTool, chemicalTool },
 	jedi = { },
-	outdoors_scout = { genericTool },
-	science_medic = { foodTool },
+	outdoors_scout = { genericTool, mineralTool },
+	science_medic = { foodTool, mineralTool },
 	social_entertainer = { slitherhorn }
 }
 
-commonStartingItems = { marojMelon, survivalKnife, x31Speeder }
+commonStartingItems = { marojMelon, survivalKnife, speederBike, backpack }

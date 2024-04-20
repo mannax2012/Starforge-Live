@@ -2442,7 +2442,7 @@ void PlayerObjectImplementation::doForceRegen() {
 	if (creature == nullptr || creature->isIncapacitated() || creature->isDead())
 		return;
 
-	const static uint32 tick = 5;
+	const static uint32 tick = 25;
 
 	uint32 modifier = 1;
 
@@ -2450,7 +2450,7 @@ void PlayerObjectImplementation::doForceRegen() {
 		Reference<ForceMeditateTask*> medTask = creature->getPendingTask("forcemeditate").castTo<ForceMeditateTask*>();
 
 		if (medTask != nullptr)
-			modifier = 3;
+			modifier = 5;
 	}
 
 	uint32 forceTick = tick * modifier;

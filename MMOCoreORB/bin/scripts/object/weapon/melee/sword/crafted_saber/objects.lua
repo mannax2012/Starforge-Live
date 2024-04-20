@@ -40,6 +40,16 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_dw_right_unstable_s01_gen4 = SharedWeaponObjectTemplate:new {
+	clientTemplateFileName = "object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_dw_right_unstable_s01_gen4.iff"}
+ObjectTemplates:addClientTemplate(object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_dw_right_unstable_s01_gen4, 
+"object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_dw_right_unstable_s01_gen4.iff")
+
+object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_dw_left_unstable_s01_gen4 = SharedWeaponObjectTemplate:new {
+	clientTemplateFileName = "object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_dw_left_unstable_s01_gen4.iff"}
+ObjectTemplates:addClientTemplate(object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_dw_left_unstable_s01_gen4, 
+"object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_dw_left_unstable_s01_gen4.iff")
+
 
 object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_one_handed_gen1 = SharedWeaponObjectTemplate:new {
 	clientTemplateFileName = "object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_one_handed_gen1.iff"

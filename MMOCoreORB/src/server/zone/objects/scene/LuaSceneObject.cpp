@@ -915,12 +915,25 @@ int LuaSceneObject::getPlayersInRange(lua_State *L) {
 
 	Vector3 worldPos = realObject->getWorldPosition();
 
-	Reference<SortedVector<ManagedReference<TreeEntry*> >*> playerObjects = new SortedVector<ManagedReference<TreeEntry*> >();
-	thisZone->getInRangePlayers(worldPos.getX(), worldPos.getZ(), worldPos.getY(), range, playerObjects);
+	//Reference<SortedVector<ManagedReference<TreeEntry*> >*> playerObjects = new SortedVector<ManagedReference<TreeEntry*> >();
+	//thisZone->getInRangePlayers(worldPos.getX(), worldPos.getZ(), worldPos.getY(), range, playerObjects);
+
+	Reference<SortedVector<ManagedReference<TreeEntry*> >*> closeObjects = new SortedVector<ManagedReference<TreeEntry*> >();
+	thisZone->getInRangePlayers(worldPos.getX(), worldPos.getZ(), worldPos.getY(), range, closeObjects);
 	int numPlayers = 0;
 
-	for (int i = 0; i < playerObjects->size(); ++i) {
-		SceneObject* object = cast<SceneObject*>(playerObjects->get(i).get());
+	//for (int i = 0; i < playerObjects->size(); ++i) {
+	//	SceneObject* object = cast<SceneObject*>(playerObjects->get(i).get());
+	for (int i = 0; i < closeObjects->size(); ++i) {
+		SceneObject* object = cast<SceneObject*>(closeObjects->get(i).get());
+
+		if (object == nullptr || !object->isPlayerCreature())
+			continue;
+
+		CreatureObject* player = object->asCreatureObject();
+
+		if (player == nullptr || player->isInvisible())
+			continue;
 
 		numPlayers++;
 		lua_pushlightuserdata(L, object);

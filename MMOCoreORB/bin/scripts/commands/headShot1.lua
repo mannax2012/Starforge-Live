@@ -46,9 +46,9 @@ HeadShot1Command = {
 
 	damageMultiplier = 1.5,
 	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 1,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 1.5,
+	mindCostMultiplier = 0,
 	accuracyBonus = 5,
 
 	poolsToDamage = MIND_ATTRIBUTE,

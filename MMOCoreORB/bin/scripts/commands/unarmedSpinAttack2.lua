@@ -48,9 +48,9 @@ UnarmedSpinAttack2Command = {
 	speedMultiplier = 3.0,
 	areaAction = true,
 	areaRange = 16,
-	healthCostMultiplier = 2,
+	healthCostMultiplier = 0,
 	actionCostMultiplier = 2,
-	mindCostMultiplier = 2,
+	mindCostMultiplier = 0,
         accuracyBonus = 15,
 
 	animation = "combo_3d", 
