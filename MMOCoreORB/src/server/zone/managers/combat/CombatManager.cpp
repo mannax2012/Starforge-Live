@@ -2278,18 +2278,23 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 	ManagedReference<WeaponObject*> weapon = defender->getWeapon();
 
 	const auto defenseToughMods = weapon->getDefenderToughnessModifiers();
-
+				int maxDReduction = 81;
+    			int curvePlacement = 2.5;
+    			float growthRate = -0.085;
+   				float growthCurve = 2.5;
 	if (attackType == weapon->getAttackType()) {
 		for (int i = 0; i < defenseToughMods->size(); ++i) {
 			int toughMod = defender->getSkillMod(defenseToughMods->get(i));
 			if (toughMod > 0)
-				damage *= 1.f - (toughMod / 100.f);
+				//damage *= 1.f - (toughMod / 100.f);
+				damage *= 1 - (.01f * (maxDReduction / (pow(1 + curvePlacement * exp(growthRate * toughMod), growthCurve))));
 		}
 	}
 
 	int jediToughness = defender->getSkillMod("jedi_toughness");
 	if (damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0)
-		damage *= 1.f - (jediToughness / 100.f);
+		//damage *= 1.f - (jediToughness / 100.f);
+		damage *= 1 - (.01f * (maxDReduction / (pow(1 + curvePlacement * exp(growthRate * jediToughness), growthCurve))));
 
 	return damage < 0 ? 0 : damage;
 }
