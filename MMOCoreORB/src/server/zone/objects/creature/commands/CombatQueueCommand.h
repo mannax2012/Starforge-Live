@@ -74,6 +74,7 @@ protected:
 	uint8 animType;
 
 	uint32 weaponType;
+	bool dualWieldAttack;
 
 public:
 	enum AnimGenTypes {
@@ -132,6 +133,7 @@ public:
 		trails = CombatManager::DEFAULTTRAIL;
 
 		weaponType = SharedWeaponObjectTemplate::ANYWEAPON;
+		dualWieldAttack = false;
 	}
 
 	void onFail(uint32 actioncntr, CreatureObject* creature, uint32 errorNumber) const {
@@ -162,8 +164,27 @@ public:
 			}
 		}
 
+		ManagedReference<WeaponObject*> offHand = creature->getOffHandWeapon();
+
 		if (!(getWeaponType() & weapon->getWeaponBitmask()))
 			return INVALIDWEAPON;
+
+		//allows different weapon types together, as long as they're in the command lua
+		if (dualWieldAttack) {
+			if (offHand != nullptr) {
+				if (!(getWeaponType() & offHand->getWeaponBitmask()))
+					return INVALIDWEAPON;
+			}
+			else {
+				return INVALIDWEAPON;
+			}
+		}
+		else {
+			//can't use non-dw attacks besides "attack" if dualwielding
+			if (offHand != nullptr && name != "attack") {
+				return INVALIDWEAPON;
+			}
+		}
 
 		if (rangeToCheck == -1)
 			rangeToCheck = (float) Math::max(10, weapon->getMaxRange());
@@ -874,6 +895,13 @@ public:
 
 	inline float getFrsDarkMaxDamageModifier() const {
 		return frsDarkMaxDamageModifier;
+	}
+	void setDualWieldAttack(bool val) {
+		dualWieldAttack = val;
+	}
+
+	bool isDualWieldAttack() const {
+		return dualWieldAttack;
 	}
 };
 

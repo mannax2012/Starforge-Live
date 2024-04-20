@@ -218,7 +218,9 @@ int CombatManager::doCombatAction(CreatureObject* attacker, WeaponObject* weapon
 
 	debug("past start combat");
 
-	if (!applySpecialAttackCost(attacker, weapon, data)) {
+	ManagedReference<WeaponObject*> offHand = attacker->getOffHandWeapon();
+
+	if (!applySpecialAttackCost(attacker, weapon, data, offHand)) {
 		return -2;
 	}
 
@@ -230,6 +232,18 @@ int CombatManager::doCombatAction(CreatureObject* attacker, WeaponObject* weapon
 	bool shouldGcwCrackdownTef = false, shouldGcwTef = false, shouldBhTef = false;
 
 	damage = doTargetCombatAction(attacker, weapon, defenderObject, &targetDefenders, data, &shouldGcwCrackdownTef, &shouldGcwTef, &shouldBhTef);
+
+	//handle dual wield stuff
+	bool dualWieldAttack = data.isDualWieldAttack();
+	bool isHardCC = false;
+
+	if (dualWieldAttack) {
+		//to not double kd/pcd
+		isHardCC = data.changesDefenderPosture();
+		if (offHand != nullptr && !isHardCC) {
+			damage += doTargetCombatAction(attacker, offHand, defenderObject, &targetDefenders, data, &shouldGcwCrackdownTef, &shouldGcwTef, &shouldBhTef);
+		}
+	}
 
 	if (data.getCommand()->isAreaAction() || data.getCommand()->isConeAction()) {
 		Reference<SortedVector<ManagedReference<TangibleObject*>>*> areaDefenders = getAreaTargets(attacker, weapon, defenderObject, data);
@@ -249,6 +263,11 @@ int CombatManager::doCombatAction(CreatureObject* attacker, WeaponObject* weapon
 				}
 
 				areaDam += doTargetCombatAction(attacker, weapon, areaDefenders->get(i), &targetDefenders, data, &shouldGcwCrackdownTef, &shouldGcwTef, &shouldBhTef);
+				if (dualWieldAttack) {
+					if (offHand != nullptr && !isHardCC) {
+						damage += doTargetCombatAction(attacker, offHand, areaDefenders->get(i), &targetDefenders, data, &shouldGcwCrackdownTef, &shouldGcwTef, &shouldBhTef);
+					}
+				}
 				areaDefenders->remove(i);
 
 				tano->unlock();
@@ -268,11 +287,18 @@ int CombatManager::doCombatAction(CreatureObject* attacker, WeaponObject* weapon
 
 		if (attacker->isPlayerCreature() && data.getCommandCRC() != STRING_HASHCODE("attack")) {
 			weapon->decay(attacker);
+
+			if (offHand != nullptr && !isHardCC)
+				offHand->decay(attacker);
 		}
 
 		// Decreases the powerup once per successful attack
 		if (!data.isForceAttack()) {
 			weapon->decreasePowerupUses(attacker);
+
+			//should chance be reduced if dw'ing to not burn through twice as many pups? 
+			if (offHand != nullptr && data.getCommandCRC() != STRING_HASHCODE("attack") && !isHardCC)
+				offHand->decreasePowerupUses(attacker);
 		}
 	}
 
@@ -468,6 +494,7 @@ int CombatManager::creoTargetCombatAction(CreatureObject* attacker, WeaponObject
 	}
 	case RICOCHET:
 		damageMultiplier = 0.0f;
+		defender->inflictDamage(defender, CreatureAttribute::ACTION, 200, true, true, true);
 		break;
 	default:
 		break;
@@ -637,6 +664,7 @@ int CombatManager::tanoTargetCombatAction(TangibleObject* attacker, WeaponObject
 		break;
 	case RICOCHET:
 		damageMultiplier = 0.0f;
+		defenderObject->inflictDamage(defenderObject, CreatureAttribute::ACTION, 200, true, true, true);
 		break;
 	default:
 		break;
@@ -1491,9 +1519,9 @@ int CombatManager::applyDamage(TangibleObject* attacker, WeaponObject* weapon, C
 		spillOverDebug << " Action Spill Over Amount: " << spilledDamage << "\n";
 #endif
 
-		defender->inflictDamage(attacker, CreatureAttribute::ACTION, (int)actionDamage, true, xpType, true, true);
+		defender->inflictDamage(attacker, CreatureAttribute::HEALTH, (int)actionDamage, true, xpType, true, true);
 
-		poolsToWound.add(CreatureAttribute::ACTION);
+		poolsToWound.add(CreatureAttribute::HEALTH);
 	}
 
 	if (mindDamaged) {
@@ -1525,9 +1553,9 @@ int CombatManager::applyDamage(TangibleObject* attacker, WeaponObject* weapon, C
 		spillOverDebug << " Mind Spill Over Amount: " << spilledDamage << "\n";
 #endif
 
-		defender->inflictDamage(attacker, CreatureAttribute::MIND, (int)mindDamage, true, xpType, true, true);
+		defender->inflictDamage(attacker, CreatureAttribute::HEALTH, (int)mindDamage, true, xpType, true, true);
 
-		poolsToWound.add(CreatureAttribute::MIND);
+		poolsToWound.add(CreatureAttribute::HEALTH);
 	}
 
 	if (numSpillOverPools > 0) {
@@ -1546,18 +1574,18 @@ int CombatManager::applyDamage(TangibleObject* attacker, WeaponObject* weapon, C
 			defender->inflictDamage(attacker, CreatureAttribute::HEALTH, spillToApply, true, xpType, true, true);
 		}
 
-		if ((poolsToDamage ^ 0x7) & ACTION) {
+		if ((poolsToDamage ^ 0x7) & HEALTH) {
 #ifdef DEBUG_SPILL_DAMAGE
 			spillOverDebug << " Action Spill Over Damage: " << spillToApply << "\n";
 #endif
-			defender->inflictDamage(attacker, CreatureAttribute::ACTION, spillToApply, true, xpType, true, true);
+			defender->inflictDamage(attacker, CreatureAttribute::HEALTH, spillToApply, true, xpType, true, true);
 		}
 
-		if ((poolsToDamage ^ 0x7) & MIND) {
+		if ((poolsToDamage ^ 0x7) & HEALTH) {
 #ifdef DEBUG_SPILL_DAMAGE
 			spillOverDebug << " Mind Spill Over Damage: " << spillToApply << "\n";
 #endif
-			defender->inflictDamage(attacker, CreatureAttribute::MIND, spillToApply, true, xpType, true, true);
+			defender->inflictDamage(attacker, CreatureAttribute::HEALTH, spillToApply, true, xpType, true, true);
 		}
 	}
 
@@ -1776,19 +1804,19 @@ uint8 CombatManager::getPoolForDot(uint64 dotType, int poolsToDamage) const {
 	case CreatureState::BLEEDING:
 		if (poolsToDamage & HEALTH) {
 			pool = CreatureAttribute::HEALTH;
-		} else if (poolsToDamage & ACTION) {
-			pool = CreatureAttribute::ACTION;
-		} else if (poolsToDamage & MIND) {
-			pool = CreatureAttribute::MIND;
+		} else if (poolsToDamage & HEALTH) {
+			pool = CreatureAttribute::HEALTH;
+		} else if (poolsToDamage & HEALTH) {
+			pool = CreatureAttribute::HEALTH;
 		}
 		break;
 	case CreatureState::DISEASED:
 		if (poolsToDamage & HEALTH) {
 			pool = CreatureAttribute::HEALTH + System::random(2);
-		} else if (poolsToDamage & ACTION) {
-			pool = CreatureAttribute::ACTION + System::random(2);
-		} else if (poolsToDamage & MIND) {
-			pool = CreatureAttribute::MIND + System::random(2);
+		} else if (poolsToDamage & HEALTH) {
+			pool = CreatureAttribute::HEALTH + System::random(2);
+		} else if (poolsToDamage & HEALTH) {
+			pool = CreatureAttribute::HEALTH + System::random(2);
 		}
 		break;
 	default:
@@ -2485,8 +2513,8 @@ int CombatManager::getArmorReduction(TangibleObject* attacker, WeaponObject* wea
 			float splitDmg = feedbackDmg / 3;
 
 			attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
-			attacker->inflictDamage(defender, CreatureAttribute::ACTION, splitDmg, true, true, true);
-			attacker->inflictDamage(defender, CreatureAttribute::MIND, splitDmg, true, true, true);
+			//attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
+			//attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
 			defender->notifyObservers(ObserverEventType::FORCEFEEDBACK, attacker, feedbackDmg);
 			defender->playEffect("clienteffect/pl_force_feedback_block.cef", "");
 			hitList->setForceFeedback(feedbackDmg);
@@ -2695,7 +2723,7 @@ float CombatManager::doDroidDetonation(CreatureObject* droid, CreatureObject* de
 				healthArmor->inflictDamage(healthArmor, 0, healthDamage * 0.1, true, true);
 				return (int)healthDamage * 0.1;
 			}
-			if (mindArmor != nullptr && !mindArmor->isVulnerable(SharedWeaponObjectTemplate::BLAST) && (pool & MIND)) {
+			if (mindArmor != nullptr && !mindArmor->isVulnerable(SharedWeaponObjectTemplate::BLAST) && (pool & HEALTH)) {
 				float armorReduction = mindArmor->getBlast();
 				if (armorReduction > 0)
 					mindDamage *= (1.f - (armorReduction / 100.f));
@@ -2705,7 +2733,7 @@ float CombatManager::doDroidDetonation(CreatureObject* droid, CreatureObject* de
 				mindArmor->inflictDamage(mindArmor, 0, mindDamage * 0.1, true, true);
 				return (int)mindDamage * 0.1;
 			}
-			if (actionArmor != nullptr && !actionArmor->isVulnerable(SharedWeaponObjectTemplate::BLAST) && (pool & ACTION)) {
+			if (actionArmor != nullptr && !actionArmor->isVulnerable(SharedWeaponObjectTemplate::BLAST) && (pool & HEALTH)) {
 				float armorReduction = actionArmor->getBlast();
 				if (armorReduction > 0)
 					actionDamage *= (1.f - (armorReduction / 100.f));
@@ -2717,7 +2745,7 @@ float CombatManager::doDroidDetonation(CreatureObject* droid, CreatureObject* de
 			}
 		}
 		if ((pool & ACTION)) {
-			defender->inflictDamage(droid, CreatureAttribute::ACTION, (int)actionDamage, true, true, false);
+			defender->inflictDamage(droid, CreatureAttribute::HEALTH, (int)actionDamage, true, true, false);
 			return (int)actionDamage;
 		}
 		if ((pool & HEALTH)) {
@@ -2725,7 +2753,7 @@ float CombatManager::doDroidDetonation(CreatureObject* droid, CreatureObject* de
 			return (int)healthDamage;
 		}
 		if ((pool & MIND)) {
-			defender->inflictDamage(droid, CreatureAttribute::MIND, (int)mindDamage, true, true, false);
+			defender->inflictDamage(droid, CreatureAttribute::HEALTH, (int)mindDamage, true, true, false);
 			return (int)mindDamage;
 		}
 		return 0;
@@ -2833,11 +2861,20 @@ void CombatManager::showHitLocationFlyText(CreatureObject* attacker, CreatureObj
 
 // Special Attack Cost
 
-bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObject* weapon, const CreatureAttackData& data) const {
+bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObject* weapon, const CreatureAttackData& data, WeaponObject* offHand) const {
 	if (attacker->isAiAgent() || data.isForceAttack())
 		return true;
 
 	float force = weapon->getForceCost() * data.getForceCostMultiplier();
+
+		if (data.isDualWieldAttack()) {
+			if (offHand != nullptr) {
+			force += offHand->getForceCost() * data.getForceCostMultiplier();
+			}
+			else {
+				return false;
+		}
+	}
 
 	if (force > 0) { // Need Force check first otherwise it can be spammed.
 		ManagedReference<PlayerObject*> playerObject = attacker->getPlayerObject();
@@ -2856,10 +2893,21 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	float action = weapon->getActionAttackCost() * data.getActionCostMultiplier();
 	float mind = weapon->getMindAttackCost() * data.getMindCostMultiplier();
 
+	if (data.isDualWieldAttack()) {
+		if (offHand != nullptr) {
+			health += offHand->getHealthAttackCost() * data.getHealthCostMultiplier();
+			action += offHand->getActionAttackCost() * data.getActionCostMultiplier();
+			mind += offHand->getMindAttackCost() * data.getMindCostMultiplier();
+		}
+		else {
+			return false;
+		}
+	}
+/*
 	health = attacker->calculateCostAdjustment(CreatureAttribute::STRENGTH, health);
 	action = attacker->calculateCostAdjustment(CreatureAttribute::QUICKNESS, action);
 	mind = attacker->calculateCostAdjustment(CreatureAttribute::FOCUS, mind);
-
+*/
 	if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
 		return false;
 
@@ -2870,13 +2918,13 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 		return false;
 
 	if (health > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, health, true, true, true);
+		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, health, true, true, true);
 
 	if (action > 0)
 		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
 
 	if (mind > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
+		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, mind, true, true, true);
 
 	return true;
 }

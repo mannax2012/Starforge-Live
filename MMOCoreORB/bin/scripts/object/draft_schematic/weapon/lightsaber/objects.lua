@@ -40,6 +40,15 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_draft_schematic_weapon_lightsaber_shared_lightsaber_dw_r_unstable_s01_gen4 = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/weapon/lightsaber/shared_lightsaber_dw_r_unstable_s01_gen4.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_lightsaber_shared_lightsaber_dw_r_unstable_s01_gen4, 
+"object/draft_schematic/weapon/lightsaber/shared_lightsaber_dw_r_unstable_s01_gen4.iff")
+
+object_draft_schematic_weapon_lightsaber_shared_lightsaber_dw_l_unstable_s01_gen4 = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/weapon/lightsaber/shared_lightsaber_dw_l_unstable_s01_gen4.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_lightsaber_shared_lightsaber_dw_l_unstable_s01_gen4, 
+"object/draft_schematic/weapon/lightsaber/shared_lightsaber_dw_l_unstable_s01_gen4.iff")
 
 object_draft_schematic_weapon_lightsaber_shared_lightsaber_one_hand_gen1 = SharedDraftSchematicObjectTemplate:new {
 	clientTemplateFileName = "object/draft_schematic/weapon/lightsaber/shared_lightsaber_one_hand_gen1.iff"

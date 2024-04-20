@@ -53,9 +53,9 @@ public:
 			return GENERALERROR;
 		}
 
-		int baseMind = player->getBaseHAM(CreatureAttribute::MIND);
+		int baseAction = player->getBaseHAM(CreatureAttribute::ACTION);
 
-		int pbBonus = baseMind / 2;
+		int pbBonus = baseAction / 2;
 
 		int meditateMod = player->getSkillMod("meditate");
 
@@ -65,7 +65,7 @@ public:
 		 */
 		int duration = 300 + ((meditateMod/100) * 300);
 
-		if(player->getHAM(CreatureAttribute::MIND) <= pbBonus) {
+		if(player->getHAM(CreatureAttribute::ACTION) <= pbBonus) {
 			player->sendSystemMessage("@teraskasi:powerboost_mind"); // [mediation] You currently lack the mental capacity to focus your energies.
 			return GENERALERROR;
 		}

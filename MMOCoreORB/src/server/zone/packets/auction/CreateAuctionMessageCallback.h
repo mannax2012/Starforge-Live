@@ -38,7 +38,14 @@ public:
 		duration = message->parseInt(); // How long to sell for in minutes
 
 		message->parseUnicode(description);
+		if (description.length() > 2048) {			
+			//Infinity:  Let's cap item descriptions at 2048 characters
 
+			description = description.substr(0, 2048);
+
+			Logger::console.error("CreateAuctionMessageCallback - Item description too long, size = " + String::valueOf(description.length()) + ", accountID = " +
+				String::valueOf(client->getAccountID()) + ", IP = " + client->getIPAddress());
+		}
 		premium = message->parseByte();
 
 	}

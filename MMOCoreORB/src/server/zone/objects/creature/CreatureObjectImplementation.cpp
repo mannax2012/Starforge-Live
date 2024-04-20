@@ -1390,7 +1390,7 @@ void CreatureObjectImplementation::addSkill(Skill* skill, bool notifyClient) {
 			String skillName = skill->getSkillName();
 
 			if (baseName == skillName) {
-				shouldSpawnHelper = true;
+				shouldSpawnHelper = false;
 				break;
 			}
 		}
@@ -2938,13 +2938,14 @@ void CreatureObjectImplementation::activateHAMRegeneration(int latency) {
 	if (isKneeling())
 		modifier *= 1.25f;
 	else if (isSitting())
-		modifier *= 1.75f;
+		modifier *= 25.75f;
 
 	// this formula gives the amount of regen per second
 	uint32 healthTick = (uint32) ceil((float) Math::max(0, getHAM(
 			CreatureAttribute::CONSTITUTION)) * 13.0f / 2100.0f * modifier);
-	uint32 actionTick = (uint32) ceil((float) Math::max(0, getHAM(
-			CreatureAttribute::STAMINA)) * 13.0f / 2100.0f * modifier);
+
+	//uint32 actionTick = (getMaxHAM(CreatureAttribute::ACTION) * 0.125);
+	uint32 actionTick = (uint32) ceil((float) Math::max(0, getHAM(CreatureAttribute::STAMINA)) * 0.225);
 	uint32 mindTick = (uint32) ceil((float) Math::max(0, getHAM(
 			CreatureAttribute::WILLPOWER)) * 13.0f / 2100.0f * modifier);
 
@@ -4368,4 +4369,54 @@ bool CreatureObjectImplementation::checkInConversationRange(SceneObject* targetO
 	int distanceToCheck = CONVERSATION_MAX_DISTANCE * CONVERSATION_MAX_DISTANCE;
 
 	return sqDistance < distanceToCheck;
+}
+bool CreatureObjectImplementation::isDualWieldingLightsabers() {
+
+	ManagedReference<WeaponObject*> wep = getWeapon();
+	ManagedReference<WeaponObject*> offHand = getOffHandWeapon();
+	if (wep != nullptr && wep->isJediWeapon() && offHand != nullptr && offHand->isJediWeapon() && offHand != wep) {
+		return true;
+	}
+
+	return false;
+}
+
+bool CreatureObjectImplementation::isDualWielding() {
+
+	ManagedReference<WeaponObject*> wep = getWeapon();
+	ManagedReference<WeaponObject*> offHand = getOffHandWeapon();
+	if (wep != nullptr && offHand != nullptr && wep != offHand) {
+		return true;
+	}
+
+	return false;
+}
+
+bool CreatureObjectImplementation::hasOffHandWeapon() {
+
+	ManagedReference<WeaponObject*> offHand = getOffHandWeapon();
+	if (offHand != nullptr) {
+		return true;
+	}
+	return false;
+
+}
+
+Reference<WeaponObject*> CreatureObjectImplementation::getOffHandWeapon() {
+
+	ManagedReference<WeaponObject*> offHand = getSlottedObject("hold_l").castTo<WeaponObject*>();
+	if (offHand != nullptr) {
+		int arrangementSize = offHand->getArrangementDescriptorSize();
+		for (int i = 0; i < arrangementSize; ++i) {
+			const Vector<String>* descriptors = offHand->getArrangementDescriptor(i);
+			for (int j = 0; j < descriptors->size(); ++j) {
+				const String& childArrangement = descriptors->get(j);
+				if (childArrangement.contains("hold_r")) {
+					return nullptr;
+				}
+			}
+		}
+		return offHand;
+	}
+	return nullptr;
 }

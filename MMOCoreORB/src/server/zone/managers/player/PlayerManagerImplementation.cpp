@@ -1339,7 +1339,7 @@ void PlayerManagerImplementation::killPlayer(TangibleObject* attacker, CreatureO
 	player->sendSystemMessage(stringId);
 
 	player->updateTimeOfDeath();
-	player->clearBuffs(true, false);
+	//player->clearBuffs(true, false);
 
 	PlayerObject* ghost = player->getPlayerObject();
 
@@ -1782,7 +1782,7 @@ void PlayerManagerImplementation::sendPlayerToCloner(CreatureObject* player, uin
 	if (preDesignatedFacility == nullptr || preDesignatedFacility != cloner) {
 		player->addWounds(CreatureAttribute::HEALTH, 100, true, false);
 		player->addWounds(CreatureAttribute::ACTION, 100, true, false);
-		player->addWounds(CreatureAttribute::MIND, 100, true, false);
+		//player->addWounds(CreatureAttribute::MIND, 100, true, false);
 		player->addShockWounds(100, true);
 	}
 
@@ -6249,6 +6249,20 @@ void PlayerManagerImplementation::enhanceCharacter(CreatureObject* player) {
 		player->sendSystemMessage("An unknown force strengthens you for battles yet to come.");
 }
 
+void PlayerManagerImplementation::enhanceCharacterFrog(CreatureObject* player) {
+	if (player == nullptr)
+		return;
+
+	bool message = true;
+
+	message = message && doEnhanceCharacter(0x98321369, player, medicalBuff, medicalDuration, BuffType::MEDICAL, 0); // medical_enhance_health
+	message = message && doEnhanceCharacter(0x7F86D2C6, player, medicalBuff, medicalDuration, BuffType::MEDICAL, 2); // medical_enhance_constitution
+	message = message && doEnhanceCharacter(0x4BF616E2, player, medicalBuff, medicalDuration, BuffType::MEDICAL, 3); // medical_enhance_action
+	message = message && doEnhanceCharacter(0xED0040D9, player, medicalBuff, medicalDuration, BuffType::MEDICAL, 5); // medical_enhance_stamina
+
+	if (message && player->isPlayerCreature())
+		player->sendSystemMessage("Your health and action have been enhanced.");
+}
 void PlayerManagerImplementation::sendAdminJediList(CreatureObject* player) {
 	Reference<ObjectManager*> objectManager = player->getZoneServer()->getObjectManager();
 

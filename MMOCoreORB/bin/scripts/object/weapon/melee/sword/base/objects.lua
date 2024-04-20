@@ -40,6 +40,15 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_weapon_melee_sword_base_shared_crafted_lightsaber_dw_r_base = SharedWeaponObjectTemplate:new {
+	clientTemplateFileName = "object/weapon/melee/sword/base/shared_crafted_lightsaber_dw_r_base.iff"}
+ObjectTemplates:addClientTemplate(object_weapon_melee_sword_base_shared_crafted_lightsaber_dw_r_base, 
+"object/weapon/melee/sword/base/shared_crafted_lightsaber_dw_r_base.iff")
+
+object_weapon_melee_sword_base_shared_crafted_lightsaber_dw_l_base = SharedWeaponObjectTemplate:new {
+	clientTemplateFileName = "object/weapon/melee/sword/base/shared_crafted_lightsaber_dw_l_base.iff"}
+ObjectTemplates:addClientTemplate(object_weapon_melee_sword_base_shared_crafted_lightsaber_dw_l_base, 
+"object/weapon/melee/sword/base/shared_crafted_lightsaber_dw_l_base.iff")
 
 object_weapon_melee_sword_base_shared_crafted_lightsaber_base = SharedWeaponObjectTemplate:new {
 	clientTemplateFileName = "object/weapon/melee/sword/base/shared_crafted_lightsaber_base.iff"

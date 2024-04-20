@@ -12,6 +12,8 @@
 #include "engine/log/Logger.h"
 #include "server/zone/ZoneClientSession.h"
 #include "server/zone/ZoneProcessServer.h"
+//Infinity:  Custom includes
+#include "server/zone/objects/creature/CreatureObject.h"
 
 namespace server {
 namespace zone {
@@ -42,7 +44,8 @@ namespace packets {
 				parse(packet);
 
 			} catch (const Exception& e) {
-				error("exception while parsing message in ZonePacketHandler");
+					error("MessageCallback - exception while parsing message in ZonePacketHandler");
+				Logger::console.error("MessageCallback - Large packet size, size = " + String::valueOf(packet->size()) + ", accountID = " + String::valueOf(client->getAccountID()) + ", IP = " + client->getIPAddress());
 				error(e.getMessage());
 				e.printStackTrace();
 
