@@ -8,7 +8,7 @@ krayt_dragon_tissue_uncommon = {
 	craftingValues = {
 		{"maxdamage",30,60,0},
 		{"attackspeed",-0.3,-0.6,2},
-		{"useCount",1,11,0},
+		{"useCount",1,20,0},
 	},
 	customizationStringNames = {},
 	customizationValues = {}

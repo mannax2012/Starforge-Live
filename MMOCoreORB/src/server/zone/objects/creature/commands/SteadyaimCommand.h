@@ -43,9 +43,9 @@ public:
 		float skillMod = (float) creature->getSkillMod("steadyaim");
 		int hamCost = (int) (100.0f * (1.0f - (skillMod / 100.0f))) * calculateGroupModifier(group);
 
-		int healthCost = creature->calculateCostAdjustment(CreatureAttribute::STRENGTH, hamCost);
+		int healthCost = 0;
 		int actionCost = creature->calculateCostAdjustment(CreatureAttribute::QUICKNESS, hamCost);
-		int mindCost = creature->calculateCostAdjustment(CreatureAttribute::FOCUS, hamCost);
+		int mindCost = 0;
 
 		if (!inflictHAM(player, healthCost, actionCost, mindCost))
 			return GENERALERROR;

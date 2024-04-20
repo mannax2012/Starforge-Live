@@ -79,7 +79,7 @@ public:
 		int hamCost = (int) (100.0f * (1.0f - (groupBurstRunMod / 100.0f))) * calculateGroupModifier(group);
 
 		int actionCost = creature->calculateCostAdjustment(CreatureAttribute::QUICKNESS, hamCost);
-		int mindCost = creature->calculateCostAdjustment(CreatureAttribute::FOCUS, hamCost);
+		int mindCost = 0;
 
 		if (!inflictHAM(player, 0, actionCost, mindCost))
 			return GENERALERROR;

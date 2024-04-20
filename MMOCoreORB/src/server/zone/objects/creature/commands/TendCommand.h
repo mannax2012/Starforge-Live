@@ -15,8 +15,8 @@
 
 class TendCommand : public QueueCommand {
 protected:
-	int mindCost;
-	int mindWoundCost;
+	int actionCost;
+	int actionWoundCost;
 
 	int healthHealed;
 	int actionHealed;
@@ -36,8 +36,8 @@ public:
 	TendCommand(const String& name, ZoneProcessServer* server)
 		: QueueCommand(name, server) {
 
-		mindCost = 0;
-		mindWoundCost = 0;
+		actionCost = 0;
+		actionWoundCost = 0;
 
 		range = 0;
 
@@ -203,9 +203,9 @@ public:
 			return GENERALERROR;
 		}
 
-		int mindCostNew = creature->calculateCostAdjustment(CreatureAttribute::FOCUS, mindCost);
+		int actionCostNew = creature->calculateCostAdjustment(CreatureAttribute::QUICKNESS, actionCost);
 
-		if (creature->getHAM(CreatureAttribute::MIND) < mindCostNew) {
+		if (creature->getHAM(CreatureAttribute::ACTION) < actionCostNew) {
 			creature->sendSystemMessage("@healing_response:not_enough_mind"); //You do not have enough mind to do that.
 			return GENERALERROR;
 		}
@@ -248,7 +248,7 @@ public:
 				attribute = findAttribute(creatureTarget);
 			}
 
-			if (attribute >= CreatureAttribute::MIND)
+			if (attribute >= CreatureAttribute::ACTION)
 				attribute = CreatureAttribute::UNKNOWN;
 
 			if (attribute == CreatureAttribute::UNKNOWN || creatureTarget->getWounds(attribute) == 0) {
@@ -283,9 +283,9 @@ public:
 			playerManager->sendBattleFatigueMessage(creature, creatureTarget);
 		}
 
-		creature->inflictDamage(creature, CreatureAttribute::MIND, mindCostNew, false);
-		creature->addWounds(CreatureAttribute::FOCUS, mindWoundCost);
-		creature->addWounds(CreatureAttribute::WILLPOWER, mindWoundCost);
+		creature->inflictDamage(creature, CreatureAttribute::ACTION, actionCostNew, false);
+		creature->addWounds(CreatureAttribute::STAMINA, actionWoundCost);
+		creature->addWounds(CreatureAttribute::ACTION, actionWoundCost);
 
 		doAnimations(creature, creatureTarget);
 
