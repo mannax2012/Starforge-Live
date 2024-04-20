@@ -47,9 +47,9 @@ SniperShotCommand = {
 	minDamage = 135,
 	maxDamage = 135,
 	speed = 1.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 2.0,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.5,
+	mindCostMultiplier = 0,
 	accuracyBonus = 5,
 
 	poolsToDamage = RANDOM_ATTRIBUTE,

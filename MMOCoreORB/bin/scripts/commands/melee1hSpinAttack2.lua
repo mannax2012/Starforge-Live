@@ -46,9 +46,9 @@ Melee1hSpinAttack2Command = {
 
 	damageMultiplier = 3.0,
 	speedMultiplier = 2.5,
-	healthCostMultiplier = 1.25,
-	actionCostMultiplier = 1.25,
-	mindCostMultiplier = 2.0,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2,
+	mindCostMultiplier = 0,
         accuracyBonus = 25,
 
 	animation = "lower_posture_2hmelee_6",

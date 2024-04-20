@@ -46,9 +46,9 @@ Melee1hHit3Command = {
 
 	damageMultiplier = 5.0,
 	speedMultiplier = 2.25,
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 2.0,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 2.25,
+	mindCostMultiplier = 0,
         accuracyBonus = 25,
 
 	animation = "combo_5a", 
