@@ -123,13 +123,13 @@ class PlanetManager extends ManagedService implements Logger {
 
 		numberOfCities = 0;
 
-		shuttleportAwayTime = 300;
-		shuttleportLandedTime = 120;
-		shuttleportLandingTime = 11;
+		shuttleportAwayTime = 10;
+		shuttleportLandedTime = 86400;
+		shuttleportLandingTime = 1;
 
-		starportAwayTime = 60;
-		starportLandedTime = 120;
-		starportLandingTime = 14;
+		starportAwayTime = 10;
+		starportLandedTime = 86400;
+		starportLandingTime = 1;
 
 		weatherManager = null;
 		gcwManager = null;
