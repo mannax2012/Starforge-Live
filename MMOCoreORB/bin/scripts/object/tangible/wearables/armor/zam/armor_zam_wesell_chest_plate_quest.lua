@@ -91,9 +91,9 @@ object_tangible_wearables_armor_zam_armor_zam_wesell_chest_plate_quest = object_
 	vulnerability = ACID + ENERGY + STUN + LIGHTSABER,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 84,
-	actionEncumbrance = 21,
-	mindEncumbrance = 23,
+	healthEncumbrance = 0,
+	actionEncumbrance = 0,
+	mindEncumbrance = 0,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,

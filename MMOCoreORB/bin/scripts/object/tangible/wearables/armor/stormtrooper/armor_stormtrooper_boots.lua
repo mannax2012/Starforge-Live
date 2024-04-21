@@ -44,7 +44,7 @@
 object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_boots = object_tangible_wearables_armor_stormtrooper_shared_armor_stormtrooper_boots:new {
 	templateType = ARMOROBJECT,
 
-	faction = "Imperial",
+--	faction = "Imperial",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -89,9 +89,9 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_boots = object_t
 	vulnerability = ACID + HEAT + STUN + LIGHTSABER,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 15,
-	actionEncumbrance = 33,
-	mindEncumbrance = 19,
+	healthEncumbrance = 0,
+	actionEncumbrance = 0,
+	mindEncumbrance = 0,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
