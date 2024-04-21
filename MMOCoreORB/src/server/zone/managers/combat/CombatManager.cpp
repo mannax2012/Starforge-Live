@@ -2278,8 +2278,8 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 	ManagedReference<WeaponObject*> weapon = defender->getWeapon();
 
 	const auto defenseToughMods = weapon->getDefenderToughnessModifiers();
-				int maxDReduction = 81;
-    			int curvePlacement = 2.5;
+				double maxDReduction = 81;
+    			double curvePlacement = 2.5;
     			float growthRate = -0.085;
    				float growthCurve = 2.5;
 	if (attackType == weapon->getAttackType()) {

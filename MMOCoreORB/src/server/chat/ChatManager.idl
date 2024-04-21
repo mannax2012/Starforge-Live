@@ -42,6 +42,7 @@ class ChatManager extends ManagedService implements Logger {
 	ChatRoom groupRoom;
 	ChatRoom guildRoom;
 	ChatRoom auctionRoom;
+	ChatRoom holonetRoom;
 	ChatRoom pvpBroadcastRoom;
 	ChatRoom systemRoom;
 
@@ -457,6 +458,13 @@ class ChatManager extends ManagedService implements Logger {
 	 */
 	public ChatRoom getAuctionRoom() {
 		return auctionRoom;
+	}
+
+	/*
+	 * Returns the HoloNet chat room
+	*/
+	public ChatRoom getHolonetRoom() {
+		return holonetRoom;
 	}
 
 	/*

@@ -51,9 +51,9 @@ legendaryChance = 1000
 
 --Multiplier values for bonus modifiers
 baseModifier = 1
-yellowModifier = 1.5
-exceptionalModifier = 3
-legendaryModifier = 6.0
+yellowModifier = 1.25
+exceptionalModifier = 1.5
+legendaryModifier = 2.0
 
 --The chance for random skill mods to be on looted weapons/wearables
 skillModChance = 500 -- 1 in 500
