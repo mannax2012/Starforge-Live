@@ -100,9 +100,9 @@ object_weapon_melee_sword_sword_nyax_ranged = object_weapon_melee_sword_shared_s
 	damageModifiers = { },
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 28,
-	actionAttackCost = 28,
-	mindAttackCost = 28,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,

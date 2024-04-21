@@ -101,7 +101,7 @@ object_weapon_melee_sword_bestine_quest_sword = object_weapon_melee_sword_shared
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 0,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
