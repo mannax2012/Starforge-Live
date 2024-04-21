@@ -99,9 +99,9 @@ object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_s
 	damageModifiers = { },
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 33,
-	actionAttackCost = 11,
-	mindAttackCost = 6,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,

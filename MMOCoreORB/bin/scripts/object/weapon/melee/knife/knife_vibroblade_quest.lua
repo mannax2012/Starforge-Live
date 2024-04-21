@@ -100,9 +100,9 @@ object_weapon_melee_knife_knife_vibroblade_quest = object_weapon_melee_knife_sha
 	       
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 5,
-	actionAttackCost = 15,
-	mindAttackCost = 5,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 	
 	pointBlankAccuracy = 5,
