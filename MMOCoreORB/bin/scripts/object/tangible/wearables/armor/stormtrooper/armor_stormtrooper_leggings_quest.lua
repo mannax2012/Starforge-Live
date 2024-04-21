@@ -44,7 +44,7 @@
 object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_leggings_quest = object_tangible_wearables_armor_stormtrooper_shared_armor_stormtrooper_leggings_quest:new {
 	templateType = ARMOROBJECT,
 
-	faction = "Imperial",
+--	faction = "Imperial",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -93,17 +93,17 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_leggings_quest =
 	vulnerability = ACID + HEAT + STUN + LIGHTSABER,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 45,
-	actionEncumbrance = 130,
-	mindEncumbrance = 19,
+	healthEncumbrance = 0,
+	actionEncumbrance = 0,
+	mindEncumbrance = 0,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
 
 	maxCondition = 45000,
 
-	kinetic = 30,
-	energy = 30,
+	kinetic = 60,
+	energy = 60,
 	electricity = 30,
 	stun = 0,
 	blast = 30,
