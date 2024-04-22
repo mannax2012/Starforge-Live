@@ -8,7 +8,7 @@ FsOutro = ScreenPlay:new {
 	FORCESHRINE = 4,
 
 	stepDelay = {
-		[1] = { 3600, 15600 }, -- Old man visit, 1 hour to 1 day
+		[1] = { 900, 10800 }, -- Old man visit, 15 minutes to 3 hours
 	}
 }
 
