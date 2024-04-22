@@ -7,7 +7,8 @@ rancor_common = {
 	lootItems = {
 		{itemTemplate = "rancor_bile", weight = 2500000},
 		{itemTemplate = "rancor_hides", weight = 2500000},
-		{itemTemplate = "rancor_padded_armor_segment", weight = 2500000},
+		{itemTemplate = "rancor_padded_armor_segment", weight = 2400000},
+		{itemTemplate = "force_color_crystal_bw", weight = 100000},
 		{itemTemplate = "rancor_tooth", weight = 2500000}
 	}
 }

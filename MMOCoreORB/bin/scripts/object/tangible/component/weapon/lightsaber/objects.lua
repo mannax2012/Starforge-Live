@@ -40,6 +40,10 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_tangible_component_weapon_lightsaber_shared_lightsaber_module_force_crystal_bw = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/component/weapon/lightsaber/shared_lightsaber_module_force_crystal_bw.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_component_weapon_lightsaber_shared_lightsaber_module_force_crystal_bw, 
+"object/tangible/component/weapon/lightsaber/shared_lightsaber_module_force_crystal_bw.iff")
 
 object_tangible_component_weapon_lightsaber_shared_base_lightsaber_lance_module = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/component/weapon/lightsaber/shared_base_lightsaber_lance_module.iff"

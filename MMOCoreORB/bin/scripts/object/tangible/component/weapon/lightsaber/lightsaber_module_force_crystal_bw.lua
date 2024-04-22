@@ -41,19 +41,8 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_component_weapon_lightsaber_lightsaber_module_force_crystal_bw = object_tangible_component_weapon_lightsaber_shared_lightsaber_module_force_crystal_bw:new {
+		gameObjectType = 262156
+}
 
---Children folder includes
-
--- Server Objects
-includeFile("tangible/component/weapon/lightsaber/base_lightsaber_lance_module.lua")
-includeFile("tangible/component/weapon/lightsaber/base_lightsaber_module.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_lance_module_force_crystal.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_attackspeed.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_color.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_damage.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_force_crystal.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_force_crystal_bw.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_forcecost.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_krayt_dragon_pearl.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_woundchance.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_refined_crystal_pack.lua")
+ObjectTemplates:addTemplate(object_tangible_component_weapon_lightsaber_lightsaber_module_force_crystal_bw, "object/tangible/component/weapon/lightsaber/lightsaber_module_force_crystal_bw.iff")
