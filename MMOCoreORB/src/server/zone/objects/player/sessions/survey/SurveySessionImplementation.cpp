@@ -103,9 +103,9 @@ void SurveySessionImplementation::startSurvey(const String& resname) {
 	}
 
 	//Get actual cost based upon player's Focus
-	int mindCost = 100 - (int)(surveyer->getHAM(CreatureAttribute::FOCUS)/15.f);
+	int mindCost = 100 - (int)(surveyer->getHAM(CreatureAttribute::STAMINA)/15.f);
 
-	if (surveyer->getHAM(CreatureAttribute::MIND) < mindCost) {
+	if (surveyer->getHAM(CreatureAttribute::ACTION) < mindCost) {
 		surveyer->setPosture(CreaturePosture::UPRIGHT, true);
 		surveyer->sendSystemMessage("@error_message:survey_mind"); //You are exhausted. You nee to clear your head before you can survey again.
 		return;
