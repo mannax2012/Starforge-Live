@@ -910,7 +910,7 @@ void ResourceSpawner::sendSample(CreatureObject* player, const String& resname,
 	ManagedReference<PlayerObject*> ghost = player->getPlayerObject();
 
 	//Adjust cost based upon player's quickness
-	int actionCost = 124 - (int)(player->getHAM(CreatureAttribute::QUICKNESS)/12.5f);
+	int actionCost = 100 - (int)(player->getHAM(CreatureAttribute::QUICKNESS)/2.f);
 
 	player->inflictDamage(player, CreatureAttribute::ACTION, actionCost, false, true);
 
@@ -997,7 +997,7 @@ void ResourceSpawner::sendSampleResults(TransactionLog& trx, CreatureObject* pla
 
 	float cityMultiplier = 1.f + player->getSkillMod("private_spec_samplesize") / 100.f;
 
-	int unitsExtracted = maxUnitsExtracted * (float(surveySkill) / 100.0f) * samplingMultiplier * cityMultiplier;
+	int unitsExtracted = 3.f * (maxUnitsExtracted * (float(surveySkill) / 100.0f) * samplingMultiplier * cityMultiplier);
 	int xpcap = 40;
 
 	if (session->tryGamble()) {
