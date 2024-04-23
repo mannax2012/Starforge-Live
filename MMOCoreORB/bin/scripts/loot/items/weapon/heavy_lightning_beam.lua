@@ -17,9 +17,9 @@ heavy_lightning_beam = {
 		{"maxrange",64,64,0},
 		{"maxrangemod",-125,-125,0},
 		{"charges",25,50,0},
-		{"attackhealthcost",45,24,0},
-		{"attackactioncost",97,52,0},
-		{"attackmindcost",26,14,0},
+		{"attackhealthcost",0,0,0},
+		{"attackactioncost",300,300,0},
+		{"attackmindcost",0,0,0},
 	},
 
 	-- randomDotChance: The chance of this weapon object dropping with a random dot on it. Higher number means less chance. Set to 0 to always have a random dot.

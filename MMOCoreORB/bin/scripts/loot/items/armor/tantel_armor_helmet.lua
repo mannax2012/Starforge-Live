@@ -8,9 +8,9 @@ tantel_armor_helmet = {
 		{"energyeffectiveness",10,30,10},
 		{"armor_effectiveness",4,19,10},
 		{"armor_integrity",11250, 18750,0},
-		{"armor_health_encumbrance",9,6,0},
-		{"armor_action_encumbrance",11,7,0},
-		{"armor_mind_encumbrance",105,63,0},
+		{"armor_health_encumbrance",0,0,0},
+		{"armor_action_encumbrance",0,0,0},
+		{"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 
