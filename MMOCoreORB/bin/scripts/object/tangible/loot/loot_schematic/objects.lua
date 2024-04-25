@@ -1222,712 +1222,114 @@ object_tangible_loot_loot_schematic_shared_creature_recycler_schematic = SharedT
 ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_creature_recycler_schematic, "object/tangible/loot/loot_schematic/shared_creature_recycler_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_belt_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_belt_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_belt",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_belt",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 3186214418,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_belt_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_belt_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_belt_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_belt_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_belt_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bicep_l_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_l_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_bicep",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_bicep",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 4262840848,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bicep_l_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_l_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_l_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bicep_l_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_l_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bicep_r_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_r_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_bicep",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_bicep",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 712860035,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bicep_r_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_r_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_r_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bicep_r_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bicep_r_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_boots_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_boots_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_boots",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_boots",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 2564896139,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_boots_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_boots_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_boots_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_boots_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_boots_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bracer_l_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_l_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_bracer",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_bracer",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 4001355238,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bracer_l_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_l_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_l_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bracer_l_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_l_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bracer_r_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_r_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_bracer",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_bracer",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 974618229,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bracer_r_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_r_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_r_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_bracer_r_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_bracer_r_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_chest_plate_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_chest_plate_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_chest_plate",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_chest_plate",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 3084811322,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_chest_plate_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_chest_plate_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_chest_plate_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_chest_plate_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_chest_plate_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_gloves_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_gloves_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_gloves",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_gloves",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 4286535235,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_gloves_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_gloves_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_gloves_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_gloves_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_gloves_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_helmet_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_helmet_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_helmet",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_helmet",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 4021975943,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_helmet_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_helmet_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_helmet_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_helmet_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_helmet_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_leggings_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_leggings_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_handheld_viewscreen_s1.apt",
-	arrangementDescriptorFilename = "",
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_leggings_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_leggings_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_leggings_schematic.iff")
 
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:armor_bounty_hunter_leggings",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:armor_bounty_hunter_leggings",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 204385497,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_leggings_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_bounty_hunter_leggings_schematic.iff")
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_belt_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_belt_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_belt_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_belt_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bicep_l_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bicep_l_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bicep_l_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bicep_l_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bicep_r_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bicep_r_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bicep_r_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bicep_r_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_boots_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_boots_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_boots_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_boots_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bracer_l_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bracer_l_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bracer_l_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bracer_l_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bracer_r_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bracer_r_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bracer_r_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_bracer_r_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_chest_plate_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_chest_plate_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_chest_plate_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_chest_plate_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_gloves_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_gloves_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_gloves_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_gloves_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_helmet_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_helmet_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_helmet_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_helmet_schematic.iff")
+	
+object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_leggings_schematic = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_leggings_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_leggings_schematic, 
+"object/tangible/loot/loot_schematic/shared_armor_clone_trooper_neutral_s01_leggings_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_drink_mandalorian_wine_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_drink_mandalorian_wine_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_datapad.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:mandalorian_wine_schematic",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:mandalorian_wine_schematic",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 818256163,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_drink_mandalorian_wine_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_drink_mandalorian_wine_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_drink_mandalorian_wine_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_drink_mandalorian_wine_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_drink_mandalorian_wine_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_executioners_hack_schematic = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_executioners_hack_schematic.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_tool_engineering_analysis_board.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 8211,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_item_ingredients_d:executioners_hack_schematic",
-
-	gameObjectType = 8211,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_item_ingredients_n:executioners_hack_schematic",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 2390933673,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_executioners_hack_schematic, "object/tangible/loot/loot_schematic/shared_death_watch_executioners_hack_schematic.iff")
+clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_executioners_hack_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_death_watch_executioners_hack_schematic, 
+"object/tangible/loot/loot_schematic/shared_death_watch_executioners_hack_schematic.iff")
 
 object_tangible_loot_loot_schematic_shared_death_watch_mandalorian_belt_schematic = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_death_watch_mandalorian_belt_schematic.iff"

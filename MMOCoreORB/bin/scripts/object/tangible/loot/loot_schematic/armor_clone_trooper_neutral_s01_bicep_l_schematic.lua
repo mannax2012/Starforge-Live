@@ -41,29 +41,13 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_loot_loot_schematic_armor_clone_trooper_neutral_s01_bicep_l_schematic = object_tangible_loot_loot_schematic_shared_armor_clone_trooper_neutral_s01_bicep_l_schematic:new {
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = "LootSchematicMenuComponent",
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_armorsmith_master",
+	targetDraftSchematic = "object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_bicep_l.iff",
+	targetUseCount = 1
+}
 
---Children folder includes
-includeFile("tangible/wearables/armor/bone/serverobjects.lua")
-includeFile("tangible/wearables/armor/bounty_hunter/serverobjects.lua")
-includeFile("tangible/wearables/armor/chitin/serverobjects.lua")
-includeFile("tangible/wearables/armor/clone_trooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/composite/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_defender/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_guardian/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_sentinel/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_black_mtn/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_ceremonial/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_hunting/serverobjects.lua")
-includeFile("tangible/wearables/armor/mandalorian/serverobjects.lua")
-includeFile("tangible/wearables/armor/marauder/serverobjects.lua")
-includeFile("tangible/wearables/armor/marine/serverobjects.lua")
-includeFile("tangible/wearables/armor/nightsister/serverobjects.lua")
-includeFile("tangible/wearables/armor/padded/serverobjects.lua")
-includeFile("tangible/wearables/armor/ris/serverobjects.lua")
-includeFile("tangible/wearables/armor/singing_mountain_clan/serverobjects.lua")
-includeFile("tangible/wearables/armor/stormtrooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/tantel/serverobjects.lua")
-includeFile("tangible/wearables/armor/ubese/serverobjects.lua")
-includeFile("tangible/wearables/armor/zam/serverobjects.lua")
-
--- Server Objects
+ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_armor_clone_trooper_neutral_s01_bicep_l_schematic, "object/tangible/loot/loot_schematic/armor_clone_trooper_neutral_s01_bicep_l_schematic.iff")
