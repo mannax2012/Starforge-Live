@@ -55,9 +55,9 @@ object_tangible_wearables_armor_kashyyykian_hunting_armor_kashyyykian_hunting_le
 	specialResists = KINETIC,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 125,
-	actionEncumbrance = 225,
-	mindEncumbrance = 75,
+	healthEncumbrance = 0,
+	actionEncumbrance = 0,
+	mindEncumbrance = 0,
 
 	maxCondition = 30000,
 
