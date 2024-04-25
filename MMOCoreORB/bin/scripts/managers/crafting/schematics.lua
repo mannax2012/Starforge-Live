@@ -42,6 +42,19 @@
 
 
 schematics = {
+	--CloneTrooper
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_belt.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_bicep_l.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_bicep_r.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_boots.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_bracer_l.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_bracer_r.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_chest_plate.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_gloves.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_helmet.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_leggings.iff"},
+
+
 	{path="object/draft_schematic/community_crafting/component/connections.iff"},
 	{path="object/draft_schematic/community_crafting/component/endrost.iff"},
 	{path="object/draft_schematic/community_crafting/component/power_supply.iff"},
