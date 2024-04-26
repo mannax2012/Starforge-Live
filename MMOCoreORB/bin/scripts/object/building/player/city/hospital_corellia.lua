@@ -42,7 +42,7 @@
 
 
 object_building_player_city_hospital_corellia = object_building_player_city_shared_hospital_corellia:new {
-	lotSize = 3,
+	lotSize = 1,
 	baseMaintenanceRate = 50,
 	planetMapCategory = "medicalcenter",
 	allowedZones = {"corellia", "talus"},

@@ -42,7 +42,7 @@
 
 
 object_building_player_city_theater_tatooine = object_building_player_city_shared_theater_tatooine:new {
-	lotSize = 3,
+	lotSize = 1,
 	baseMaintenanceRate = 50,
 	allowedZones = {"dantooine", "lok", "tatooine"},
 	length = 5,
