@@ -61,7 +61,7 @@ object_creature_player_general_grievous = object_creature_player_shared_general_
 	},
 	defaultLanguage = 1,
 	startingItems = { },
-	startingSkills = { "species_general_grievous", "social_language_basic_comprehend", "social_language_basic_speak" }
+	startingSkills = { "species_human", "social_language_basic_comprehend", "social_language_basic_speak" }
 }
 
 ObjectTemplates:addTemplate(object_creature_player_general_grievous, "object/creature/player/general_grievous.iff")
