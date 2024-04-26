@@ -27,7 +27,8 @@ const static char* Species[] = {
     "moncal", // moncal female
     "wookiee", // wookiee female
     "sullustan", // sullustan female
-    "ithorian"  // DA E7   -   ithorian female
+    "ithorian",  // DA E7   -   ithorian female
+    "general_grievous" // NK-1 Droid
 };
 
 const static int TemplateSpecies[] = {
@@ -50,7 +51,8 @@ const static int TemplateSpecies[] = {
 		3,
 		4,
 		0x31,
-		0x21
+		0x21,
+        0
 };
 
 const static char* Gender[] = {
@@ -73,7 +75,8 @@ const static char* Gender[] = {
     "female", // moncal female
     "female", // wookiee female
     "female", // sullustan female
-    "female"  // DA E7   -   ithorian female
+    "female",  // DA E7   -   ithorian female
+    "male" // NK-1 Droid Male
 };
 
 const static char* RaceStrs[] = {
@@ -96,7 +99,8 @@ const static char* RaceStrs[] = {
     "object/creature/player/shared_moncal_female.iff", // moncal female
     "object/creature/player/shared_wookiee_female.iff", // wookiee female
     "object/creature/player/shared_sullustan_female.iff", // sullustan female
-    "object/creature/player/shared_ithorian_female.iff"  // DA E7   -   ithorian female
+    "object/creature/player/shared_ithorian_female.iff",  // DA E7   -   ithorian female
+    "object/creature/player/shared_general_grievous.iff" // NK-1 Droid
 };
 
 const static char* CCRaceStrs[] = {
@@ -119,7 +123,8 @@ const static char* CCRaceStrs[] = {
     "object/creature/player/moncal_female.iff", // moncal female
     "object/creature/player/wookiee_female.iff", // wookiee female
     "object/creature/player/sullustan_female.iff", // sullustan female
-    "object/creature/player/ithorian_female.iff"  // DA E7   -   ithorian female
+    "object/creature/player/ithorian_female.iff",  // DA E7   -   ithorian female
+    "object/creature/player/general_grievous.iff" // NK-1 Droid
 };
 
 static uint32 SharedRace[] = {
@@ -142,7 +147,8 @@ static uint32 SharedRace[] = {
     0x982FBFDE,
     0x0DAB65E2,
     0x1573341A,
-    0xB3E08013
+    0xB3E08013,
+    0x968AED64 // NK-1 droid
 };
 
 static unsigned int attributeLimits[10][19] = {
