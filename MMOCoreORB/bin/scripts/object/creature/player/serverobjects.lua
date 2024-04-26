@@ -46,6 +46,7 @@
 includeFile("creature/player/base/serverobjects.lua")
 
 -- Server Objects
+includeFile("creature/player/general_grievous.lua")
 includeFile("creature/player/bothan_female.lua")
 includeFile("creature/player/bothan_male.lua")
 includeFile("creature/player/human_female.lua")

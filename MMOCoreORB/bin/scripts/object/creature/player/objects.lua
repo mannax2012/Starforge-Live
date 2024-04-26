@@ -124,6 +124,12 @@ object_creature_player_shared_bothan_female = SharedCreatureObjectTemplate:new {
 
 ObjectTemplates:addClientTemplate(object_creature_player_shared_bothan_female, "object/creature/player/shared_bothan_female.iff")
 
+object_creature_player_shared_general_grievous = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/creature/player/shared_general_grievous.iff"}
+ObjectTemplates:addClientTemplate(object_creature_player_shared_general_grievous, 
+"object/creature/player/shared_general_grievous.iff")
+
+
 object_creature_player_shared_bothan_male = SharedCreatureObjectTemplate:new {
 	clientTemplateFileName = "object/creature/player/shared_bothan_male.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
