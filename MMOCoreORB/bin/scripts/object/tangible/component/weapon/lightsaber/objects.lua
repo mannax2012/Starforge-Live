@@ -45,6 +45,11 @@ object_tangible_component_weapon_lightsaber_shared_lightsaber_module_force_cryst
 ObjectTemplates:addClientTemplate(object_tangible_component_weapon_lightsaber_shared_lightsaber_module_force_crystal_bw, 
 "object/tangible/component/weapon/lightsaber/shared_lightsaber_module_force_crystal_bw.iff")
 
+object_tangible_component_weapon_lightsaber_shared_lightsaber_unstable_crystal_pack = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/component/weapon/lightsaber/shared_lightsaber_unstable_crystal_pack.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_component_weapon_lightsaber_shared_lightsaber_unstable_crystal_pack,
+ "object/tangible/component/weapon/lightsaber/shared_lightsaber_unstable_crystal_pack.iff")
+
 object_tangible_component_weapon_lightsaber_shared_base_lightsaber_lance_module = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/component/weapon/lightsaber/shared_base_lightsaber_lance_module.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups

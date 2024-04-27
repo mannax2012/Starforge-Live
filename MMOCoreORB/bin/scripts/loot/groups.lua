@@ -1,3 +1,6 @@
+--custom
+includeFile("groups/custom/unstable_crystal_pack.lua")
+
 includeFile("groups/armor_attachments.lua")
 includeFile("groups/clothing_attachments.lua")
 includeFile("groups/coa_encoded_disk_fragments.lua")

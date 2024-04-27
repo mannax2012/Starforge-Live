@@ -9,6 +9,9 @@ JUNKJAWA = 64
 JUNKGUNGAN = 128
 JUNKCORSEC = 256
 
+--custom
+includeFile("items/custom/unstable_crystal.lua")
+includeFile("items/force_color_crystal_bw.lua")
 --items folder
 includeFile("items/attachment_armor.lua")
 includeFile("items/attachment_clothing.lua")
@@ -21,7 +24,6 @@ includeFile("items/fine_tuned_vibro_motor.lua")
 includeFile("items/firework_casing.lua")
 includeFile("items/fireworks_packager.lua")
 includeFile("items/force_color_crystal.lua")
-includeFile("items/force_color_crystal_bw.lua")
 includeFile("items/force_power_crystal.lua")
 includeFile("items/heavy_duty_clasp.lua")
 includeFile("items/heavy_duty_feed_mechanism.lua")

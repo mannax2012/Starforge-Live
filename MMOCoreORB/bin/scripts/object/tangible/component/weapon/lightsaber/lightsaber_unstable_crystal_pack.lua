@@ -41,20 +41,18 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_component_weapon_lightsaber_lightsaber_unstable_crystal_pack = object_tangible_component_weapon_lightsaber_shared_lightsaber_unstable_crystal_pack:new {
 
---Children folder includes
 
--- Server Objects
-includeFile("tangible/component/weapon/lightsaber/base_lightsaber_lance_module.lua")
-includeFile("tangible/component/weapon/lightsaber/base_lightsaber_module.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_lance_module_force_crystal.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_attackspeed.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_color.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_damage.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_force_crystal.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_force_crystal_bw.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_forcecost.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_krayt_dragon_pearl.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_module_woundchance.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_refined_crystal_pack.lua")
-includeFile("tangible/component/weapon/lightsaber/lightsaber_unstable_crystal_pack.lua")
+	numberExperimentalProperties = {1, 1},
+	experimentalProperties = {"XX", "XX"},
+	experimentalWeights = {1, 1},
+	experimentalGroupTitles = {"null", "null"},
+	experimentalSubGroupTitles = {"null", "null"},
+	experimentalMin = {0, 0},
+	experimentalMax = {0, 0},
+	experimentalPrecision = {0, 0},
+	experimentalCombineType = {0, 0},
+}
+
+ObjectTemplates:addTemplate(object_tangible_component_weapon_lightsaber_lightsaber_unstable_crystal_pack, "object/tangible/component/weapon/lightsaber/lightsaber_unstable_crystal_pack.iff")
