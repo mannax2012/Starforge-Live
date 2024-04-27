@@ -58,6 +58,7 @@ object_tangible_wearables_apron_apron_porcellus = object_tangible_wearables_apro
 				"object/creature/player/twilek_male.iff",
 				"object/creature/player/twilek_female.iff",
 				"object/creature/player/wookiee_male.iff",
+				"object/creature/player/general_grievous.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",

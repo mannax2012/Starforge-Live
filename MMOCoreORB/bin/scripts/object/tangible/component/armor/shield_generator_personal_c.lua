@@ -93,7 +93,8 @@ object_tangible_component_armor_shield_generator_personal_c = object_tangible_co
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_female.iff",
-				"object/mobile/vendor/wookiee_male.iff" },
+				"object/mobile/vendor/wookiee_male.iff",
+				"object/creature/player/general_grievous.iff" },
 	
 	-- Damage types in WeaponObject
 	vulnerability = ACID + BLAST + KINETIC,

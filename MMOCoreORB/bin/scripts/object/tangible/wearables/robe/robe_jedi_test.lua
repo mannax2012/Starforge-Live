@@ -91,7 +91,8 @@ object_tangible_wearables_robe_robe_jedi_test = object_tangible_wearables_robe_s
 				"object/mobile/vendor/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
-				"object/mobile/vendor/zabrak_male.iff" },
+				"object/mobile/vendor/zabrak_male.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_robe_robe_jedi_test, "object/tangible/wearables/robe/robe_jedi_test.iff")

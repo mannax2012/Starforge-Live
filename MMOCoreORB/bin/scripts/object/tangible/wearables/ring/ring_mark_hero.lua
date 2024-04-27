@@ -92,7 +92,8 @@ object_tangible_wearables_ring_ring_mark_hero = object_tangible_wearables_ring_s
 		"object/mobile/vendor/wookiee_female.iff",
 		"object/mobile/vendor/wookiee_male.iff",
 		"object/mobile/vendor/zabrak_female.iff",
-		"object/mobile/vendor/zabrak_male.iff"
+		"object/mobile/vendor/zabrak_male.iff",
+		"object/creature/player/general_grievous.iff"
 	},
 
 	noTrade = 1,
