@@ -50,6 +50,7 @@ object_draft_schematic_weapon_rifle_beam = object_draft_schematic_weapon_shared_
    craftingToolTab = 1, -- (See DraftSchematicObjectTemplate.h)
    complexity = 50, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_weapon.iff",
    
    xpType = "crafting_weapons_general", 

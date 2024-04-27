@@ -47,7 +47,7 @@ object_draft_schematic_space_chassis_ykl37r = object_draft_schematic_space_chass
 	craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 43,
 	size = 1,
-	factoryCrateSize = 0,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 
 	xpType = "shipwright",

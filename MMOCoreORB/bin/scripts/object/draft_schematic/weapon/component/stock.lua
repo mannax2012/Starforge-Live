@@ -50,6 +50,7 @@ object_draft_schematic_weapon_component_stock = object_draft_schematic_weapon_co
    craftingToolTab = 1, -- (See DraftSchematicObjectTemplate.h)
    complexity = 3, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_weapon.iff",
    
    xpType = "crafting_weapons_general", 

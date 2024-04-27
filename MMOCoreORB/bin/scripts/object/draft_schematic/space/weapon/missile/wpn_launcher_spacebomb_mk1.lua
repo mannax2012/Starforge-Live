@@ -50,7 +50,7 @@ object_draft_schematic_space_weapon_missile_wpn_launcher_spacebomb_mk1 = object_
 	craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 19,
 	size = 1,
-	factoryCrateSize = 0,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
 	xpType = "shipwright",

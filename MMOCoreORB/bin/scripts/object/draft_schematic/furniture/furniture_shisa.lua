@@ -49,6 +49,7 @@ object_draft_schematic_furniture_furniture_shisa = object_draft_schematic_furnit
     craftingToolTab = 512, -- (See DraftSchematicObjectTemplate.h)
     complexity = 18,
     size = 1,
+	factoryCrateSize = 1000,
     factoryCrateType = "object/factory/factory_crate_furniture.iff",
     factoryCrateSize = 0,
 

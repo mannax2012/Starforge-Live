@@ -50,6 +50,7 @@ object_draft_schematic_space_booster_booster_overdriver_mk5 = object_draft_schem
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 34, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "shipwright", 

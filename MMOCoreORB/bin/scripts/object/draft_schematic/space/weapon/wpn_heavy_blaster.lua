@@ -50,7 +50,7 @@ object_draft_schematic_space_weapon_wpn_heavy_blaster = object_draft_schematic_s
 	craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 29,
 	size = 0,
-	factoryCrateSize = 0,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
 	xpType = "shipwright",
