@@ -83,7 +83,8 @@ object_tangible_wearables_robe_robe_prefect_talmont = object_tangible_wearables_
 				"object/mobile/vendor/twilek_male.iff",
 				"object/mobile/vendor/weequay_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
-				"object/mobile/vendor/zabrak_male.iff" },
+				"object/mobile/vendor/zabrak_male.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_robe_robe_prefect_talmont, "object/tangible/wearables/robe/robe_prefect_talmont.iff")

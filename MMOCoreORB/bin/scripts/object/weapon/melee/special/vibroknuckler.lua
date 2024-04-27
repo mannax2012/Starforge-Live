@@ -62,7 +62,8 @@ object_weapon_melee_special_vibroknuckler = object_weapon_melee_special_shared_v
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK

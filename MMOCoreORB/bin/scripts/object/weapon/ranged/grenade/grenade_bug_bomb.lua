@@ -63,7 +63,8 @@ object_weapon_ranged_grenade_grenade_bug_bomb = object_weapon_ranged_grenade_sha
 			"object/creature/player/wookiee_male.iff",
 			"object/creature/player/wookiee_female.iff",
 			"object/creature/player/zabrak_male.iff",
-			"object/creature/player/zabrak_female.iff" },
+			"object/creature/player/zabrak_female.iff",
+			"object/creature/player/general_grievous.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK

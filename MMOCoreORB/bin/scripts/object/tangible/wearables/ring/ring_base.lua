@@ -91,7 +91,8 @@ object_tangible_wearables_ring_ring_base = object_tangible_wearables_ring_shared
 				"object/mobile/vendor/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
-				"object/mobile/vendor/zabrak_male.iff" },
+				"object/mobile/vendor/zabrak_male.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_ring_ring_base, "object/tangible/wearables/ring/ring_base.iff")

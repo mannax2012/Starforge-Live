@@ -62,7 +62,8 @@ object_weapon_ranged_carbine_carbine_dh17_snubnose = object_weapon_ranged_carbin
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
