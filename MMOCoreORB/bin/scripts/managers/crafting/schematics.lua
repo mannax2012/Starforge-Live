@@ -54,6 +54,9 @@ schematics = {
 	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_helmet.iff"},
 	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_leggings.iff"},
 
+	--Unstable Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen4.iff"},
 
 	{path="object/draft_schematic/community_crafting/component/connections.iff"},
 	{path="object/draft_schematic/community_crafting/component/endrost.iff"},
