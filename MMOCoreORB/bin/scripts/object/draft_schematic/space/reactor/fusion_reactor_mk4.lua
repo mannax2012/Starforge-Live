@@ -50,6 +50,7 @@ object_draft_schematic_space_reactor_fusion_reactor_mk4 = object_draft_schematic
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 32, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "shipwright", 

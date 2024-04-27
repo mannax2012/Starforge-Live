@@ -50,6 +50,7 @@ object_draft_schematic_instrument_instrument_fizz = object_draft_schematic_instr
    craftingToolTab = 524288, -- (See DraftSchematicObjectTemplate.h)
    complexity = 11, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "music", 

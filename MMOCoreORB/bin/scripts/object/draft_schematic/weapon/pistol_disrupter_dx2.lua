@@ -50,6 +50,7 @@ object_draft_schematic_weapon_pistol_disrupter_dx2 = object_draft_schematic_weap
    craftingToolTab = 1, -- (See DraftSchematicObjectTemplate.h)
    complexity = 24, 
    size = 2, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_weapon.iff",
    
    xpType = "crafting_weapons_general", 

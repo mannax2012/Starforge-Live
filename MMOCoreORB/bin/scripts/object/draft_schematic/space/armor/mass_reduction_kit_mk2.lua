@@ -49,7 +49,8 @@ object_draft_schematic_space_armor_mass_reduction_kit_mk2 = object_draft_schemat
 
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 23, 
-   size = 1, 
+   size = 1,
+	factoryCrateSize = 1000, 
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "shipwright", 

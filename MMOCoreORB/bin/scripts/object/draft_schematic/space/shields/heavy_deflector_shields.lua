@@ -50,6 +50,7 @@ object_draft_schematic_space_shields_heavy_deflector_shields = object_draft_sche
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 29, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "shipwright", 

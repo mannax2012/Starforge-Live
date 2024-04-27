@@ -50,6 +50,7 @@ object_draft_schematic_spices_spice_neutron_pixey = object_draft_schematic_spice
    craftingToolTab = 4, -- (See DraftSchematicObjectTemplate.h)
    complexity = 13, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_food.iff",
    
    xpType = "crafting_spice", 

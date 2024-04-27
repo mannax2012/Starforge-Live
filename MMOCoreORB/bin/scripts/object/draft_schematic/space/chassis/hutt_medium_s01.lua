@@ -47,7 +47,7 @@ object_draft_schematic_space_chassis_hutt_medium_s01 = object_draft_schematic_sp
 	craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 27,
 	size = 1,
-	factoryCrateSize = 0,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 
 	xpType = "shipwright",

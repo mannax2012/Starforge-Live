@@ -50,6 +50,7 @@ object_draft_schematic_space_shields_shield_limiter_mk3 = object_draft_schematic
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 27, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "shipwright", 

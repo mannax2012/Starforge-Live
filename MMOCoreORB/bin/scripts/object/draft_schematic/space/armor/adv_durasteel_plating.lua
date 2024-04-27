@@ -50,6 +50,7 @@ object_draft_schematic_space_armor_adv_durasteel_plating = object_draft_schemati
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 32, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_chemicals.iff",
    
    xpType = "shipwright", 

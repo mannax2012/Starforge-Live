@@ -50,7 +50,7 @@ object_draft_schematic_space_weapon_wpn_advanced_disruptor = object_draft_schema
 	craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 32,
 	size = 1,
-	factoryCrateSize = 0,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
 	xpType = "shipwright",

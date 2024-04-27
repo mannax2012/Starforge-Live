@@ -50,6 +50,7 @@ object_draft_schematic_item_item_firework_five = object_draft_schematic_item_sha
    craftingToolTab = 524288, -- (See DraftSchematicObjectTemplate.h)
    complexity = 11, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "crafting_general", 

@@ -50,7 +50,7 @@ object_draft_schematic_space_weapon_wpn_medium_blaster_green = object_draft_sche
 	craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 25,
 	size = 1,
-	factoryCrateSize = 0,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
 	xpType = "shipwright",

@@ -50,6 +50,7 @@ object_draft_schematic_food_drink_jawa_beer = object_draft_schematic_food_shared
    craftingToolTab = 4, -- (See DraftSchematicObjectTemplate.h)
    complexity = 4, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_food.iff",
    
    xpType = "crafting_general", 

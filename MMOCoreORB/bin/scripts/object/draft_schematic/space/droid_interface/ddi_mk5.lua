@@ -50,6 +50,7 @@ object_draft_schematic_space_droid_interface_ddi_mk5 = object_draft_schematic_sp
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 36, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "shipwright", 
