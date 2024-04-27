@@ -72,7 +72,7 @@ object_draft_schematic_weapon_lightsaber_lightsaber_one_hand_unstable_gen4 = obj
    contribution = {100, 100, 100, 100, 100, 100, 100},
 
 
-   targetTemplate = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_s01_gen4.iff",
+   targetTemplate = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_gen4.iff",
 
    additionalTemplates = {
              }

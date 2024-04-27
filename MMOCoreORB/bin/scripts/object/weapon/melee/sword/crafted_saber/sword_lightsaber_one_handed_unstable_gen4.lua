@@ -41,7 +41,7 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01_gen4 = object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_one_handed_unstable_s01_gen4:new {
+object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_gen4 = object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_one_handed_unstable_gen4:new {
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -136,4 +136,4 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
-ObjectTemplates:addTemplate(object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01_gen4, "object/weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_s01_gen4.iff")
+ObjectTemplates:addTemplate(object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_gen4, "object/weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_gen4.iff")

@@ -57,6 +57,10 @@ schematics = {
 	--Unstable Sabers
 	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen3.iff"},
 	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_unstable_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_unstable_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen4.iff"},
 
 	{path="object/draft_schematic/community_crafting/component/connections.iff"},
 	{path="object/draft_schematic/community_crafting/component/endrost.iff"},

@@ -41,8 +41,8 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01_gen3 = object_weapon_melee_sword_crafted_saber_shared_sword_lightsaber_one_handed_unstable_s01_gen3:new {
-	
+object_weapon_melee_polearm_crafted_saber_sword_lightsaber_polearm_unstable_gen4 = object_weapon_melee_polearm_crafted_saber_shared_sword_lightsaber_polearm_unstable_gen4:new {
+
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
 				"object/creature/player/human_male.iff",
@@ -77,13 +77,13 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01
 
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
-	-- combat_meleespecialize_twohandlightsaber, combat_meleespecialize_polearmlightsaber, jedi_general
+	-- combat_meleespecialize_twohandlightsaber, jedi_general, combat_meleespecialize_onehandlightsaber
 	xpType = "jedi_general",
 	
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_onehandlightsaber_gen4" },
+	certificationsRequired = { "cert_polearmlightsaber_gen4" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
-	creatureAccuracyModifiers = { "onehandlightsaber_accuracy" },
+	creatureAccuracyModifiers = { "polearmlightsaber_accuracy" },
 
 	-- See http://www.ocdsoft.com/files/defense.xls
 	defenderDefenseModifiers = { "melee_defense" },
@@ -92,7 +92,7 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01
 	defenderSecondaryDefenseModifiers = { "saber_block" },
 
 	-- See http://www.ocdsoft.com/files/speed.xls
-	speedModifiers = { "onehandlightsaber_speed" },
+	speedModifiers = { "polearmlightsaber_speed" },
 
 	-- Leave blank for now
 	damageModifiers = { },
@@ -102,7 +102,7 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01
 	healthAttackCost = 0,
 	actionAttackCost = 350,
 	mindAttackCost = 0,
-	forceCost = 40,
+	forceCost = 48,
 
 	pointBlankRange = 0,
 	pointBlankAccuracy = 20,
@@ -113,14 +113,17 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01
 	maxRange = 5,
 	maxRangeAccuracy = 5,
 
-	attackSpeed = 4.5,	
+	minDamage = 225,
+	maxDamage = 305,
+
+	attackSpeed = 5.1,
 
 	woundsRatio = 37,
 
 	defenderToughnessModifiers = { "lightsaber_toughness" },
-	
-	noTrade = 1,
-	
+
+	noTrade = 1,	
+
 	childObjects = {
 		{templateFile = "object/tangible/inventory/lightsaber_inventory_4.iff", x = 0, z = 0, y = 0, ox = 0, oy = 0, oz = 0, ow = 0, cellid = -1, containmentType = 4}
 	},
@@ -130,10 +133,10 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01
 	experimentalWeights = {1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "forcecost", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 140, 230, 4.5, 25, 55, 0, 280, 0},
-	experimentalMax = {0, 0, 160, 270, 4.2, 50, 48, 0, 350, 0},
+	experimentalMin = {0, 0, 225, 305, 5.1, 25, 55, 0, 280, 0},
+	experimentalMax = {0, 0, 235, 325, 4.8, 50, 48, 0, 350, 0},
 	experimentalPrecision = {0, 0, 0, 0, 1, 0, 1, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
-ObjectTemplates:addTemplate(object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_unstable_s01_gen3, "object/weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_s01_gen3.iff")
+ObjectTemplates:addTemplate(object_weapon_melee_polearm_crafted_saber_sword_lightsaber_polearm_unstable_gen4, "object/weapon/melee/polearm/crafted_saber/sword_lightsaber_polearm_unstable_gen4.iff")

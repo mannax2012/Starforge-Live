@@ -41,7 +41,7 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_draft_schematic_weapon_lightsaber_lightsaber_one_hand_unstable_gen3 = object_draft_schematic_weapon_lightsaber_shared_lightsaber_one_hand_unstable_gen3:new {
+object_draft_schematic_weapon_lightsaber_lightsaber_two_hand_unstable_gen4 = object_draft_schematic_weapon_lightsaber_shared_lightsaber_two_hand_unstable_gen4:new {
 
    templateType = DRAFTSCHEMATIC,
 
@@ -72,10 +72,10 @@ object_draft_schematic_weapon_lightsaber_lightsaber_one_hand_unstable_gen3 = obj
    contribution = {100, 100, 100, 100, 100, 100, 100},
 
 
-   targetTemplate = "object/weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_gen3.iff",
+   targetTemplate = "object/weapon/melee/2h_sword/crafted_saber/sword_lightsaber_two_handed_unstable_gen4.iff",
 
    additionalTemplates = {
              }
 
 }
-ObjectTemplates:addTemplate(object_draft_schematic_weapon_lightsaber_lightsaber_one_hand_unstable_gen3, "object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen3.iff")
+ObjectTemplates:addTemplate(object_draft_schematic_weapon_lightsaber_lightsaber_two_hand_unstable_gen4, "object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_unstable_gen4.iff")
