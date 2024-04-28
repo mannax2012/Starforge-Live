@@ -12,6 +12,7 @@ JUNKCORSEC = 256
 --custom
 includeFile("items/custom/unstable_crystal.lua")
 includeFile("items/custom/starforge_token.lua")
+includeFile("items/custom/heavy_starforge_token.lua")
 includeFile("items/force_color_crystal_bw.lua")
 --items folder
 includeFile("items/attachment_armor.lua")

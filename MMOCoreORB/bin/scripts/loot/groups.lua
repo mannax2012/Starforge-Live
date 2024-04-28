@@ -1,6 +1,7 @@
 --custom
 includeFile("groups/custom/unstable_crystal_pack.lua")
 includeFile("groups/custom/starforge_vendor_token.lua")
+includeFile("groups/custom/heavy_starforge_vendor_token.lua")
 
 includeFile("groups/armor_attachments.lua")
 includeFile("groups/clothing_attachments.lua")

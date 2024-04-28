@@ -658,10 +658,14 @@ bool LootManagerImplementation::createLoot(TransactionLog& trx, SceneObject* con
 	int cLevel = creature->getLevel();
 	String lootNpcTemplate = "starforge_vendor_token";
 
-	if (cLevel > 100) {
+	if (cLevel > 300) {
+		lootNpcTemplate = "heavy_starforge_vendor_token";
+	}
+	/*
+		else if (cLevel > 100){
 		lootNpcTemplate = "starforge_vendor_token";
 	}
-
+	*/
 	CreatureTemplate* obj = CreatureTemplateManager::instance()->getTemplate(lootNpcTemplate.hashCode());
 
 	if (obj != nullptr) {
