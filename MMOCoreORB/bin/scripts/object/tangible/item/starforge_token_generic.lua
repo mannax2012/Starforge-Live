@@ -41,16 +41,10 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_item_starforge_token_generic = object_tangible_item_shared_starforge_token_generic:new {
+    --gameObjectType = 8252,
+    objectMenuComponent = "VendorTokenMenuComponent",
+	useCount = 1,
+}
 
---Children folder includes
-includeFile("tangible/item/new_player/serverobjects.lua")
-includeFile("tangible/item/plant/serverobjects.lua")
-includeFile("tangible/item/quest/serverobjects.lua")
-
--- Server Objects
-includeFile("tangible/item/starforge_token_generic.lua")
-includeFile("tangible/item/con_drinking_glass_01.lua")
-includeFile("tangible/item/droid_customization.lua")
-includeFile("tangible/item/loot_credit_chip.lua")
-includeFile("tangible/item/lytus_family_artefact.lua")
-includeFile("tangible/item/vehicle_customization.lua")
+ObjectTemplates:addTemplate(object_tangible_item_starforge_token_generic, "object/tangible/item/starforge_token_generic.iff")

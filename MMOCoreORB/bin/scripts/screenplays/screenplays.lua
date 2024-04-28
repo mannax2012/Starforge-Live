@@ -32,6 +32,7 @@ includeFile("playerTriggers.lua")
 
 --Mission terminal
 includeFile("tools/mission_direction_choice.lua")
+includeFile("tools/VendorTokenMenuComponent.lua")
 
 -- Theme parks
 includeFile("themepark/conversations/goru_conv_handler.lua")
