@@ -54,9 +54,9 @@ object_tangible_wearables_armor_ithorian_defender_ith_armor_s01_bracer_l = objec
 	vulnerability = HEAT + COLD + STUN + LIGHTSABER,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 1,
-	actionEncumbrance = 1,
-	mindEncumbrance = 1,
+	healthEncumbrance = 0,
+	actionEncumbrance = 0,
+	mindEncumbrance = 0,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
