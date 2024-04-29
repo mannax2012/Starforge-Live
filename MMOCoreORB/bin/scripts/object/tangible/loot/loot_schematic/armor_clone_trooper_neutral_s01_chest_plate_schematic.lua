@@ -47,7 +47,7 @@ object_tangible_loot_loot_schematic_armor_clone_trooper_neutral_s01_chest_plate_
 	attributeListComponent = "LootSchematicAttributeListComponent",
 	requiredSkill = "crafting_armorsmith_master",
 	targetDraftSchematic = "object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_chest_plate.iff",
-	targetUseCount = 1
+	targetUseCount = 5
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_armor_clone_trooper_neutral_s01_chest_plate_schematic, "object/tangible/loot/loot_schematic/armor_clone_trooper_neutral_s01_chest_plate_schematic.iff")
