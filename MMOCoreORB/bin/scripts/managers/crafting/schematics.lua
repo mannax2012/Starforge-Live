@@ -42,6 +42,18 @@
 
 
 schematics = {
+	--Droid MKII
+	{path="object/draft_schematic/clothing/clothing_armor_droid_belt.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_bicep_l.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_bicep_r.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_boots.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_bracer_l.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_bracer_r.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_chest_plate.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_gloves.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_helmet.iff"},
+	{path="object/draft_schematic/clothing/clothing_armor_droid_leggings.iff"},
+
 	--CloneTrooper
 	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_belt.iff"},
 	{path="object/draft_schematic/clothing/clothing_armor_clone_trooper_neutral_s01_bicep_l.iff"},
@@ -137,6 +149,8 @@ schematics = {
 	{path="object/draft_schematic/armor/armor_segment_padded_advanced.iff"},
 	{path="object/draft_schematic/armor/armor_segment_kashyyykian_black_mtn_advanced.iff"},
 	{path="object/draft_schematic/armor/armor_segment_composite.iff"},
+	{path="object/draft_schematic/armor/armor_segment_droid.iff"},
+	{path="object/draft_schematic/armor/armor_segment_droid_advanced.iff"},
 	{path="object/draft_schematic/clothing/clothing_armor_padded_belt.iff"},
 	{path="object/draft_schematic/clothing/clothing_armor_padded_bicep_l.iff"},
 	{path="object/draft_schematic/clothing/clothing_armor_padded_bicep_r.iff"},

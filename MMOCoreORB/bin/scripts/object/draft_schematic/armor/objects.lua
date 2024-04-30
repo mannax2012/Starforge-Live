@@ -483,102 +483,25 @@ object_draft_schematic_armor_shared_armor_segment_chitin_advanced = SharedDraftS
 ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segment_chitin_advanced, "object/draft_schematic/armor/shared_armor_segment_chitin_advanced.iff")
 
 object_draft_schematic_armor_shared_armor_segment_composite = SharedDraftSchematicObjectTemplate:new {
-	clientTemplateFileName = "object/draft_schematic/armor/shared_armor_segment_composite.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "",
-	arrangementDescriptorFilename = "abstract/slot/arrangement/arrangement_datapad.iff",
-
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 2049,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 0,
-	collisionActionPassFlags = 0,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 0,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 0,
-
-	detailedDescription = "string_id_table",
-
-	gameObjectType = 2049,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "string_id_table",
-	onlyVisibleInTools = 0,
-
-	portalLayoutFilename = "",
-
-	scale = 0,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 0,
-	surfaceType = 0,
-
-	totalCellNumber = 0,
-
-	clientObjectCRC = 1778592860,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/intangible/base/shared_base_intangible.iff", "object/draft_schematic/base/shared_base_draft_schematic.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segment_composite, "object/draft_schematic/armor/shared_armor_segment_composite.iff")
-
+clientTemplateFileName = "object/draft_schematic/armor/shared_armor_segment_composite.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segment_composite, 
+"object/draft_schematic/armor/shared_armor_segment_composite.iff")
+	
 object_draft_schematic_armor_shared_armor_segment_composite_advanced = SharedDraftSchematicObjectTemplate:new {
-	clientTemplateFileName = "object/draft_schematic/armor/shared_armor_segment_composite_advanced.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "",
-	arrangementDescriptorFilename = "abstract/slot/arrangement/arrangement_datapad.iff",
+clientTemplateFileName = "object/draft_schematic/armor/shared_armor_segment_composite_advanced.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segment_composite_advanced, 
+"object/draft_schematic/armor/shared_armor_segment_composite_advanced.iff")
 
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 2049,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 0,
-	collisionActionPassFlags = 0,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 0,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 0,
 
-	detailedDescription = "string_id_table",
-
-	gameObjectType = 2049,
-
-	locationReservationRadius = 0,
-	lookAtText = "string_id_table",
-
-	noBuildRadius = 0,
-
-	objectName = "string_id_table",
-	onlyVisibleInTools = 0,
-
-	portalLayoutFilename = "",
-
-	scale = 0,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "",
-	snapToTerrain = 0,
-	surfaceType = 0,
-
-	totalCellNumber = 0,
-
-	clientObjectCRC = 2060695348,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/intangible/base/shared_base_intangible.iff", "object/draft_schematic/base/shared_base_draft_schematic.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segment_composite_advanced, "object/draft_schematic/armor/shared_armor_segment_composite_advanced.iff")
+object_draft_schematic_armor_shared_armor_segment_droid = SharedDraftSchematicObjectTemplate:new {
+clientTemplateFileName = "object/draft_schematic/armor/shared_armor_segment_droid.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segment_droid, 
+"object/draft_schematic/armor/shared_armor_segment_droid.iff")
+	
+object_draft_schematic_armor_shared_armor_segment_droid_advanced = SharedDraftSchematicObjectTemplate:new {
+clientTemplateFileName = "object/draft_schematic/armor/shared_armor_segment_droid_advanced.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segment_droid_advanced, 
+"object/draft_schematic/armor/shared_armor_segment_droid_advanced.iff")
 
 object_draft_schematic_armor_shared_armor_segment_kashyyykian_black_mtn = SharedDraftSchematicObjectTemplate:new {
 	clientTemplateFileName = "object/draft_schematic/armor/shared_armor_segment_kashyyykian_black_mtn.iff"

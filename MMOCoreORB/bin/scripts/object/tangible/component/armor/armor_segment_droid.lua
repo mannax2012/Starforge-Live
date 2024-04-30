@@ -41,30 +41,17 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_component_armor_armor_segment_droid = object_tangible_component_armor_shared_armor_segment_droid:new {
 
---Children folder includes
-includeFile("tangible/wearables/armor/bone/serverobjects.lua")
-includeFile("tangible/wearables/armor/bounty_hunter/serverobjects.lua")
-includeFile("tangible/wearables/armor/chitin/serverobjects.lua")
-includeFile("tangible/wearables/armor/clone_trooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/composite/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_defender/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_guardian/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_sentinel/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_black_mtn/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_ceremonial/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_hunting/serverobjects.lua")
-includeFile("tangible/wearables/armor/mandalorian/serverobjects.lua")
-includeFile("tangible/wearables/armor/marauder/serverobjects.lua")
-includeFile("tangible/wearables/armor/marine/serverobjects.lua")
-includeFile("tangible/wearables/armor/nightsister/serverobjects.lua")
-includeFile("tangible/wearables/armor/padded/serverobjects.lua")
-includeFile("tangible/wearables/armor/ris/serverobjects.lua")
-includeFile("tangible/wearables/armor/singing_mountain_clan/serverobjects.lua")
-includeFile("tangible/wearables/armor/stormtrooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/tantel/serverobjects.lua")
-includeFile("tangible/wearables/armor/ubese/serverobjects.lua")
-includeFile("tangible/wearables/armor/zam/serverobjects.lua")
-includeFile("tangible/wearables/armor/droid/serverobjects.lua")
+	numberExperimentalProperties = {1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 1},
+	experimentalProperties = {"XX", "XX", "XX", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "MA", "OQ", "XX", "XX", "OQ", "SR", "XX"},
+	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "exp_durability", "exp_quality", "exp_durability", "exp_durability", "exp_durability", "exp_durability", "null", "null", "exp_resistance", "null"},
+	experimentalSubGroupTitles = {"null", "null", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
+	experimentalMin = {0, 0, 1000, 1, 100, 13, 13, 16, 1, 256, 1, 100},
+	experimentalMax = {0, 0, 1000, 10, 1000, 1, 1, 1, 1, 256, 15, 1000},
+	experimentalPrecision = {0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
+	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
+}
 
--- Server Objects
+ObjectTemplates:addTemplate(object_tangible_component_armor_armor_segment_droid, "object/tangible/component/armor/armor_segment_droid.iff")

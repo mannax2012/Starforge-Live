@@ -41,30 +41,40 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_draft_schematic_clothing_clothing_armor_droid_belt = object_draft_schematic_clothing_shared_clothing_armor_droid_belt:new {
 
---Children folder includes
-includeFile("tangible/wearables/armor/bone/serverobjects.lua")
-includeFile("tangible/wearables/armor/bounty_hunter/serverobjects.lua")
-includeFile("tangible/wearables/armor/chitin/serverobjects.lua")
-includeFile("tangible/wearables/armor/clone_trooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/composite/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_defender/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_guardian/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_sentinel/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_black_mtn/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_ceremonial/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_hunting/serverobjects.lua")
-includeFile("tangible/wearables/armor/mandalorian/serverobjects.lua")
-includeFile("tangible/wearables/armor/marauder/serverobjects.lua")
-includeFile("tangible/wearables/armor/marine/serverobjects.lua")
-includeFile("tangible/wearables/armor/nightsister/serverobjects.lua")
-includeFile("tangible/wearables/armor/padded/serverobjects.lua")
-includeFile("tangible/wearables/armor/ris/serverobjects.lua")
-includeFile("tangible/wearables/armor/singing_mountain_clan/serverobjects.lua")
-includeFile("tangible/wearables/armor/stormtrooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/tantel/serverobjects.lua")
-includeFile("tangible/wearables/armor/ubese/serverobjects.lua")
-includeFile("tangible/wearables/armor/zam/serverobjects.lua")
-includeFile("tangible/wearables/armor/droid/serverobjects.lua")
+   templateType = DRAFTSCHEMATIC,
 
--- Server Objects
+   customObjectName = "MKII Droid Upgrade Module: Belt",
+
+   craftingToolTab = 32, -- (See DraftSchematicObjectTemplate.h)
+   complexity = 20, 
+   size = 4, 
+   factoryCrateType = "object/factory/factory_crate_electronics.iff",
+
+   xpType = "crafting_droid_general", 
+   xp = 40, 
+
+   assemblySkill = "droid_assembly", 
+   experimentingSkill = "droid_experimentation", 
+   customizationSkill = "droid_customization", 
+
+   customizationOptions = {1},
+   customizationStringNames = {"/private/index_color_2"},
+   customizationDefaults = {82},
+
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"auxilary_coverage", "body", "liner"},
+   ingredientSlotType = {0, 0, 1},
+   resourceTypes = {"metal", "hide", "object/tangible/component/clothing/shared_fiberplast_panel.iff"},
+   resourceQuantities = {15, 4, 1},
+   contribution = {100, 100, 100},
+
+
+   targetTemplate = "object/tangible/wearables/armor/droid/armor_droid_belt.iff",
+
+   additionalTemplates = {
+             }
+
+}
+ObjectTemplates:addTemplate(object_draft_schematic_clothing_clothing_armor_droid_belt, "object/draft_schematic/clothing/clothing_armor_droid_belt.iff")
