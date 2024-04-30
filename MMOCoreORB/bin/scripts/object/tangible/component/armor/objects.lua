@@ -1753,122 +1753,25 @@ object_tangible_component_armor_shared_armor_segment_chitin_sharnaff = SharedTan
 ObjectTemplates:addClientTemplate(object_tangible_component_armor_shared_armor_segment_chitin_sharnaff, "object/tangible/component/armor/shared_armor_segment_chitin_sharnaff.iff")
 
 object_tangible_component_armor_shared_armor_segment_composite = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/component/armor/shared_armor_segment_composite.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_comp_armor_segment.apt",
-	arrangementDescriptorFilename = "",
-
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 262145,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
-
-	detailedDescription = "@craft_clothing_ingredients_d:armor_segment_composite",
-
-	gameObjectType = 262145,
-
-	locationReservationRadius = 0,
-	lookAtText = "@weapon_lookat:armor_segment",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_clothing_ingredients_n:armor_segment_composite",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "abstract/slot/descriptor/tangible.iff",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 3596548182,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff", "object/tangible/base/shared_tangible_craftable.iff", "object/tangible/component/base/shared_base_component.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_component_armor_shared_armor_segment_composite, "object/tangible/component/armor/shared_armor_segment_composite.iff")
+clientTemplateFileName = "object/tangible/component/armor/shared_armor_segment_composite.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_component_armor_shared_armor_segment_composite, 
+"object/tangible/component/armor/shared_armor_segment_composite.iff")
 
 object_tangible_component_armor_shared_armor_segment_composite_advanced = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/component/armor/shared_armor_segment_composite_advanced.iff"
-	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
---[[
-	appearanceFilename = "appearance/eqp_comp_armor_segment.apt",
-	arrangementDescriptorFilename = "",
+clientTemplateFileName = "object/tangible/component/armor/shared_armor_segment_composite_advanced.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_component_armor_shared_armor_segment_composite_advanced, 
+"object/tangible/component/armor/shared_armor_segment_composite_advanced.iff")
 
-	certificationsRequired = {},
-	clearFloraRadius = 0,
-	clientDataFile = "",
-	clientGameObjectType = 262145,
-	collisionActionBlockFlags = 0,
-	collisionActionFlags = 51,
-	collisionActionPassFlags = 1,
-	collisionMaterialBlockFlags = 0,
-	collisionMaterialFlags = 1,
-	collisionMaterialPassFlags = 0,
-	containerType = 0,
-	containerVolumeLimit = 1,
-	customizationVariableMapping = {},
 
-	detailedDescription = "@craft_clothing_ingredients_d:armor_segment_composite_advanced",
-
-	gameObjectType = 262145,
-
-	locationReservationRadius = 0,
-	lookAtText = "@weapon_lookat:armor_segment",
-
-	noBuildRadius = 0,
-
-	objectName = "@craft_clothing_ingredients_n:armor_segment_composite_advanced",
-	onlyVisibleInTools = 0,
-
-	paletteColorCustomizationVariables = {},
-	portalLayoutFilename = "",
-
-	rangedIntCustomizationVariables = {},
-
-	scale = 1,
-	scaleThresholdBeforeExtentTest = 0.5,
-	sendToClient = 1,
-	slotDescriptorFilename = "abstract/slot/descriptor/tangible.iff",
-	snapToTerrain = 1,
-	socketDestinations = {},
-	structureFootprintFileName = "",
-	surfaceType = 0,
-
-	targetable = 1,
-	totalCellNumber = 0,
-
-	useStructureFootprintOutline = 0,
-
-	clientObjectCRC = 2764212654,
-	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff", "object/tangible/base/shared_tangible_craftable.iff", "object/tangible/component/base/shared_base_component.iff", "object/tangible/component/armor/shared_armor_segment_composite.iff"}
-]]
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_component_armor_shared_armor_segment_composite_advanced, "object/tangible/component/armor/shared_armor_segment_composite_advanced.iff")
+object_tangible_component_armor_shared_armor_segment_droid = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/component/armor/shared_armor_segment_droid.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_component_armor_shared_armor_segment_droid, 
+"object/tangible/component/armor/shared_armor_segment_droid.iff")
+	
+object_tangible_component_armor_shared_armor_segment_droid_advanced = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/component/armor/shared_armor_segment_droid_advanced.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_component_armor_shared_armor_segment_droid_advanced, 
+"object/tangible/component/armor/shared_armor_segment_droid_advanced.iff")
 
 object_tangible_component_armor_shared_armor_segment_composite_krayt = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/component/armor/shared_armor_segment_composite_krayt.iff"

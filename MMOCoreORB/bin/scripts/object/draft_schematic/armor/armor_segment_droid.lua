@@ -41,30 +41,38 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_draft_schematic_armor_armor_segment_droid = object_draft_schematic_armor_shared_armor_segment_droid:new {
 
---Children folder includes
-includeFile("tangible/wearables/armor/bone/serverobjects.lua")
-includeFile("tangible/wearables/armor/bounty_hunter/serverobjects.lua")
-includeFile("tangible/wearables/armor/chitin/serverobjects.lua")
-includeFile("tangible/wearables/armor/clone_trooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/composite/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_defender/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_guardian/serverobjects.lua")
-includeFile("tangible/wearables/armor/ithorian_sentinel/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_black_mtn/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_ceremonial/serverobjects.lua")
-includeFile("tangible/wearables/armor/kashyyykian_hunting/serverobjects.lua")
-includeFile("tangible/wearables/armor/mandalorian/serverobjects.lua")
-includeFile("tangible/wearables/armor/marauder/serverobjects.lua")
-includeFile("tangible/wearables/armor/marine/serverobjects.lua")
-includeFile("tangible/wearables/armor/nightsister/serverobjects.lua")
-includeFile("tangible/wearables/armor/padded/serverobjects.lua")
-includeFile("tangible/wearables/armor/ris/serverobjects.lua")
-includeFile("tangible/wearables/armor/singing_mountain_clan/serverobjects.lua")
-includeFile("tangible/wearables/armor/stormtrooper/serverobjects.lua")
-includeFile("tangible/wearables/armor/tantel/serverobjects.lua")
-includeFile("tangible/wearables/armor/ubese/serverobjects.lua")
-includeFile("tangible/wearables/armor/zam/serverobjects.lua")
-includeFile("tangible/wearables/armor/droid/serverobjects.lua")
+	templateType = DRAFTSCHEMATIC,
 
--- Server Objects
+	customObjectName = "Droid Upgrade Module Segment: MKII Basic Programming",
+
+	craftingToolTab = 32, -- (See DraftSchematicObjectTemplate.h)
+	complexity = 30,
+	size = 6,
+	factoryCrateSize = 1000,
+	factoryCrateType = "object/factory/factory_crate_electronics.iff",
+
+	xpType = "crafting_droid_general",
+	xp = 35,
+
+	assemblySkill = "droid_assembly",
+	experimentingSkill = "droid_experimentation",
+	customizationSkill = "droid_customization",
+
+	customizationOptions = {},
+	customizationStringNames = {},
+	customizationDefaults = {},
+
+	ingredientTemplateNames = {"craft_armor_ingredients_n", "craft_armor_ingredients_n", "craft_armor_ingredients_n", "craft_armor_ingredients_n", "craft_armor_ingredients_n", "craft_armor_ingredients_n", "craft_armor_ingredients_n"},
+	ingredientTitleNames = {"segment_layer_assembly_plate", "armor_layer_weld_tabs", "segment_mounting_tabs", "defensive_layer", "defensive_layer_2", "defensive_layer_3", "segment_enhancement"},
+	ingredientSlotType = {0, 0, 0, 3, 3, 3, 3},
+	resourceTypes = {"metal", "steel", "steel", "object/tangible/component/armor/shared_armor_layer.iff", "object/tangible/component/armor/shared_armor_layer.iff", "object/tangible/component/armor/shared_armor_layer.iff", "object/tangible/component/armor/shared_base_armor_segment_enhancement.iff"},
+	resourceQuantities = {10, 5, 3, 1, 1, 1, 1},
+	contribution = {100, 100, 100, 100, 100, 100, 100},
+
+	targetTemplate = "object/tangible/component/armor/armor_segment_droid.iff",
+
+	additionalTemplates = {}
+}
+ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_segment_droid, "object/draft_schematic/armor/armor_segment_droid.iff")
