@@ -49,7 +49,7 @@ object_draft_schematic_vehicle_component_gyroscopic_stabilizer_advanced = object
 
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 32,
-	size = 10,
+	size = 3,
 	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 

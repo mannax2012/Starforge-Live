@@ -16,8 +16,8 @@ class VehicleDeed extends Deed {
 	protected int hitPoints;
 	protected string controlDeviceObjectTemplate;
 	protected int vehicle_speed;
-	protected int vehicle_acceleration;
-	protected int vehicle_handling;
+	protected float vehicle_acceleration;
+	protected float vehicle_handling;
 	protected int armorRating;
 	protected float kinResist;
 	protected float energyResist;

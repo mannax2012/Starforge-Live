@@ -50,7 +50,7 @@ object_draft_schematic_vehicle_component_experimental_circuits = object_draft_sc
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 35,
 	size = 3,
-	factoryCrateSize = 100,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 
 	xpType = "crafting_mechanic",

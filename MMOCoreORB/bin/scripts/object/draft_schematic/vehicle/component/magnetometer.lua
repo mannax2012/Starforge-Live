@@ -50,7 +50,7 @@ object_draft_schematic_vehicle_component_magnetometer = object_draft_schematic_v
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 35,
 	size = 3,
-	factoryCrateSize = 100,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 
 	xpType = "crafting_mechanic",
@@ -67,7 +67,7 @@ object_draft_schematic_vehicle_component_magnetometer = object_draft_schematic_v
 	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
 	ingredientTitleNames = {"metal_casing", "steel_frame", "internal_dampener"},
 	ingredientSlotType = {0, 0, 0},
-	resourceTypes = {"steel_duralloy", "steel_arveshian", "petrochem_inert_polymer"},
+	resourceTypes = {"iron", "steel", "petrochem_inert_polymer"},
 	resourceQuantities = {35, 85, 20},
 	contribution = {100, 100, 100},
 

@@ -303,6 +303,7 @@ void VehicleControlDeviceImplementation::fillAttributeList(AttributeListMessage*
 		return;
 
 	ManagedReference<VehicleObject*> vehicle = this->controlledObject.get().castTo<VehicleObject*>();
+	
 	if( vehicle == nullptr )
 		return;
 
@@ -310,8 +311,8 @@ void VehicleControlDeviceImplementation::fillAttributeList(AttributeListMessage*
 	conditionString << "\t" << vehicle->getMaxCondition() - vehicle->getConditionDamage() << "/" << vehicle->getMaxCondition();
 	alm->insertAttribute("cat_vehicle_stats.hit_points", conditionString);
 	alm->insertAttribute("cat_vehicle_stats.vehicle_speed", vehicle->getRunSpeed());
-	alm->insertAttribute("cat_vehicle_stats.vehicle_acceleration", vehicle->getAccelerationMultiplierMod() * 10);
-	alm->insertAttribute("cat_vehicle_stats.vehicle_handling", vehicle->getTurnScale() * 75);
+	alm->insertAttribute("cat_vehicle_stats.vehicle_acceleration", vehicle->getAccelerationMultiplierMod() * 10.f);
+	alm->insertAttribute("cat_vehicle_stats.vehicle_handling", vehicle->getTurnScale() * 75.f);
 
 	int armorRating = vehicle->getArmor();
 	if (armorRating == 0)

@@ -99,6 +99,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	float accelMax = 25;
 	float turnMin = 45;
 	float turnMax = 180;
+
 	hitPoints = (int) values->getCurrentValue("hit_points");
 	if (hitPoints < hpMin)
 		hitPoints = hpMin;
@@ -111,7 +112,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	if (vehicle_speed > speedMax)
 		vehicle_speed = speedMax;
 
-	vehicle_acceleration = (int) values->getCurrentValue("vehicle_acceleration");
+	vehicle_acceleration = (float) round((values->getCurrentValue("vehicle_acceleration") * 100.0)) / 100.0;
 
 	if (vehicle_acceleration < accelMin)
 		vehicle_acceleration = accelMin;
@@ -119,7 +120,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	if (vehicle_acceleration > accelMax)
 		vehicle_acceleration = accelMax;
 
-	vehicle_handling = (int) values->getCurrentValue("vehicle_handling");
+	vehicle_handling = (float) round((values->getCurrentValue("vehicle_handling") * 10.0)) / 10.0;
 
 	if (vehicle_handling < turnMin)
 		vehicle_handling = turnMin;

@@ -48,13 +48,14 @@ object_tangible_deed_vehicle_deed_speederbike_deed = object_tangible_deed_vehicl
 	controlDeviceObjectTemplate = "object/intangible/vehicle/speederbike_pcd.iff",
 	generatedObjectTemplate = "object/mobile/vehicle/speederbike.iff",
 
+
 	numberExperimentalProperties = {1, 1, 3, 1, 3, 3, 3},
 	experimentalProperties = {"XX", "XX", "OQ", "SR", "UT", "XX", "OQ", "DR", "MA", "OQ", "SR", "MA", "OQ", "DR", "SR"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "exp_durability", "null", "exp_speed", "exp_handling", "exp_acceleration"},
 	experimentalSubGroupTitles = {"null", "null", "hit_points", "vehicle_resists", "vehicle_speed", "vehicle_handling", "vehicle_acceleration"},
-	experimentalMin = {0, 0, 750, 0, 12.5, 75, 12.5},
-	experimentalMax = {0, 0, 2000, 0, 20, 80, 15},
+	experimentalMin = {0, 0, 1750, 0, 10.0, 75, 10.0},
+	experimentalMax = {0, 0, 3000, 0, 20, 80, 25},
 	experimentalPrecision = {0, 0, 0, 0, 2, 1, 2},
 	experimentalCombineType = {0, 0, 1, 0, 1, 1, 1},
 }

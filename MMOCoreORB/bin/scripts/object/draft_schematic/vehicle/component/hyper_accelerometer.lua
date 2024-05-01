@@ -48,9 +48,9 @@ object_draft_schematic_vehicle_component_hyper_accelerometer = object_draft_sche
 	customObjectName = "Hyper Accelerometer",
 
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
-	complexity = 35,
+	complexity = 32,
 	size = 3,
-	factoryCrateSize = 100,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 
 	xpType = "crafting_mechanic",

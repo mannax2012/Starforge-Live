@@ -50,7 +50,7 @@ object_draft_schematic_vehicle_component_hydraulic_actuator = object_draft_schem
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 35,
 	size = 3,
-	factoryCrateSize = 100,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 
 	xpType = "crafting_mechanic",
