@@ -56,7 +56,7 @@ object_tangible_deed_vehicle_deed_air2_swoop_speeder_deed = object_tangible_deed
 	experimentalMin = {0, 0, 750, 0, 12.5, 75, 12.5},
 	experimentalMax = {0, 0, 2000, 0, 20, 80, 15},
 	experimentalPrecision = {0, 0, 0, 0, 2, 1, 2},
-	experimentalCombineType = {0, 0, 1, 0, 1, 1, 1},
+	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_deed_vehicle_deed_air2_swoop_speeder_deed, "object/tangible/deed/vehicle_deed/air2_swoop_speeder_deed.iff")

@@ -43,15 +43,15 @@
 
 object_tangible_component_vehicle_armor_module_advanced = object_tangible_component_vehicle_shared_armor_module_advanced:new {
 	
-	numberExperimentalProperties = {1, 1, 3},
-	experimentalProperties = {"XX", "XX", "OQ", "SR", "UT"},
-	experimentalWeights = {1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "exp_durability"},
-	experimentalSubGroupTitles = {"null", "null", "hit_points"},
-	experimentalMin = {0, 0, 75},
-	experimentalMax = {0, 0, 125},
-	experimentalPrecision = {0, 0, 0},
-	experimentalCombineType = {0, 0, 1},
+	numberExperimentalProperties = {1, 1, 3, 3},
+	experimentalProperties = {"XX", "XX", "OQ", "SR", "UT", "OQ", "SR", "UT"},
+	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "exp_durability", "exp_durability"},
+	experimentalSubGroupTitles = {"null", "null", "hit_points", "vehicle_resists"},
+	experimentalMin = {0, 0, 75, 1},
+	experimentalMax = {0, 0, 125, 15},
+	experimentalPrecision = {0, 0, 0, 10},
+	experimentalCombineType = {0, 0, 1, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_component_vehicle_armor_module_advanced, "object/tangible/component/vehicle/armor_module_advanced.iff")

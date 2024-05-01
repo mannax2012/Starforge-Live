@@ -94,7 +94,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	float vehResCap = 80;
 	float hpMin = 500;
 	float speedMin = 10;
-	float speedMax = 40;
+	float speedMax = 60;
 	float accelMin = 5;
 	float accelMax = 25;
 	float turnMin = 45;
@@ -136,7 +136,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	if ((kinResist + (int) vehicle_resists) > vehResCap)
 		kinResist = vehResCap;
 	else
-		kinResist += (int) values->getCurrentValue("vehicle_resists");
+		kinResist += (int) vehicle_resists;
 
 	if ((energyResist + (int) vehicle_resists) > vehResCap)
 		energyResist = vehResCap;

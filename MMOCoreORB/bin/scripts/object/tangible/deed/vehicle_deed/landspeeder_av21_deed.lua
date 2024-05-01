@@ -53,10 +53,10 @@ object_tangible_deed_vehicle_deed_landspeeder_av21_deed = object_tangible_deed_v
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "exp_durability", "null", "exp_speed", "exp_handling", "exp_acceleration"},
 	experimentalSubGroupTitles = {"null", "null", "hit_points", "vehicle_resists", "vehicle_speed", "vehicle_handling", "vehicle_acceleration"},
-	experimentalMin = {0, 0, 1000, 0, 10, 80, 10},
-	experimentalMax = {0, 0, 2500, 0, 17.5, 85, 12.5},
+	experimentalMin = {0, 0, 1000, 0, 20, 80, 10},
+	experimentalMax = {0, 0, 2500, 0, 50, 85, 22.5},
 	experimentalPrecision = {0, 0, 0, 0, 2, 1, 2},
-	experimentalCombineType = {0, 0, 1, 0, 1, 1, 1},
+	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_deed_vehicle_deed_landspeeder_av21_deed, "object/tangible/deed/vehicle_deed/landspeeder_av21_deed.iff")

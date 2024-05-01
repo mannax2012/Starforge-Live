@@ -48,8 +48,8 @@ object_tangible_component_vehicle_tough_plating = object_tangible_component_vehi
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "exp_durability", "exp_durability", "exp_speed", "exp_handling", "exp_acceleration"},
 	experimentalSubGroupTitles = {"null", "null", "hit_points", "vehicle_resists", "vehicle_speed", "vehicle_handling", "vehicle_acceleration"},
-	experimentalMin = {0, 0, 125, 1, -3, -2.5, -0.66},
-	experimentalMax = {0, 0, 175, 10, -2, 0, 0},
+	experimentalMin = {0, 0, 125, 1, -0.3, -0.5, -0.66},
+	experimentalMax = {0, 0, 275, 10, 0, 0, 0},
 	experimentalPrecision = {0, 0, 0, 10, 2, 1, 2},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1},
 }
