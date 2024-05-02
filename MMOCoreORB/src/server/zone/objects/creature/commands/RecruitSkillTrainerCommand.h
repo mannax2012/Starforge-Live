@@ -66,8 +66,8 @@ public:
 		suiTrainerType->addMenuItem("@city/city:st_imagedesigner", 16);
 		suiTrainerType->addMenuItem("@city/city:st_marksman", 17);
 		suiTrainerType->addMenuItem("@city/city:st_medic", 18);
-		suiTrainerType->addMenuItem("@city/city:st_merchant", 19);
-		suiTrainerType->addMenuItem("@city/city:st_mechanic", 20);
+		suiTrainerType->addMenuItem("@city/city:st_mechanic", 19);
+		suiTrainerType->addMenuItem("@city/city:st_merchant", 20);
 		suiTrainerType->addMenuItem("@city/city:st_musician", 21);
 		suiTrainerType->addMenuItem("@city/city:st_pistol", 22);
 		suiTrainerType->addMenuItem("@city/city:st_polearm", 23);
