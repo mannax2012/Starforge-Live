@@ -1,7 +1,10 @@
 trainer_mechanic = Creature:new {
-	objectName = "@mob/creature_names:trainer_mechanic",
+	objectName = "@starforge_n:trainer_mechanic",
 	randomNameType = NAME_GENERIC,
 	randomNameTag = true,
+	mobType = MOB_NPC,
+	planetMapCategory = "trainer",
+	planetMapSubCategory = "trainer_mechanic",
 	faction = "",
 	level = 100,
 	chanceHit = 0.390000,
@@ -25,6 +28,7 @@ trainer_mechanic = Creature:new {
 	creatureBitmask = NONE,
 	optionsBitmask = INVULNERABLE + CONVERSABLE,
 	diet = HERBIVORE,
+
 
 	templates = {
 		"object/mobile/dressed_artisan_trainer_01.iff",
