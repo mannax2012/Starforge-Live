@@ -81,6 +81,30 @@ StarforgeVendorConvoTemplate:addScreen(start_sale_schematic_as);
 buy_weapons = ConvoScreen:new {
 	id = "buy_weapons",
 	customDialogText = "",
+	stopConversation = "false",
+	options = {}
+}
+StarforgeVendorConvoTemplate:addScreen(buy_weapons);
+
+buy_weapons = ConvoScreen:new {
+	id = "buy_lightsaber",
+	customDialogText = "",
+	stopConversation = "false",
+	options = {}
+}
+StarforgeVendorConvoTemplate:addScreen(buy_weapons);
+
+buy_weapons = ConvoScreen:new {
+	id = "buy_lightsaber_gen3",
+	customDialogText = "",
+	stopConversation = "true",
+	options = {}
+}
+StarforgeVendorConvoTemplate:addScreen(buy_weapons);
+
+buy_weapons = ConvoScreen:new {
+	id = "buy_lightsaber_gen4",
+	customDialogText = "",
 	stopConversation = "true",
 	options = {}
 }

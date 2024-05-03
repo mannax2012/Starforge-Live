@@ -97,14 +97,32 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 	end
 
 	if (screenID == "buy_weapons") then
-		clonedScreen:setCustomDialogText(self.underConstruction)
+		clonedScreen:setCustomDialogText(self.weaponsMenu)
+		clonedScreen:addOption(self.saleOption_weapon_lightsaber, "buy_lightsaber")
+	end
+
+	if (screenID == "buy_lightsaber") then
+		clonedScreen:setCustomDialogText(self.buyLightSaber)
+		clonedScreen:addOption(self.saleOption_weapon_lightsaber_gen3, "buy_lightsaber_gen3")
+		clonedScreen:addOption(self.saleOption_weapon_lightsaber_gen4, "buy_lightsaber_gen4")
 		--self.vendorLogicType:openSUIArmorweaveSchematics(pPlayer)
+	end
+
+	if (screenID == "buy_lightsaber_gen3") then
+		clonedScreen:setCustomDialogText(self.openSUItext)
+		self.weaponsLogic:openSUILightsaberGenThree(pPlayer)
+	end
+
+	if (screenID == "buy_lightsaber_gen4") then
+		clonedScreen:setCustomDialogText(self.openSUItext)
+		self.weaponsLogic:openSUILightsaberGenFour(pPlayer)
 	end
 
 	if (screenID == "buy_vehicles") then
 		clonedScreen:setCustomDialogText(self.underConstruction)
-		--self.vendorLogicType:openSUIArmorweaveSchematics(pPlayer)
+		self.weaponsLogic:openSUILightsaberGenThree(pPlayer)
 	end
+
 	if (screenID == "information_first") then
 		clonedScreen:setCustomDialogText(self.informationFirstDialog)
 		clonedScreen:addOption(self.buyWindow, "buy_window")
@@ -126,6 +144,7 @@ end
 StarforgeVendorConvoHandler = VendorConvoHandler:new {
 	--Vendor Setup
 	vendorLogicType = StarforgeVendorLogic,
+	weaponsLogic = WeaponsLightsaberVendorLogic,
 	--Vendor Greeting
 	initialDialog = "Ya-hoo, name is Busten Cyder, I travel da world sellen items per Starforge Currency. Do you want to be buyin something?",
 	--Player selection to start buying, vendor spatial.
@@ -141,6 +160,9 @@ StarforgeVendorConvoHandler = VendorConvoHandler:new {
     saleOption_segment_aw = "Armorweaving Segment Schematics",
 	saleOption_schematic_aw = "Armorweaving Clothing Schematics",
 	saleOption_segment_as = "Armorsmithing Segment Schematics",
+	saleOption_weapon_lightsaber = "Lightsabers",
+	saleOption_weapon_lightsaber_gen3 = "Show me what you have for Generation Three Lightsabers.",
+	saleOption_weapon_lightsaber_gen4 = "Show me what you have for Generation Four Lightsabers.",
 	saleOption_schematic_as = "Armorsmithing Schematics",
 	openSUItext = "Take your time and stay close.",
 	saleDialog = "Okay, here's what I have for sale.",
@@ -151,4 +173,7 @@ StarforgeVendorConvoHandler = VendorConvoHandler:new {
 	informationSecondOption = "How do I get Starforge tokens?",
     informationSecondDialog = "Participaten in kill'n things on Starforge. When you get some tokens, make sure to use them right away to store the currency. Then come back to me and trade your currency for items.",
 	underConstruction = "This shop is under construction. Check back after a few weeks...",
+	weaponsMenu = "I have a few different types of weapons...",
+	buyLightSaber = "Lightsabers come in different generations, which are you certified to use?"
+
 }
