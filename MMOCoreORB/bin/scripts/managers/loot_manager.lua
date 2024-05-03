@@ -280,7 +280,10 @@ lootableClothingAttachmentStatMods = {
 	"forceintimidate_accuracy",
 	"forceknockdown_accuracy",
 	"forcelightning_accuracy",
-	"forceweaken_accuracy"
+	"forceweaken_accuracy",
+	"vehicle_assembly",
+	"vehicle_experimentation",
+	"vehicle_repair"
 }
 
 lootableArmorStatMods = {
