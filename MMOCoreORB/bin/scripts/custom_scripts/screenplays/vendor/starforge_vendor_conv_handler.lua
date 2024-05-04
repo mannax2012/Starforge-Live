@@ -110,17 +110,17 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 
 	if (screenID == "buy_lightsaber_gen3") then
 		clonedScreen:setCustomDialogText(self.openSUItext)
-		self.weaponsLogic:openSUILightsaberGenThree(pPlayer)
+		self.weaponsSabersLogic:openSUILightsaberGenThree(pPlayer)
 	end
 
 	if (screenID == "buy_lightsaber_gen4") then
 		clonedScreen:setCustomDialogText(self.openSUItext)
-		self.weaponsLogic:openSUILightsaberGenFour(pPlayer)
+		self.weaponsSabersLogic:openSUILightsaberGenFour(pPlayer)
 	end
 
 	if (screenID == "buy_vehicles") then
 		clonedScreen:setCustomDialogText(self.underConstruction)
-		self.weaponsLogic:openSUILightsaberGenThree(pPlayer)
+		--self.weaponsLogic:openSUILightsaberGenThree(pPlayer)
 	end
 
 	if (screenID == "information_first") then
@@ -144,7 +144,7 @@ end
 StarforgeVendorConvoHandler = VendorConvoHandler:new {
 	--Vendor Setup
 	vendorLogicType = StarforgeVendorLogic,
-	weaponsLogic = WeaponsLightsaberVendorLogic,
+	weaponsSabersLogic = WeaponsLightsaberVendorLogic,
 	--Vendor Greeting
 	initialDialog = "Ya-hoo, name is Busten Cyder, I travel da world sellen items per Starforge Currency. Do you want to be buyin something?",
 	--Player selection to start buying, vendor spatial.

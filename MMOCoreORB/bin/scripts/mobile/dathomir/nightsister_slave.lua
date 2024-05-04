@@ -36,8 +36,16 @@ nightsister_slave = Creature:new {
 				{group = "wearables_common", chance = 3000000},
 				{group = "loot_kit_parts", chance = 2000000},
 				{group = "tailor_components", chance = 1000000},
-			}
-		}
+			},
+			lootChance = 10000000,
+		},
+
+		{
+			groups = {
+				{group = "unstable_crystal_pack", chance = 10000000}
+			},
+				lootChance = 50000,
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)

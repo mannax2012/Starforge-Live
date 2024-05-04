@@ -5,7 +5,7 @@ nightsister_elder = Creature:new {
 	mobType = MOB_NPC,
 	socialGroup = "nightsister",
 	faction = "nightsister",
-	level = 278,
+	level = 333,
 	chanceHit = 27.25,
 	damageMin = 1520,
 	damageMax = 2750,
@@ -42,8 +42,16 @@ nightsister_elder = Creature:new {
 				{group = "carbines", chance = 900000},
 				{group = "melee_weapons", chance = 2000000},
 				{group = "wearables_scarce", chance = 500000}
-			}
-		}
+			},
+			lootChance = 10000000,
+		},
+
+		{
+			groups = {
+				{group = "unstable_crystal_pack", chance = 10000000}
+			},
+				lootChance = 1500000,
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
