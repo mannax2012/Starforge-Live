@@ -50,7 +50,7 @@ object_draft_schematic_vehicle_civilian_landspeeder_v35 = object_draft_schematic
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 40,
 	size = 10,
-	factoryCrateSize = 50,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_installation.iff",
    
 	xpType = "crafting_mechanic",

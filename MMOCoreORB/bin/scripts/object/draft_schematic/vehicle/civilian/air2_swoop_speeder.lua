@@ -50,7 +50,7 @@ object_draft_schematic_vehicle_civilian_air2_swoop_speeder = object_draft_schema
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 32,
 	size = 10,
-	factoryCrateSize = 50,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_installation.iff",
    
 	xpType = "crafting_mechanic",

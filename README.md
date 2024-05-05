@@ -1,3 +1,6 @@
+# Mechanic ADDED thanks to TinyPebble: https://github.com/TheTinyPebble/SWG-Blackstar
+Thanks for all the hours you put into making this and for all the hour letting me bug you about how it fix what I broke!
+      
 # SWGEmu Core3: Recreating the Classic Star Wars Galaxies Experience
 
 ## What is SWGEmu?
