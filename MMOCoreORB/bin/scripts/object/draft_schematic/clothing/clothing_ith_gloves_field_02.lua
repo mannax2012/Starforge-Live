@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_ith_gloves_field_02 = object_draft_sche
    complexity = 15, 
    size = 2, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_clothing_general", 
    xp = 90, 
 

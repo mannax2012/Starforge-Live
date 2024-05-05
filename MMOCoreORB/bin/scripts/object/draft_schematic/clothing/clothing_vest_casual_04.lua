@@ -46,7 +46,7 @@ object_draft_schematic_clothing_clothing_vest_casual_04 = object_draft_schematic
    templateType = DRAFTSCHEMATIC,
 
    customObjectName = "Simple Vest",
-
+   factoryCrateSize = 1000,
    craftingToolTab = 8, -- (See DraftSchematicObjectTemplate.h)
    complexity = 20, 
    size = 2, 

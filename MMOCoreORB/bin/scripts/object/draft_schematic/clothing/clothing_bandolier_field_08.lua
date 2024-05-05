@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_bandolier_field_08 = object_draft_schem
    complexity = 12, 
    size = 2, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_general", 
    xp = 30, 
 

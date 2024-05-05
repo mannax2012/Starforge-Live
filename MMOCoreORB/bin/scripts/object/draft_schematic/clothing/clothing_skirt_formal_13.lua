@@ -46,7 +46,7 @@ object_draft_schematic_clothing_clothing_skirt_formal_13 = object_draft_schemati
    templateType = DRAFTSCHEMATIC,
 
    customObjectName = "Thin Pleated Skirt",
-
+   factoryCrateSize = 1000,
    craftingToolTab = 8, -- (See DraftSchematicObjectTemplate.h)
    complexity = 21, 
    size = 4, 

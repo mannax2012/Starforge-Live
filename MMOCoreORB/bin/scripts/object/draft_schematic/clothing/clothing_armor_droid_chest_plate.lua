@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_armor_droid_chest_plate = object_draft_
    complexity = 45, 
    size = 4, 
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_droid_general", 
    xp = 650, 
 

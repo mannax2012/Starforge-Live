@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_bustier_casual_03 = object_draft_schema
    complexity = 19, 
    size = 3, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_clothing_general", 
    xp = 120, 
 

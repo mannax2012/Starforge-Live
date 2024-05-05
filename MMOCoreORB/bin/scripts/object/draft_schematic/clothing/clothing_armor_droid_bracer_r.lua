@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_armor_droid_bracer_r = object_draft_sch
    complexity = 45, 
    size = 4, 
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_droid_general", 
    xp = 420, 
 

@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_armor_tantel_boots = object_draft_schem
    complexity = 30, 
    size = 3, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_clothing_armor", 
    xp = 180, 
 

@@ -51,6 +51,7 @@ object_draft_schematic_clothing_clothing_armor_clone_trooper_neutral_s01_boots =
    complexity = 45, 
    size = 4, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
+   factoryCrateSize = 1000,
 
    xpType = "crafting_clothing_armor", 
    xp = 420, 
