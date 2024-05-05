@@ -50,6 +50,7 @@ includeFile("mobile/vehicle/serverobjects.lua")
 includeFile("mobile/vendor/serverobjects.lua")
 
 -- Server Objects
+includeFile("mobile/dath_disciple.lua")
 includeFile("mobile/21b_surgical_droid_crafted.lua")
 includeFile("mobile/21b_surgical_droid.lua")
 includeFile("mobile/3po_protocol.lua")

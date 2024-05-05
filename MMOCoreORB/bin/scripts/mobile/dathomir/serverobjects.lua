@@ -1,3 +1,8 @@
+--Starforge
+includeFile("dathomir/dath_disciple.lua")
+includeFile("dathomir/nightsister_ascendant.lua")
+
+--SWEMU
 includeFile("dathomir/alpha_bolma.lua")
 includeFile("dathomir/ancient_bull_rancor.lua")
 includeFile("dathomir/ancient_reptilian_flier.lua")
