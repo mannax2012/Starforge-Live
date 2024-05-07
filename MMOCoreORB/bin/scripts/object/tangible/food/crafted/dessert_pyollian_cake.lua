@@ -45,14 +45,14 @@ object_tangible_food_crafted_dessert_pyollian_cake = object_tangible_food_crafte
 	templateType = CONSUMABLE,
 
 	duration = 1,
-	filling = 10,
+	filling = 0,
 	nutrition = 10,
 
 	effectType = 3, -- Event Based Buff
 	eventTypes = {CRAFTINGASSEMBLY},
 
-	fillingMin = 18,
-	fillingMax = 9,
+	fillingMin = 0,
+	fillingMax = 0,
 	flavorMin = 1,
 	flavorMax = 1,
 	nutritionMin = 5,
@@ -66,15 +66,15 @@ object_tangible_food_crafted_dessert_pyollian_cake = object_tangible_food_crafte
 	buffCRC = 0,
 	speciesRestriction = "",
 
-	numberExperimentalProperties = {1, 1, 1, 2, 2, 2},
-	experimentalProperties = {"XX", "XX", "XX", "DR", "OQ", "OQ", "PE", "FL", "OQ"},
-	experimentalWeights = {1, 1, 1, 1, 1, 1, 2, 2, 1},
-	experimentalGroupTitles = {"null", "null", "null", "exp_nutrition", "exp_quantity", "exp_filling"},
-	experimentalSubGroupTitles = {"null", "null", "hitpoints", "nutrition", "quantity", "filling"},
-	experimentalMin = {0, 0, 1000, 75, 60, 80},
-	experimentalMax = {0, 0, 1000, 120, 100, 120},
-	experimentalPrecision = {0, 0, 0, 10, 10, 10},
-	experimentalCombineType = {0, 0, 4, 1, 1, 1},
+	numberExperimentalProperties = {1, 1, 1, 2, 2},
+	experimentalProperties = {"XX", "XX", "XX", "DR", "OQ", "OQ", "PE"},
+	experimentalWeights = {1, 1, 1, 1, 1, 1, 2},
+	experimentalGroupTitles = {"null", "null", "null", "exp_nutrition", "exp_quantity"},
+	experimentalSubGroupTitles = {"null", "null", "hitpoints", "nutrition", "quantity"},
+	experimentalMin = {0, 0, 1000, 75, 60},
+	experimentalMax = {0, 0, 1000, 120, 100},
+	experimentalPrecision = {0, 0, 0, 10, 10},
+	experimentalCombineType = {0, 0, 4, 1, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_food_crafted_dessert_pyollian_cake, "object/tangible/food/crafted/dessert_pyollian_cake.iff")
