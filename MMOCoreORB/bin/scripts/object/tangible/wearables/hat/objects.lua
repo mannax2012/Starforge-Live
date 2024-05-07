@@ -40,6 +40,10 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_tangible_wearables_hat_shared_hat_tusken_raider_crafted = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/hat/shared_hat_tusken_raider_crafted.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_wearables_hat_shared_hat_tusken_raider_crafted, 
+"object/tangible/wearables/hat/shared_hat_tusken_raider_crafted.iff")
 
 object_tangible_wearables_hat_shared_hat_chef_s01 = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/hat/shared_hat_chef_s01.iff"
