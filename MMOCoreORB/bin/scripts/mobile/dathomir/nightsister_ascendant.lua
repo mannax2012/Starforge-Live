@@ -3,6 +3,7 @@ nightsister_ascendant = Creature:new {
 	customName = "a Nightsister Ascendant",
 	socialGroup = "mercenary",
 	faction = "",
+	mobType = MOB_NPC,
 	level = 300,
 	chanceHit = 25.0,
 	damageMin = 1225,

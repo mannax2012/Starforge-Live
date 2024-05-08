@@ -42,6 +42,22 @@
 
 
 schematics = {
+	--Tusken Clothing
+	{path="object/draft_schematic/clothing/custom/clothing_bandolier_tusken_raider_bag_s01_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_bandolier_tusken_raider_bag_s02_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_bandolier_tusken_raider_bag_s03_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_robe_tusken_raider_s01_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_robe_tusken_raider_s02_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_hat_tusken_raider_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_bracer_tusken_raider_r_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_bracer_tusken_raider_l_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_boots_tusken_raider_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_belt_tusken_raider_schematic.iff"},
+	{path="object/draft_schematic/clothing/custom/clothing_gloves_tusken_raider_schematic.iff"},
+  
+	--Starforge Bag
+	{path="object/draft_schematic/clothing/custom/starforge_backpack_schematic.iff"},
+
 	--Mechanic
 	{path="object/draft_schematic/vehicle/civilian/landspeeder_x31.iff"},
 	{path="object/draft_schematic/vehicle/civilian/speederbike_flash.iff"},

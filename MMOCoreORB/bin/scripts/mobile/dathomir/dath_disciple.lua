@@ -3,6 +3,7 @@ dath_disciple = Creature:new {
 	customName = "Mana Das (a Disciple of Rakata)",
 	socialGroup = "mercenary",
 	faction = "",
+	mobType = MOB_NPC,
 	level = 350,
 	chanceHit = 4.75,
 	damageMin = 1045,

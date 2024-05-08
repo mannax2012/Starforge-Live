@@ -44,6 +44,7 @@
 
 --Children folder includes
 includeFile("draft_schematic/clothing/component/serverobjects.lua")
+includeFile("draft_schematic/clothing/custom/serverobjects.lua")
 
 -- Server Objects
 includeFile("draft_schematic/clothing/clothing_apron_chef_01.lua")
