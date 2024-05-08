@@ -55,6 +55,7 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 		clonedScreen:setCustomDialogText(self.saleDialog)
 		clonedScreen:addOption(self.buyArmor, "buy_armor")
 		clonedScreen:addOption(self.buyWeapons, "buy_weapons")
+		clonedScreen:addOption(self.buyBackpacks, "buy_backpacks")
 		clonedScreen:addOption(self.buyVehicles, "buy_vehicles")
 	end
 
@@ -120,7 +121,12 @@ function VendorConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, sele
 
 	if (screenID == "buy_vehicles") then
 		clonedScreen:setCustomDialogText(self.underConstruction)
-		--self.weaponsLogic:openSUILightsaberGenThree(pPlayer)
+		--self.vehiclesLogic:openSUIVehicles(pPlayer)
+	end
+
+	if (screenID == "buy_backpacks") then
+		clonedScreen:setCustomDialogText(self.openSUItext)
+		self.backpacksLogic:openSUIBackpacks(pPlayer)
 	end
 
 	if (screenID == "information_first") then
@@ -145,6 +151,7 @@ StarforgeVendorConvoHandler = VendorConvoHandler:new {
 	--Vendor Setup
 	vendorLogicType = StarforgeVendorLogic,
 	weaponsSabersLogic = WeaponsLightsaberVendorLogic,
+	backpacksLogic = BackpacksVendorLogic,
 	--Vendor Greeting
 	initialDialog = "Ya-hoo, name is Busten Cyder, I travel da world sellen items per Starforge Currency. Do you want to be buyin something?",
 	--Player selection to start buying, vendor spatial.
@@ -152,6 +159,7 @@ StarforgeVendorConvoHandler = VendorConvoHandler:new {
 	buyArmorDialog = "I have a few thing available for armor, take a look.",
 	buyArmor = "I am interested in improving my armor.",
 	buyWeapons = "I am interested in improving my weapons.",
+	buyBackpacks = "I am interested in improving my backpack look.",
 	buyVehicles = "I am interested in improving my ride.",
 	buyArmorAWDialog = "This is what I have available for Armorweaving.",
 	buyArmorASDialog = "This is what I have available for Armorsmithing.",

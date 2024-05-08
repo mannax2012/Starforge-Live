@@ -118,6 +118,14 @@ buy_vehicles = ConvoScreen:new {
 }
 StarforgeVendorConvoTemplate:addScreen(buy_vehicles);
 
+buy_backpacks = ConvoScreen:new {
+	id = "buy_backpacks",
+	customDialogText = "",
+	stopConversation = "true",
+	options = {}
+}
+StarforgeVendorConvoTemplate:addScreen(buy_backpacks);
+
 information_first = ConvoScreen:new {
 	id = "information_first",
 	customDialogText = "",
