@@ -41,7 +41,14 @@ tusken_raid_hunter = Creature:new {
 				{group = "color_crystals", chance = 500000},
 				{group = "power_crystals", chance = 500000}
 			}
-		}
+		},
+
+		{
+			groups = {
+				{group = "tusken_raider_schematics", chance = 10000000}
+			},
+				lootChance = 1500000,
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)
