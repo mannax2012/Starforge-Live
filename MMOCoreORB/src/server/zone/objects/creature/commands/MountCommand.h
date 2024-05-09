@@ -175,12 +175,9 @@ public:
 		// Force Sensitive SkillMods
 		// The new modifiers are put here to only apply to vehicles, and not mounts just in case
 		if (vehicle->isVehicleObject()) {
-			newSpeed += creature->getSkillMod("force_vehicle_speed");
-			newAccel += creature->getSkillMod("force_vehicle_speed");
-			newTurn += creature->getSkillMod("force_vehicle_control");
-			vehicle->setTurnScale(newTurn, true);
-			vehicle->setAccelerationMultiplierBase(newAccel, true);
-			creature->setSpeedMultiplierMod(newSpeed / 10);
+		newSpeed += creature->getSkillMod("force_vehicle_speed");
+		newAccel += creature->getSkillMod("force_vehicle_speed");
+		newTurn += creature->getSkillMod("force_vehicle_control");
 		}
 
 		creature->setRunSpeed(newSpeed);

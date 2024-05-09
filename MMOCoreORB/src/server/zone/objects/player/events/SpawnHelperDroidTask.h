@@ -131,7 +131,7 @@ public:
 
 		datapad->broadcastObject(controlDevice, true);
 
-		controlDevice->callObject(playerCreo);
+		//controlDevice->callObject(playerCreo);
 	}
 };
 
