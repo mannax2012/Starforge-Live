@@ -159,7 +159,13 @@ public:
 				newSpeed = petManager->getMountedRunSpeed(vehicle);
 			}
 		}
-		
+				// Force Sensitive SkillMods
+		// The new modifiers are put here to only apply to vehicles, and not mounts just in case
+		if (vehicle->isVehicleObject()){
+		newSpeed += creature->getSkillMod("force_vehicle_speed");
+		newAccel += creature->getSkillMod("force_vehicle_speed");
+		newTurn += creature->getSkillMod("force_vehicle_control");
+		}
 		// Update vehicle speed modifier. Should only apply to vehicles.
 		if (vehicle->isVehicleObject() && vehicle->getSpeedMultiplierMod() != 0)
 				creature->setSpeedMultiplierMod(vehicle->getSpeedMultiplierMod());
@@ -172,15 +178,6 @@ public:
 		changeBuffer->add(SpeedModChange(newSpeed + creature->getRunSpeed()));
 
 		creature->updateToDatabase();
-
-		// Force Sensitive SkillMods
-		// The new modifiers are put here to only apply to vehicles, and not mounts just in case
-		if (vehicle->isVehicleObject()) {
-		newSpeed += creature->getSkillMod("force_vehicle_speed");
-		newAccel += creature->getSkillMod("force_vehicle_speed");
-		newTurn += creature->getSkillMod("force_vehicle_control");
-		}
-
 		creature->setSpeedMultiplierMod(newSpeed / 10);
 		creature->setTurnScale(newTurn, true);
 		creature->setAccelerationMultiplierMod(newAccel, true);
