@@ -146,6 +146,7 @@ public:
 		float newSpeed = vehicle->getRunSpeed();
 		float newAccel = vehicle->getAccelerationMultiplierMod();
 		float newTurn = vehicle->getTurnScale();
+
 		if (newSpeed <= 10){
 			vehicle->setRunSpeed(10);
 			newSpeed = vehicle->getRunSpeed();
@@ -168,7 +169,7 @@ public:
 			newSpeed *= vehicle->getSpeedMultiplierMod();
 
 		// Add our change to the buffer history
-		changeBuffer->add(SpeedModChange(newSpeed / creature->getRunSpeed()));
+		changeBuffer->add(SpeedModChange(newSpeed + creature->getRunSpeed()));
 
 		creature->updateToDatabase();
 
@@ -180,7 +181,7 @@ public:
 		newTurn += creature->getSkillMod("force_vehicle_control");
 		}
 
-		creature->setRunSpeed(newSpeed);
+		creature->setSpeedMultiplierMod(newSpeed / 10);
 		creature->setTurnScale(newTurn, true);
 		creature->setAccelerationMultiplierMod(newAccel, true);
 		creature->addMountedCombatSlow();
