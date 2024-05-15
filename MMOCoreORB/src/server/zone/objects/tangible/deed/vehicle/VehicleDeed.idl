@@ -15,10 +15,36 @@ include templates.SharedObjectTemplate;
 class VehicleDeed extends Deed {
 	protected int hitPoints;
 	protected string controlDeviceObjectTemplate;
+	protected float vehicle_speed;
+	protected float vehicle_acceleration;
+	protected float vehicle_handling;
+	public int armorRating;
+	public float kinResist;
+	public float energyResist;
+	public float blastResist;
+	public float coldResist;
+	public float heatResist;
+	public float elecResist;
+	public float acidResist;
+	public float stunResist;
+	public float saberResist;
 
 	public VehicleDeed() {
 		Logger.setLoggingName("VehicleDeed");
-		hitPoints = 1500;
+		hitPoints = 2500;
+		vehicle_speed = 20;
+		vehicle_acceleration = 10;
+		vehicle_handling = 75;
+		armorRating = 0;
+		kinResist = 15;
+		energyResist = 10;
+		blastResist = 10;
+		coldResist = 10;
+		heatResist = 10;
+		elecResist = 10;
+		acidResist = 10;
+		stunResist = 10;
+		saberResist = 10;
 	}
 
 	public native void initializeTransientMembers();

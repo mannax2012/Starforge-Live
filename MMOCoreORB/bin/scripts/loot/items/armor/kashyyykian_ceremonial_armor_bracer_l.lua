@@ -8,9 +8,9 @@ kashyyykian_ceremonial_armor_bracer_l = {
 		{"kineticeffectiveness",10,40,10},
 		{"armor_effectiveness",4,24,10},
 		{"armor_integrity",15000, 25000,0},
-		{"armor_health_encumbrance",23,18,0},
-		{"armor_action_encumbrance",23,18,0},
-		{"armor_mind_encumbrance",26,19,0},
+		{"armor_health_encumbrance",0,0,0},
+		{"armor_action_encumbrance",0,0,0},
+		{"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 

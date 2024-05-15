@@ -8,9 +8,9 @@ bone_armor_chest_plate = {
 		{"energyeffectiveness",10,35,10},
 		{"armor_effectiveness",4,19,10},
 		{"armor_integrity",7500, 12500,0},
-		{"armor_health_encumbrance",56,34,0},
-		{"armor_action_encumbrance",24,13,0},
-		{"armor_mind_encumbrance",4,2,0},
+		{"armor_health_encumbrance",0,0,0},
+		{"armor_action_encumbrance",0,0,0},
+		{"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 

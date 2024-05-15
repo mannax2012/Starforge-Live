@@ -51,6 +51,7 @@ object_draft_schematic_clothing_clothing_apron_field_01_quest_02 = object_draft_
    complexity = 30, 
    size = 1, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
+   factoryCrateSize = 1000,
 
    xpType = "crafting_clothing_general", 
    xp = 1000, 

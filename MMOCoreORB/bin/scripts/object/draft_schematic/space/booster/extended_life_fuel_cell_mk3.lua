@@ -50,6 +50,7 @@ object_draft_schematic_space_booster_extended_life_fuel_cell_mk3 = object_draft_
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 27, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "shipwright", 

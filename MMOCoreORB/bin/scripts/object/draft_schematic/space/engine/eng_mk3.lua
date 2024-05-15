@@ -50,6 +50,7 @@ object_draft_schematic_space_engine_eng_mk3 = object_draft_schematic_space_engin
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 29, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "shipwright", 

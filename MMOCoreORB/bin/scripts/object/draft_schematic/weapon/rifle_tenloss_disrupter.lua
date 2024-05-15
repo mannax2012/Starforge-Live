@@ -50,6 +50,7 @@ object_draft_schematic_weapon_rifle_tenloss_disrupter = object_draft_schematic_w
    craftingToolTab = 1, -- (See DraftSchematicObjectTemplate.h)
    complexity = 28, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_weapon.iff",
    
    xpType = "crafting_weapons_general", 

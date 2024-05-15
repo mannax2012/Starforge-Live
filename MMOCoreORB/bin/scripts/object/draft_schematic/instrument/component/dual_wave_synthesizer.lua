@@ -50,6 +50,7 @@ object_draft_schematic_instrument_component_dual_wave_synthesizer = object_draft
    craftingToolTab = 524288, -- (See DraftSchematicObjectTemplate.h)
    complexity = 15, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "music", 

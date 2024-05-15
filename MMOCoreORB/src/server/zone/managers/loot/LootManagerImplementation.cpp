@@ -18,6 +18,7 @@
 #include "server/zone/managers/loot/LootValues.h"
 #include "server/zone/managers/resource/ResourceManager.h"
 #include "server/zone/Zone.h"
+#include "server/zone/managers/creature/CreatureTemplateManager.h"
 
 // #define DEBUG_LOOT_MAN
 
@@ -654,7 +655,27 @@ bool LootManagerImplementation::createLoot(TransactionLog& trx, SceneObject* con
 		return false;
 	}
 
-	return createLootFromCollection(trx, container, lootCollection, creature->getLevel());
+	int cLevel = creature->getLevel();
+	String lootNpcTemplate = "starforge_vendor_token";
+
+	if (cLevel > 300) {
+		lootNpcTemplate = "heavy_starforge_vendor_token";
+	}
+	/*
+		else if (cLevel > 100){
+		lootNpcTemplate = "starforge_vendor_token";
+	}
+	*/
+	CreatureTemplate* obj = CreatureTemplateManager::instance()->getTemplate(lootNpcTemplate.hashCode());
+
+	if (obj != nullptr) {
+		const LootGroupCollection* collection = obj->getLootGroups();
+
+		if (collection != nullptr)
+			createLootFromCollection(trx, container, collection, cLevel);
+	}
+
+	return createLootFromCollection(trx, container, lootCollection, cLevel);
 }
 
 bool LootManagerImplementation::createLootFromCollection(TransactionLog& trx, SceneObject* container, const LootGroupCollection* lootCollection, int level) {

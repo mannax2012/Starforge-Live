@@ -46,6 +46,7 @@
 includeFile("tangible/wearables/armor/bone/serverobjects.lua")
 includeFile("tangible/wearables/armor/bounty_hunter/serverobjects.lua")
 includeFile("tangible/wearables/armor/chitin/serverobjects.lua")
+includeFile("tangible/wearables/armor/clone_trooper/serverobjects.lua")
 includeFile("tangible/wearables/armor/composite/serverobjects.lua")
 includeFile("tangible/wearables/armor/ithorian_defender/serverobjects.lua")
 includeFile("tangible/wearables/armor/ithorian_guardian/serverobjects.lua")
@@ -64,5 +65,6 @@ includeFile("tangible/wearables/armor/stormtrooper/serverobjects.lua")
 includeFile("tangible/wearables/armor/tantel/serverobjects.lua")
 includeFile("tangible/wearables/armor/ubese/serverobjects.lua")
 includeFile("tangible/wearables/armor/zam/serverobjects.lua")
+includeFile("tangible/wearables/armor/droid/serverobjects.lua")
 
 -- Server Objects

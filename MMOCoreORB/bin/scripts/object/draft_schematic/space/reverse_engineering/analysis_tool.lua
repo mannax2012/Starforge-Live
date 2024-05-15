@@ -50,6 +50,7 @@ object_draft_schematic_space_reverse_engineering_analysis_tool = object_draft_sc
    craftingToolTab = 262144, -- (See DraftSchematicObjectTemplate.h)
    complexity = 11, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "shipwright", 

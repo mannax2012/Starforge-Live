@@ -91,9 +91,9 @@ object_tangible_wearables_armor_bone_armor_bone_s01_bicep_l = object_tangible_we
 	vulnerability = KINETIC + BLAST + STUN + HEAT + COLD + ACID + LIGHTSABER,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 6,
-	actionEncumbrance = 15,
-	mindEncumbrance = 4,
+	healthEncumbrance = 0,
+	actionEncumbrance = 0,
+	mindEncumbrance = 0,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
@@ -113,8 +113,8 @@ object_tangible_wearables_armor_bone_armor_bone_s01_bicep_l = object_tangible_we
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "null", "exp_durability", "exp_quality", "exp_durability", "exp_durability", "exp_durability", "exp_durability", "null", "null", "exp_resistance", "null"},
 	experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
-	experimentalMin = {0, 0, 0, 1000, 5, 7500, 6, 8, 4, 1, 2, 5, 7500},
-	experimentalMax = {0, 0, 0, 1000, 20, 12500, 4, 4, 2, 1, 2, 30, 12500},
+	experimentalMin = {0, 0, 0, 1000, 5, 7500, 0, 0, 0, 1, 2, 5, 7500},
+	experimentalMax = {0, 0, 0, 1000, 20, 12500, 0, 0, 0, 1, 2, 30, 12500},
 	experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }

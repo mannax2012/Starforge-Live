@@ -62,7 +62,8 @@ object_weapon_melee_polearm_lance_controllerfp = object_weapon_melee_polearm_sha
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -100,9 +101,9 @@ object_weapon_melee_polearm_lance_controllerfp = object_weapon_melee_polearm_sha
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 20,
-	actionAttackCost = 45,
-	mindAttackCost = 22,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -126,8 +127,8 @@ object_weapon_melee_polearm_lance_controllerfp = object_weapon_melee_polearm_sha
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 7, 133, 7, 9, 750, 5, 5, 3, 5, 5, 26, 59, 29},
-	experimentalMax = {0, 0, 13, 247, 4, 18, 1500, 15, 15, 3, 15, 5, 14, 32, 15},
+	experimentalMin = {0, 0, 7, 133, 7, 9, 750, 5, 5, 3, 5, 5, 0, 280, 0},
+	experimentalMax = {0, 0, 13, 247, 4, 18, 1500, 15, 15, 3, 15, 5, 0, 350, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

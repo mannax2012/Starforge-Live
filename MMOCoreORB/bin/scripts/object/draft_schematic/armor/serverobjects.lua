@@ -46,6 +46,7 @@
 includeFile("draft_schematic/armor/component/serverobjects.lua")
 
 -- Server Objects
+includeFile("draft_schematic/armor/objects.lua")
 includeFile("draft_schematic/armor/armor_module_heavy.lua")
 includeFile("draft_schematic/armor/armor_module_light.lua")
 includeFile("draft_schematic/armor/armor_segment.lua")
@@ -55,6 +56,8 @@ includeFile("draft_schematic/armor/armor_segment_bone_acklay.lua")
 includeFile("draft_schematic/armor/armor_segment_bone_advanced.lua")
 includeFile("draft_schematic/armor/armor_segment_chitin.lua")
 includeFile("draft_schematic/armor/armor_segment_chitin_advanced.lua")
+includeFile("draft_schematic/armor/armor_segment_droid.lua")
+includeFile("draft_schematic/armor/armor_segment_droid_advanced.lua")
 includeFile("draft_schematic/armor/armor_segment_composite.lua")
 includeFile("draft_schematic/armor/armor_segment_composite_advanced.lua")
 includeFile("draft_schematic/armor/armor_segment_kashyyykian_black_mtn.lua")

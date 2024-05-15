@@ -149,6 +149,9 @@ dathomir_regions = {
 	{ "dathomir_fs_combat_camp24", 1369, 1217, {CIRCLE, 150}, NOSPAWNAREA + NOBUILDZONEAREA + NAVAREA},
 	{ "dathomir_fs_combat_camp25", 3076, 2174, {CIRCLE, 150}, NOSPAWNAREA + NOBUILDZONEAREA + NAVAREA},
 
+	-- Custom
+	{ "rakata", 1068, -4485, {1, 100}, NOSPAWNAREA + NOBUILDZONEAREA},
+
 	-- Cities / Outposts
 	{"@dathomir_region_names:dathomir_survey_outpost", -85, -1600, {CIRCLE, 400}, CITY + NOSPAWNAREA},
 	{"dathomir_survey_outpost_nobuild_1", -85, -1600, {CIRCLE, 200}, NOBUILDZONEAREA},

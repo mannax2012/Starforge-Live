@@ -50,6 +50,7 @@ object_draft_schematic_instrument_instrument_slitherhorn = object_draft_schemati
    craftingToolTab = 524288, -- (See DraftSchematicObjectTemplate.h)
    complexity = 8, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "music", 

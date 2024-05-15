@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_robe_field_27 = object_draft_schematic_
    complexity = 23, 
    size = 2, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_clothing_general", 
    xp = 110, 
 

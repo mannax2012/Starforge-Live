@@ -40,6 +40,21 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_tangible_wearables_bandolier_shared_bandolier_tusken_raider_s01_crafted = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/bandolier/shared_bandolier_tusken_raider_bag_s01.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_wearables_bandolier_shared_bandolier_tusken_raider_s01_crafted, 
+"object/tangible/wearables/bandolier/shared_bandolier_tusken_raider_bag_s01.iff")
+
+object_tangible_wearables_bandolier_shared_bandolier_tusken_raider_s02_crafted = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/bandolier/shared_bandolier_tusken_raider_bag_s02.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_wearables_bandolier_shared_bandolier_tusken_raider_s02_crafted, 
+"object/tangible/wearables/bandolier/shared_bandolier_tusken_raider_bag_s02.iff")
+
+object_tangible_wearables_bandolier_shared_bandolier_tusken_raider_s03_crafted = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/bandolier/shared_bandolier_tusken_raider_bag_s03.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_wearables_bandolier_shared_bandolier_tusken_raider_s03_crafted, 
+"object/tangible/wearables/bandolier/shared_bandolier_tusken_raider_bag_s03.iff")
+
 
 object_tangible_wearables_bandolier_shared_bandolier_s01 = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/bandolier/shared_bandolier_s01.iff"

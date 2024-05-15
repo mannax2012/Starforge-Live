@@ -50,6 +50,7 @@ object_draft_schematic_weapon_lance_vibro = object_draft_schematic_weapon_shared
    craftingToolTab = 1, -- (See DraftSchematicObjectTemplate.h)
    complexity = 30, 
    size = 4, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_weapon.iff",
    
    xpType = "crafting_weapons_general", 

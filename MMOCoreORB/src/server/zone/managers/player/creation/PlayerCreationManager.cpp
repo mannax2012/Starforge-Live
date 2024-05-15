@@ -603,6 +603,11 @@ bool PlayerCreationManager::createCharacter(ClientCreateCharacterCallback* callb
 	ghost->addSuiBox(box);
 	playerCreature->sendMessage(box->generateMessage());
 
+	//broadcast new character creations to galaxy
+	StringBuffer buff;
+	buff << "A new arrival, please welcome " << firstName << " " << lastName << " to SWG Starforge";
+	chatManager->broadcastGalaxy(nullptr, buff.toString());
+
 	return true;
 }
 

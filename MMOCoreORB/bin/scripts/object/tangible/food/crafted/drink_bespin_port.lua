@@ -45,14 +45,14 @@ object_tangible_food_crafted_drink_bespin_port = object_tangible_food_crafted_sh
 	templateType = CONSUMABLE,
 
 	duration = 1,
-	filling = 10,
+	filling = 0,
 	nutrition = 10,
 
 	effectType = 3, -- Event Based Buff
 	eventTypes = {CRAFTINGEXPERIMENTATION},
 
-	fillingMin = 25,
-	fillingMax = 15,
+	fillingMin = 0,
+	fillingMax = 0,
 	flavorMin = 1,
 	flavorMax = 1,
 	nutritionMin = 3,
@@ -66,15 +66,15 @@ object_tangible_food_crafted_drink_bespin_port = object_tangible_food_crafted_sh
 	buffCRC = 0x9B38A4CB,
 	speciesRestriction = "",
 
-	numberExperimentalProperties = {1, 1, 1, 1, 2, 2, 2, 1},
-	experimentalProperties = {"XX", "XX", "XX", "XX", "DR", "OQ", "OQ", "PE", "FL", "OQ", "XX"},
-	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1},
-	experimentalGroupTitles = {"null", "null", "null", "null", "exp_nutrition", "exp_quantity", "exp_filling", "null"},
-	experimentalSubGroupTitles = {"null", "null", "hitpoints", "quantity_bonus", "nutrition", "quantity", "filling", "stomach"},
-	experimentalMin = {0, 0, 1000, 0, 120, 100, 120, 1},
-	experimentalMax = {0, 0, 1000, 0, 75, 60, 80, 1},
-	experimentalPrecision = {0, 0, 0, 0, 10, 10, 10, 0},
-	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1},
+	numberExperimentalProperties = {1, 1, 1, 1, 2, 2},
+	experimentalProperties = {"XX", "XX", "XX", "XX", "DR", "OQ", "OQ", "PE"},
+	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 2},
+	experimentalGroupTitles = {"null", "null", "null", "null", "exp_nutrition", "exp_quantity"},
+	experimentalSubGroupTitles = {"null", "null", "hitpoints", "quantity_bonus", "nutrition", "quantity"},
+	experimentalMin = {0, 0, 1000, 0, 120, 100},
+	experimentalMax = {0, 0, 1000, 0, 75, 60},
+	experimentalPrecision = {0, 0, 0, 0, 10, 10},
+	experimentalCombineType = {0, 0, 4, 1, 1, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_food_crafted_drink_bespin_port, "object/tangible/food/crafted/drink_bespin_port.iff")

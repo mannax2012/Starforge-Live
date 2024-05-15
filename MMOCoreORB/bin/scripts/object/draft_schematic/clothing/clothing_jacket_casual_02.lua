@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_jacket_casual_02 = object_draft_schemat
    complexity = 7, 
    size = 3, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_general", 
    xp = 60, 
 

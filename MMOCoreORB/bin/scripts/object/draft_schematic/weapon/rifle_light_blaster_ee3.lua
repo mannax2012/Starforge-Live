@@ -50,6 +50,7 @@ object_draft_schematic_weapon_rifle_light_blaster_ee3 = object_draft_schematic_w
    craftingToolTab = 1, -- (See DraftSchematicObjectTemplate.h)
    complexity = 22, 
    size = 3, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_weapon.iff",
    
    xpType = "crafting_weapons_general", 

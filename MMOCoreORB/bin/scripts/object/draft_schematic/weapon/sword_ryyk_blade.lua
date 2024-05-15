@@ -50,6 +50,7 @@ object_draft_schematic_weapon_sword_ryyk_blade = object_draft_schematic_weapon_s
    craftingToolTab = 1, -- (See DraftSchematicObjectTemplate.h)
    complexity = 20, 
    size = 3, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_weapon.iff",
    
    xpType = "crafting_weapons_general", 

@@ -50,6 +50,7 @@ object_draft_schematic_space_weapon_max_damage_intensifier_mk5 = object_draft_sc
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 34, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "shipwright", 

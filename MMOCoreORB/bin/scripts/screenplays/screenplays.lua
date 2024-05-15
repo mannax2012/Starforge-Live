@@ -30,8 +30,12 @@ require("sui.custom.SuiReceiverPuzzle")
 includeFile("helperfuncs.lua")
 includeFile("playerTriggers.lua")
 
+--World Bosses
+includeFile("dungeon/world_boss/dath_disciple_boss.lua")
+
 --Mission terminal
 includeFile("tools/mission_direction_choice.lua")
+includeFile("tools/VendorTokenMenuComponent.lua")
 
 -- Theme parks
 includeFile("themepark/conversations/goru_conv_handler.lua")

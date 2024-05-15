@@ -85,7 +85,8 @@ object_tangible_wearables_apron_apron_s01 = object_tangible_wearables_apron_shar
 				"object/mobile/vendor/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
-				"object/mobile/vendor/zabrak_male.iff" },
+				"object/mobile/vendor/zabrak_male.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_apron_apron_s01, "object/tangible/wearables/apron/apron_s01.iff")

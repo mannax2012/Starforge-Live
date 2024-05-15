@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_hat_twilek_casual_02 = object_draft_sch
    complexity = 17, 
    size = 3, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_clothing_general", 
    xp = 110, 
 

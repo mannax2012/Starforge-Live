@@ -36,15 +36,16 @@ void ArmorObjectMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject, 
 			return;
 	}
 
-	String text = "Color Change";
+	String text = "Set Color";
 	menuResponse->addRadialMenuItem(81, 3, text);
+	menuResponse->addRadialMenuItem(82, 3, "Set Color 2");
 
 	WearableObjectMenuComponent::fillObjectMenuResponse(sceneObject, menuResponse, player);
 }
 
 int ArmorObjectMenuComponent::handleObjectMenuSelect(SceneObject* sceneObject, CreatureObject* player, byte selectedID) const {
 
-	if (selectedID == 81) {
+	if (selectedID == 81 || selectedID == 82) {
 		ManagedReference<SceneObject*> parent = sceneObject->getParent().get();
 
 		if (parent == nullptr)
@@ -80,7 +81,10 @@ int ArmorObjectMenuComponent::handleObjectMenuSelect(SceneObject* sceneObject, C
 			// The Sui Box.
 			ManagedReference<SuiColorBox*> cbox = new SuiColorBox(player, SuiWindowType::COLOR_ARMOR);
 			cbox->setCallback(new ColorArmorSuiCallback(server));
+			if (selectedID == 81)
 			cbox->setColorPalette(variables.elementAt(1).getKey()); // First one seems to be the frame of it? Skip to 2nd.
+			else
+			cbox->setColorPalette(variables.elementAt(0).getKey());
 			cbox->setUsingObject(sceneObject);
 
 			int skillMod = 255; //player->getSkillMod("armor_customization");

@@ -47,6 +47,8 @@
 -- Server Objects
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_dw_right_unstable_s01_gen4.lua")
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_dw_left_unstable_s01_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_gen4.lua")
 
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_gen1.lua")
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_gen2.lua")

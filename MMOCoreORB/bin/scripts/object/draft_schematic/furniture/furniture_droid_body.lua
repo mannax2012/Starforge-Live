@@ -50,6 +50,7 @@ object_draft_schematic_furniture_furniture_droid_body = object_draft_schematic_f
    craftingToolTab = 512, -- (See DraftSchematicObjectTemplate.h)
    complexity = 18, 
    size = 1, 
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "crafting_droid_general", 

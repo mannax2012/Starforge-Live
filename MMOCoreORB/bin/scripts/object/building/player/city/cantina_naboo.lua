@@ -42,7 +42,7 @@
 
 
 object_building_player_city_cantina_naboo = object_building_player_city_shared_cantina_naboo:new {
-	lotSize = 5,
+	lotSize = 1,
 	baseMaintenanceRate = 50,
 	allowedZones = {"dantooine", "naboo", "rori", "lok", "tatooine", "corellia", "talus"},
 	length = 7,

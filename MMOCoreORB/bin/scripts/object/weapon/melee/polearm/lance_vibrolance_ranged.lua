@@ -62,7 +62,8 @@ object_weapon_melee_polearm_lance_vibrolance_ranged = object_weapon_melee_polear
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -100,9 +101,9 @@ object_weapon_melee_polearm_lance_vibrolance_ranged = object_weapon_melee_polear
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 52,
-	actionAttackCost = 67,
-	mindAttackCost = 28,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -126,8 +127,8 @@ object_weapon_melee_polearm_lance_vibrolance_ranged = object_weapon_melee_polear
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 42, 154, 5.9, 14, 750, -24, -24, 3, -24, 5, 59, 78, 29},
-	experimentalMax = {0, 0, 78, 286, 4, 26, 1500, 0, 0, 3, 0, 5, 32, 43, 15},
+	experimentalMin = {0, 0, 42, 154, 5.9, 14, 750, -24, -24, 3, -24, 5, 0, 280, 0},
+	experimentalMax = {0, 0, 78, 286, 4, 26, 1500, 0, 0, 3, 0, 5, 0, 350, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

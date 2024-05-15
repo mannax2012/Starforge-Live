@@ -3,7 +3,7 @@ tusken_king = Creature:new {
 	socialGroup = "tusken_raider",
 	faction = "tusken_raider",
 	mobType = MOB_NPC,
-	level = 100,
+	level = 200,
 	chanceHit = 1,
 	damageMin = 645,
 	damageMax = 1000,
@@ -40,7 +40,14 @@ tusken_king = Creature:new {
 				{group = "color_crystals", chance = 500000},
 				{group = "power_crystals", chance = 500000}
 			}
-		}
+		},
+
+		{
+			groups = {
+				{group = "tusken_raider_schematics", chance = 10000000}
+			},
+				lootChance = 1500000,
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)

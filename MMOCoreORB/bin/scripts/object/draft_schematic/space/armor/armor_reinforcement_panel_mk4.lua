@@ -50,6 +50,7 @@ object_draft_schematic_space_armor_armor_reinforcement_panel_mk4 = object_draft_
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 30, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "shipwright", 

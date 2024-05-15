@@ -54,7 +54,7 @@ object_draft_schematic_bio_engineer_bio_component_bio_component_clothing_field_d
 
    xpType = "crafting_bio_engineer_creature", 
    xp = 180, 
-
+   factoryCrateSize = 1000,
    assemblySkill = "bio_engineer_assembly", 
    experimentingSkill = "bio_engineer_experimentation", 
    customizationSkill = "bio_customization", 

@@ -50,6 +50,7 @@ object_draft_schematic_instrument_instrument_mandoviol = object_draft_schematic_
    craftingToolTab = 524288, -- (See DraftSchematicObjectTemplate.h)
    complexity = 18, 
    size = 0, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_generic_items.iff",
    
    xpType = "music", 

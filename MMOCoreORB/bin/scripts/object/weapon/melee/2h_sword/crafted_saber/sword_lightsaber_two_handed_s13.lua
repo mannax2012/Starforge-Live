@@ -62,7 +62,8 @@ object_weapon_melee_2h_sword_crafted_saber_sword_lightsaber_two_handed_s13 = obj
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK, 
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -98,9 +99,9 @@ object_weapon_melee_2h_sword_crafted_saber_sword_lightsaber_two_handed_s13 = obj
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 40,
-	actionAttackCost = 35,
-	mindAttackCost = 20,
+	healthAttackCost = 0,
+	actionAttackCost = 350,
+	mindAttackCost = 0,
 	forceCost = 12,
 
 	pointBlankRange = 0,
@@ -132,8 +133,8 @@ object_weapon_melee_2h_sword_crafted_saber_sword_lightsaber_two_handed_s13 = obj
 	experimentalWeights = {1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "forcecost", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 90, 180, 4.8, 10, 15, 40, 35, 20},
-	experimentalMax = {0, 0, 110, 220, 4.5, 20, 12, 25, 25, 15},
+	experimentalMin = {0, 0, 90, 180, 4.8, 10, 15, 0, 350, 0},
+	experimentalMax = {0, 0, 110, 220, 4.5, 20, 12, 0, 280, 0},
 	experimentalPrecision = {0, 0, 0, 0, 1, 0, 1, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1},
 }

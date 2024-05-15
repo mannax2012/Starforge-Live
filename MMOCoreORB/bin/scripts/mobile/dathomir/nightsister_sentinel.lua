@@ -43,8 +43,16 @@ nightsister_sentinel = Creature:new {
 				{group = "carbines", chance = 1000000},
 				{group = "wearables_common", chance = 500000},
 				{group = "tailor_components", chance = 500000}
-			}
-		}
+			},
+			lootChance = 10000000,
+		},
+
+		{
+			groups = {
+				{group = "unstable_crystal_pack", chance = 10000000}
+			},
+				lootChance = 500000,
+		},
 	},
 
 	-- Primary and secondary weapon should be different types (rifle/carbine, carbine/pistol, rifle/unarmed, etc)

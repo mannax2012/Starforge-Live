@@ -11,6 +11,7 @@
 #include "server/zone/managers/minigames/events/ForagingEvent.h"
 #include "server/zone/objects/area/ForageAreaCollection.h"
 #include "templates/params/creature/CreatureAttribute.h"
+#include "server/zone/managers/stringid/StringIdManager.h"
 #include "server/zone/Zone.h"
 
 void ForageManagerImplementation::startForaging(CreatureObject* player, int forageType) {
@@ -403,6 +404,12 @@ bool ForageManagerImplementation::forageGiveResource(TransactionLog& trx, Creatu
 	}
 
 	int quantity = System::random(30) + 10;
+
+	if (player->hasSkill("outdoors_ranger_master")) {
+		quantity =  quantity * 2.0;
+	}
+
+	player->sendSystemMessage("You have successfully gathered " + String::valueOf(quantity) + " eggs.");
 	resourceManager->harvestResourceToPlayer(trx, player, resource, quantity);
 	return true;
 }

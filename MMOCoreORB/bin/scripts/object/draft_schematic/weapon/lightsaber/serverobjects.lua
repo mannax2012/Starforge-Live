@@ -47,6 +47,12 @@
 -- Server Objects
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_r_unstable_s01_gen4.lua")
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_l_unstable_s01_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_unstable_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_unstable_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen4.lua")
 
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen1.lua")
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen2.lua")

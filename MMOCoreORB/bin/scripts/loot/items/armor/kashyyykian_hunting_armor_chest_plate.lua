@@ -7,9 +7,9 @@ kashyyykian_hunting_armor_chest_plate = {
 		{"armor_rating",1,1,0},
 		{"armor_effectiveness",8,39,10},
 		{"armor_integrity",30000,55000,0},
-		{"armor_health_encumbrance",350,210,0},
-		{"armor_action_encumbrance",157,93,0},
-		{"armor_mind_encumbrance",400,240,0},
+		{"armor_health_encumbrance",0,0,0},
+		{"armor_action_encumbrance",0,0,0},
+		{"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 

@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_wke_shirt_s01 = object_draft_schematic_
    complexity = 4, 
    size = 3, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_general", 
    xp = 40, 
 

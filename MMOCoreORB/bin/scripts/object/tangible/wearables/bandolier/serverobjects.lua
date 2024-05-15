@@ -65,3 +65,7 @@ includeFile("tangible/wearables/bandolier/ith_mercenary_bandolier.lua")
 includeFile("tangible/wearables/bandolier/ith_multipocket_bandolier.lua")
 includeFile("tangible/wearables/bandolier/mercenary_bandolier.lua")
 includeFile("tangible/wearables/bandolier/multipocket_bandolier.lua")
+
+includeFile("tangible/wearables/bandolier/bandolier_tusken_raider_s01_crafted.lua")
+includeFile("tangible/wearables/bandolier/bandolier_tusken_raider_s02_crafted.lua")
+includeFile("tangible/wearables/bandolier/bandolier_tusken_raider_s03_crafted.lua")

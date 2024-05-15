@@ -7,6 +7,7 @@
 #include "server/zone/managers/creature/CreatureManager.h"
 #include "server/zone/objects/creature/CreatureObject.h"
 #include "server/zone/objects/transaction/TransactionLog.h"
+#include "server/zone/managers/stringid/StringIdManager.h"
 #include "engine/engine.h"
 
 class MilkCreatureTask : public Task {
@@ -28,7 +29,7 @@ public:
 
 		Locker _clocker(player, creature);
 
-		if (!creature->isInRange(player, 7.f) || creature->isDead()) {
+		if (!creature->isInRange(player, 10.f) || creature->isDead()) {
 			updateMilkState(CreatureManager::NOTMILKED);
 			player->sendSystemMessage("@skl_use:milk_too_far"); // The creature has moved too far away to continue milking it.
 			return;
@@ -121,16 +122,20 @@ public:
 		float density = resourceSpawn->getDensityAt(player->getZone()->getZoneName(), player->getPositionX(), player->getPositionY());
 
 		if (density > 0.80f) {
-			quantityExtracted = int(quantityExtracted * 1.25f);
+			quantityExtracted = int(quantityExtracted * 2.50f);
 		} else if (density > 0.60f) {
-			quantityExtracted = int(quantityExtracted * 1.00f);
+			quantityExtracted = int(quantityExtracted * 2.00f);
 		} else if (density > 0.40f) {
-			quantityExtracted = int(quantityExtracted * 0.75f);
+			quantityExtracted = int(quantityExtracted * 1.50f);
 		} else {
-			quantityExtracted = int(quantityExtracted * 0.50f);
+			quantityExtracted = int(quantityExtracted * 1.00f);
 		}
 
-		TransactionLog trx(TrxCode::HARVESTED, player, resourceSpawn);
+		if (player->hasSkill("outdoors_ranger_master")) {
+			quantityExtracted =  quantityExtracted * 2.0;
+		}
+		player->sendSystemMessage("You have successfully gathered " + String::valueOf(quantityExtracted) + " units of milk."); // You have successfully gathered milk from the creature!
+		TransactionLog trx(TrxCode::HARVESTED, player, resourceSpawn, quantityExtracted);
 		resourceManager->harvestResourceToPlayer(trx, player, resourceSpawn, quantityExtracted);
 
 		updateMilkState(CreatureManager::ALREADYMILKED);

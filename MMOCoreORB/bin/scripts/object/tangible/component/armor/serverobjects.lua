@@ -45,6 +45,7 @@
 --Children folder includes
 
 -- Server Objects
+includeFile("tangible/component/armor/objects.lua")
 includeFile("tangible/component/armor/armor_layer.lua")
 includeFile("tangible/component/armor/armor_layer_acid.lua")
 includeFile("tangible/component/armor/armor_layer_blast.lua")
@@ -74,6 +75,8 @@ includeFile("tangible/component/armor/armor_segment_chitin_brackaset.lua")
 includeFile("tangible/component/armor/armor_segment_chitin_kliknick.lua")
 includeFile("tangible/component/armor/armor_segment_chitin_kliknick_adv.lua")
 includeFile("tangible/component/armor/armor_segment_chitin_sharnaff.lua")
+includeFile("tangible/component/armor/armor_segment_droid.lua")
+includeFile("tangible/component/armor/armor_segment_droid_advanced.lua")
 includeFile("tangible/component/armor/armor_segment_composite.lua")
 includeFile("tangible/component/armor/armor_segment_composite_advanced.lua")
 includeFile("tangible/component/armor/armor_segment_composite_krayt.lua")

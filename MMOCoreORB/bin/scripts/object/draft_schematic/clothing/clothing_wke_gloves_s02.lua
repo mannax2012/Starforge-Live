@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_wke_gloves_s02 = object_draft_schematic
    complexity = 4, 
    size = 2, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_general", 
    xp = 30, 
 

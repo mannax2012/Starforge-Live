@@ -47,7 +47,7 @@ object_draft_schematic_space_chassis_tieinterceptor = object_draft_schematic_spa
 	craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 35,
 	size = 1,
-	factoryCrateSize = 0,
+	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_generic_items.iff",
 
 	xpType = "shipwright",

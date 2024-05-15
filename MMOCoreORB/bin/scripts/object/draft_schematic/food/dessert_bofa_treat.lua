@@ -50,6 +50,7 @@ object_draft_schematic_food_dessert_bofa_treat = object_draft_schematic_food_sha
    craftingToolTab = 4, -- (See DraftSchematicObjectTemplate.h)
    complexity = 3, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_food.iff",
    
    xpType = "crafting_general", 

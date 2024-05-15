@@ -8,9 +8,9 @@ kashyyykian_black_mtn_armor_chest_plate = {
 		{"kineticeffectiveness",10,40,10},
 		{"armor_effectiveness",4,29,10},
 		{"armor_integrity",18750, 31250,0},
-		{"armor_health_encumbrance",233,143,0},
-		{"armor_action_encumbrance",142,88,0},
-		{"armor_mind_encumbrance",370,221,0},
+		{"armor_health_encumbrance",0,0,0},
+		{"armor_action_encumbrance",0,0,0},
+		{"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 

@@ -50,6 +50,7 @@ object_draft_schematic_food_dish_exo_protein_wafers = object_draft_schematic_foo
    craftingToolTab = 4, -- (See DraftSchematicObjectTemplate.h)
    complexity = 3, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_food.iff",
    
    xpType = "crafting_general", 

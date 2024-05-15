@@ -92,7 +92,8 @@ object_tangible_wearables_ring_aakuan_ring = object_tangible_wearables_ring_shar
 				"object/mobile/vendor/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
-				"object/mobile/vendor/zabrak_male.iff" },
+				"object/mobile/vendor/zabrak_male.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_ring_aakuan_ring, "object/tangible/wearables/ring/aakuan_ring.iff")

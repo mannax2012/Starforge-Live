@@ -18,6 +18,10 @@ public:
 		if (!checkStateMask(creature))
 			return INVALIDSTATE;
 
+		if (creature->isRidingMount())
+		creature->sendSystemMessage("You cannot perform that skill while mounted.");
+			return INVALIDSTATE;
+
 		if (!checkInvalidLocomotions(creature))
 			return INVALIDLOCOMOTION;
 

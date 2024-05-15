@@ -40,6 +40,15 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_tangible_wearables_base_shared_base_bandolier_bag = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/wearables/base/shared_base_bandolier_bag.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_wearables_base_shared_base_bandolier_bag, 
+"object/tangible/wearables/base/shared_base_bandolier_bag.iff")
+
+object_tangible_wearables_base_shared_base_fannypack = SharedTangibleObjectTemplate:new {
+clientTemplateFileName = "object/tangible/wearables/base/shared_base_fannypack.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_wearables_base_shared_base_fannypack, 
+"object/tangible/wearables/base/shared_base_fannypack.iff")
 
 object_tangible_wearables_base_shared_armor_base = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/base/shared_armor_base.iff"

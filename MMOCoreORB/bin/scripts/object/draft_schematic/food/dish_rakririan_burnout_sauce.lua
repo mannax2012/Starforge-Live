@@ -50,6 +50,7 @@ object_draft_schematic_food_dish_rakririan_burnout_sauce = object_draft_schemati
    craftingToolTab = 4, -- (See DraftSchematicObjectTemplate.h)
    complexity = 12, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_food.iff",
    
    xpType = "crafting_food_general", 

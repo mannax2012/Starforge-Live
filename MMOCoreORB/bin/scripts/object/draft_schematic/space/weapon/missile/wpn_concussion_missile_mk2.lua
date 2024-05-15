@@ -50,6 +50,7 @@ object_draft_schematic_space_weapon_missile_wpn_concussion_missile_mk2 = object_
    craftingToolTab = 131072, -- (See DraftSchematicObjectTemplate.h)
    complexity = 19, 
    size = 0, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_electronics.iff",
    
    xpType = "shipwright", 

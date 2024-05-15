@@ -1742,6 +1742,19 @@ void CreatureObjectImplementation::updateSpeedAndAccelerationMods() {
 		sendSpeedAndAccelerationMods(asSceneObject());
 	}
 
+	float speedboost = 0;
+
+	if(posture == CreaturePosture::PRONE && !hasBuff(CreatureState::COVER)) {
+		speedboost = getSkillMod("slope_move") >= 50
+				? ((getSkillMod("slope_move") - 50.0f) / 100.0f) / 2 : 0;
+	}
+
+	if (!isRidingMount()) {
+        setSpeedMultiplierMod(CreaturePosture::instance()->getMovementScale(speedboost + posture), true, true);
+        setAccelerationMultiplierMod(CreaturePosture::instance()->getAccelerationScale(posture), true, true);
+        setTurnScale(CreaturePosture::instance()->getTurnScale(posture), true);
+	}
+
 	// Terrain Negotiation.
 	updateSlopeMods(notifyClient);
 	updateWaterMod(notifyClient);

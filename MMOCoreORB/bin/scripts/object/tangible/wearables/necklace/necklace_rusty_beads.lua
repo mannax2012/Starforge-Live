@@ -83,7 +83,8 @@ object_tangible_wearables_necklace_necklace_rusty_beads = object_tangible_wearab
 				"object/mobile/vendor/twilek_male.iff",
 				"object/mobile/vendor/weequay_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
-				"object/mobile/vendor/zabrak_male.iff" },
+				"object/mobile/vendor/zabrak_male.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_necklace_necklace_rusty_beads, "object/tangible/wearables/necklace/necklace_rusty_beads.iff")

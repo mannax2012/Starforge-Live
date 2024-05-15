@@ -62,7 +62,8 @@ object_weapon_melee_2h_sword_crafted_saber_sword_lightsaber_two_handed_gen5 = ob
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK, 
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -101,9 +102,9 @@ object_weapon_melee_2h_sword_crafted_saber_sword_lightsaber_two_handed_gen5 = ob
 	noTrade = 1,
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 105,
-	actionAttackCost = 50,
-	mindAttackCost = 55,
+	healthAttackCost = 0,
+	actionAttackCost = 350,
+	mindAttackCost = 0,
 	forceCost = 60,
 
 	pointBlankRange = 0,

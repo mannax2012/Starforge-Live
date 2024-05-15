@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_dress_formal_08_quest = object_draft_sc
    complexity = 23, 
    size = 4, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
-
+   factoryCrateSize = 1000,
    xpType = "crafting_clothing_general", 
    xp = 330, 
 

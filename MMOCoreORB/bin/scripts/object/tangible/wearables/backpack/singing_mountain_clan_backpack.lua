@@ -61,7 +61,8 @@ object_tangible_wearables_backpack_singing_mountain_clan_backpack = object_tangi
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_backpack_singing_mountain_clan_backpack, "object/tangible/wearables/backpack/singing_mountain_clan_backpack.iff")

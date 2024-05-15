@@ -51,6 +51,7 @@ object_draft_schematic_clothing_clothing_armor_bone_boots = object_draft_schemat
    complexity = 12, 
    size = 3, 
    factoryCrateType = "object/factory/factory_crate_clothing.iff",
+   factoryCrateSize = 1000,
 
    xpType = "crafting_general", 
    xp = 130, 

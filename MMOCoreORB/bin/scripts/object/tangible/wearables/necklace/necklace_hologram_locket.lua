@@ -83,7 +83,8 @@ object_tangible_wearables_necklace_necklace_hologram_locket = object_tangible_we
 				"object/mobile/vendor/twilek_male.iff",
 				"object/mobile/vendor/weequay_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
-				"object/mobile/vendor/zabrak_male.iff" },
+				"object/mobile/vendor/zabrak_male.iff",
+				"object/creature/player/general_grievous.iff" },
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_necklace_necklace_hologram_locket, "object/tangible/wearables/necklace/necklace_hologram_locket.iff")

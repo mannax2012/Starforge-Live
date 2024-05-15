@@ -50,6 +50,7 @@ object_draft_schematic_food_dessert_kiwik_clusjo_swirl = object_draft_schematic_
    craftingToolTab = 4, -- (See DraftSchematicObjectTemplate.h)
    complexity = 10, 
    size = 1, 
+	factoryCrateSize = 1000,
    factoryCrateType = "object/factory/factory_crate_food.iff",
    
    xpType = "crafting_food_general", 

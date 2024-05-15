@@ -45,6 +45,8 @@
 --Children folder includes
 
 -- Server Objects
+includeFile("tangible/wearables/hat/hat_tusken_raider_crafted.lua")
+
 includeFile("tangible/wearables/hat/hat_chef_s01.lua")
 includeFile("tangible/wearables/hat/hat_chef_s02.lua")
 includeFile("tangible/wearables/hat/hat_imp_s01.lua")

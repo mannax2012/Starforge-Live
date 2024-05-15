@@ -2362,6 +2362,39 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					},
 					"Master", "science_medic_master"
 				},
+				"Mechanic",
+				{
+					"Novice", "crafting_mechanic_novice",
+					"Landspeeders",
+					{
+						"Landspeeders I", "crafting_mechanic_landspeeder_01",
+						"Landspeeders II", "crafting_mechanic_landspeeder_02",
+						"Landspeeders III", "crafting_mechanic_landspeeder_03",
+						"Landspeeders IV", "crafting_mechanic_landspeeder_04"
+					},
+					"Speederbikes",
+					{
+						"Speederbikes I", "crafting_mechanic_speederbike_01",
+						"Speederbikes II", "crafting_mechanic_speederbike_02",
+						"Speederbikes III", "crafting_mechanic_speederbike_03",
+						"Speederbikes IV", "crafting_mechanic_speederbike_04"
+					},
+					"Modules",
+					{
+						"Modules I", "crafting_mechanic_modules_01",
+						"Modules II", "crafting_mechanic_modules_02",
+						"Modules III", "crafting_mechanic_modules_03",
+						"Modules IV", "crafting_mechanic_modules_04"
+					},
+					"Techniques",
+					{
+						"Techniques I", "crafting_mechanic_techniques_01",
+						"Techniques II", "crafting_mechanic_techniques_02",
+						"Techniques III", "crafting_mechanic_techniques_03",
+						"Techniques IV", "crafting_mechanic_techniques_04"
+					},
+					"Master", "crafting_mechanic_master"
+				},
 				"Merchant",
 				{
 					"Novice", "crafting_merchant_novice",

@@ -62,7 +62,8 @@ object_weapon_melee_unarmed_unarmed_default_player = object_weapon_melee_unarmed
 				"object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+				"object/creature/player/zabrak_female.iff",
+				"object/creature/player/general_grievous.iff" },
 	
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -103,9 +104,9 @@ object_weapon_melee_unarmed_unarmed_default_player = object_weapon_melee_unarmed
 	       
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 10,
-	actionAttackCost = 10,
-        mindAttackCost = 10,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+        mindAttackCost = 0,
 	forceCost = 0,
 	
 	pointBlankAccuracy = 0,

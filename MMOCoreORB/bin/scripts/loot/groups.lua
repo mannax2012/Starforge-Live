@@ -1,3 +1,9 @@
+--custom
+includeFile("groups/custom/unstable_crystal_pack.lua")
+includeFile("groups/custom/tusken_raider_schematics.lua")
+includeFile("groups/custom/starforge_vendor_token.lua")
+includeFile("groups/custom/heavy_starforge_vendor_token.lua")
+
 includeFile("groups/armor_attachments.lua")
 includeFile("groups/clothing_attachments.lua")
 includeFile("groups/coa_encoded_disk_fragments.lua")
@@ -6,6 +12,7 @@ includeFile("groups/coa2_rebel_message.lua")
 includeFile("groups/coa3_caravan_disk.lua")
 includeFile("groups/coa3_alderaan_flora.lua")
 includeFile("groups/color_crystals.lua")
+includeFile("groups/color_crystals_bw.lua")
 includeFile("groups/power_crystals.lua")
 includeFile("groups/data_storage_unit_parts.lua")
 includeFile("groups/fenri_dalso_drop.lua")

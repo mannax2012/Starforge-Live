@@ -54,7 +54,7 @@ object_draft_schematic_clothing_clothing_wke_hood_s02 = object_draft_schematic_c
 
    xpType = "crafting_clothing_general", 
    xp = 60, 
-
+   factoryCrateSize = 1000,
    assemblySkill = "clothing_assembly", 
    experimentingSkill = "clothing_experimentation", 
    customizationSkill = "clothing_customization", 
