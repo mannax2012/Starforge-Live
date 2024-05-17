@@ -50,7 +50,7 @@ object_draft_schematic_vehicle_civilian_podracer_sebulba = object_draft_schemati
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 25, 
 	size = 10,
-	factoryCrateSize = 1000,
+	factoryCrateSize = 0,
 	factoryCrateType = "object/factory/factory_crate_installation.iff",
    
 	xpType = "crafting_mechanic", 

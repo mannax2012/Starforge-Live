@@ -50,7 +50,7 @@ object_draft_schematic_vehicle_civilian_podracer_balta = object_draft_schematic_
 	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
 	complexity = 25, 
 	size = 10,
-	factoryCrateSize = 1000,
+	factoryCrateSize = 0,
 	factoryCrateType = "object/factory/factory_crate_installation.iff",
    
 	xpType = "crafting_mechanic", 
