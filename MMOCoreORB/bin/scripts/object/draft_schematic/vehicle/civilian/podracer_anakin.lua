@@ -64,12 +64,12 @@ object_draft_schematic_vehicle_civilian_podracer_anakin = object_draft_schematic
 	customizationStringNames = {},
 	customizationDefaults = {},
 
-	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
-	ingredientTitleNames = {"vehicle_body", "structural_frame", "chassis_lubrication", "power_supply", "engine_unit", "vehicle_enhancement_1"},
-	ingredientSlotType = {0, 0, 0, 1, 1, 3},
-	resourceTypes = {"aluminum", "steel", "petrochem_inert", "object/tangible/component/item/shared_electronic_power_conditioner.iff", "object/tangible/component/item/shared_electronic_energy_distributor.iff", "object/tangible/component/vehicle/shared_base_vehicle_enhancement.iff"},
-	resourceQuantities = {1200, 2400, 260, 2, 2, 1},
-	contribution = {100, 100, 100, 100, 100, 100},
+	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
+	ingredientTitleNames = {"vehicle_body", "structural_frame", "chassis_lubrication", "power_supply", "engine_unit", "vehicle_enhancement_1", "vehicle_enhancement_2"},
+	ingredientSlotType = {0, 0, 0, 1, 1, 3, 3},
+	resourceTypes = {"aluminum", "steel", "petrochem_inert", "object/tangible/component/item/shared_electronic_power_conditioner.iff", "object/tangible/component/item/shared_electronic_energy_distributor.iff", "object/tangible/component/vehicle/shared_base_vehicle_enhancement.iff", "object/tangible/component/vehicle/shared_base_vehicle_enhancement.iff"},
+	resourceQuantities = {1600, 3200, 350, 3, 3, 1, 1},
+	contribution = {100, 100, 100, 100, 100, 100, 100},
 
 
 	targetTemplate = "object/tangible/deed/vehicle_deed/podracer_anakin_deed.iff",
