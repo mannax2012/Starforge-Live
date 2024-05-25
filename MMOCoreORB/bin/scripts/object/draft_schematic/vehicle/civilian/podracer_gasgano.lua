@@ -41,33 +41,38 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_draft_schematic_vehicle_civilian_podracer_gasgano = object_draft_schematic_vehicle_civilian_shared_podracer_gasgano:new {
 
---Children folder includes
+	templateType = DRAFTSCHEMATIC,
 
--- Server Objects
-includeFile("tangible/deed/vehicle_deed/jetpack_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_av21_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_x31_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_x34_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_flash_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_swoop_deed.lua")
-includeFile("tangible/deed/vehicle_deed/vehicle_deed_base.lua")
-includeFile("tangible/deed/vehicle_deed/vehicular_prototype_bike_deed.lua")
-includeFile("tangible/deed/vehicle_deed/vehicular_prototype_deed.lua")
-includeFile("tangible/deed/vehicle_deed/air2_swoop_speeder_deed.lua")
-includeFile("tangible/deed/vehicle_deed/barc_speeder_deed.lua")
-includeFile("tangible/deed/vehicle_deed/flare_s_swoop_deed.lua")
-includeFile("tangible/deed/vehicle_deed/sith_speeder_deed.lua")
-includeFile("tangible/deed/vehicle_deed/a1_deluxe_floater_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_ab1_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_xp38_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_v35_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_anakin_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_sebulba_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_balta_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_ipg_deed.lua")
---includeFile("tangible/deed/vehicle_deed/podracer_fg_8t8_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_gasgano_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_mawhonical_deed.lua")
---
+	customObjectName = "Podracer",
+
+	craftingToolTab = 16, -- (See DraftSchematicObjectTemplate.h)
+	complexity = 25, 
+	size = 10,
+	factoryCrateSize = 0,
+	factoryCrateType = "object/factory/factory_crate_installation.iff",
+   
+	xpType = "crafting_mechanic", 
+	xp = 1930, 
+
+	assemblySkill = "vehicle_assembly", 
+	experimentingSkill = "vehicle_experimentation", 
+	customizationSkill = "", 
+
+	customizationOptions = {},
+	customizationStringNames = {},
+	customizationDefaults = {},
+
+	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
+	ingredientTitleNames = {"vehicle_body", "structural_frame", "chassis_lubrication", "power_supply", "engine_unit", "vehicle_enhancement_1", "vehicle_enhancement_2"},
+	ingredientSlotType = {0, 0, 0, 1, 1, 3, 3},
+	resourceTypes = {"aluminum", "steel", "petrochem_inert", "object/tangible/component/item/shared_electronic_power_conditioner.iff", "object/tangible/component/item/shared_electronic_energy_distributor.iff", "object/tangible/component/vehicle/shared_base_vehicle_enhancement.iff", "object/tangible/component/vehicle/shared_base_vehicle_enhancement.iff"},
+	resourceQuantities = {1600, 3200, 350, 3, 3, 1, 1},
+	contribution = {100, 100, 100, 100, 100, 100, 100},
+
+	targetTemplate = "object/tangible/deed/vehicle_deed/podracer_gasgano_deed.iff",
+
+	additionalTemplates = {}
+}
+ObjectTemplates:addTemplate(object_draft_schematic_vehicle_civilian_podracer_gasgano, "object/draft_schematic/vehicle/civilian/podracer_gasgano.iff")

@@ -488,3 +488,38 @@ object_intangible_vehicle_shared_landspeeder_v35_pcd = SharedIntangibleObjectTem
 }
 
 ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_landspeeder_v35_pcd, "object/intangible/vehicle/shared_landspeeder_v35_pcd.iff")
+
+object_intangible_vehicle_shared_podracer_anakin_pcd = SharedIntangibleObjectTemplate:new {
+	clientTemplateFileName = "object/intangible/vehicle/shared_podracer_anakin_pcd.iff"}
+ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_podracer_anakin_pcd,
+ "object/intangible/vehicle/shared_podracer_anakin_pcd.iff")
+ 
+object_intangible_vehicle_shared_podracer_sebulba_pcd = SharedIntangibleObjectTemplate:new {
+	clientTemplateFileName = "object/intangible/vehicle/shared_podracer_sebulba_pcd.iff"}
+ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_podracer_sebulba_pcd,
+ "object/intangible/vehicle/shared_podracer_sebulba_pcd.iff")
+
+ object_intangible_vehicle_shared_podracer_balta_pcd = SharedIntangibleObjectTemplate:new {
+	clientTemplateFileName = "object/intangible/vehicle/shared_podracer_balta_pcd.iff"}
+ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_podracer_balta_pcd,
+ "object/intangible/vehicle/shared_podracer_balta_pcd.iff")
+
+ object_intangible_vehicle_shared_podracer_ipg_pcd = SharedIntangibleObjectTemplate:new {
+	clientTemplateFileName = "object/intangible/vehicle/shared_podracer_ipg_pcd.iff"}
+ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_podracer_ipg_pcd,
+ "object/intangible/vehicle/shared_podracer_ipg_pcd.iff")
+
+ object_intangible_vehicle_shared_podracer_fg_8t8_pcd = SharedIntangibleObjectTemplate:new {
+	clientTemplateFileName = "object/intangible/vehicle/shared_podracer_fg_8t8_pcd.iff"}
+ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_podracer_fg_8t8_pcd,
+ "object/intangible/vehicle/shared_podracer_fg_8t8_pcd.iff")
+
+ object_intangible_vehicle_shared_podracer_mawhonical_pcd = SharedIntangibleObjectTemplate:new {
+	clientTemplateFileName = "object/intangible/vehicle/shared_podracer_mawhonical_pcd.iff"}
+ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_podracer_mawhonical_pcd,
+ "object/intangible/vehicle/shared_podracer_mawhonical_pcd.iff")
+
+ object_intangible_vehicle_shared_podracer_gasgano_pcd = SharedIntangibleObjectTemplate:new {
+	clientTemplateFileName = "object/intangible/vehicle/shared_podracer_gasgano_pcd.iff"}
+ObjectTemplates:addClientTemplate(object_intangible_vehicle_shared_podracer_gasgano_pcd,
+ "object/intangible/vehicle/shared_podracer_gasgano_pcd.iff")

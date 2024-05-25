@@ -3,23 +3,28 @@ Created on: 08/09, 2021
 Author: TheTinyPebble
 Modified: Mannax
 ]]--
-BackpacksVendorLogic = ScreenPlay:new {
-	scriptName = "BackpacksVendorLogic",
+VehiclesVendorLogic = ScreenPlay:new {
+	scriptName = "VehiclesVendorLogic",
 	currencies = {
 			{currency = "credits"},
 			{currency = "experience", name = "Starforge Currency", experience =  "starforge_currency"},
 		        },
 
-		merchandise_backpacks = { -- Displayed name, full template string (without the shared_), cost {} - follow same order as the currencies setup previously
-		{name = "Starforge Backpack", template = "object/tangible/loot/loot_schematic/starforge_backpack_schematic.iff", cost = {0, 10000}},
+		merchandise_vehicles = { -- Displayed name, full template string (without the shared_), cost {} - follow same order as the currencies setup previously
+		{name = "Anakin's Podracer Schematic", template = "object/tangible/loot/loot_schematic/vehicle/podracer_anakin_schematic.iff", cost = {0, 10000}},
+		{name = "Sebulba's Podracer Schematic", template = "object/tangible/loot/loot_schematic/vehicle/podracer_sebulba_schematic.iff", cost = {0, 10000}},
+		{name = "Balta's Podracer Schematic", template = "object/tangible/loot/loot_schematic/vehicle/podracer_balta_schematic.iff", cost = {0, 10000}},
+		{name = "IPG Podracer Schematic", template = "object/tangible/loot/loot_schematic/vehicle/podracer_ipg_schematic.iff", cost = {0, 10000}},
+		{name = "Gasgano Podracer Schematic", template = "object/tangible/loot/loot_schematic/vehicle/podracer_gasgano_schematic.iff", cost = {0, 10000}},
+		{name = "Mawhonical Podracer Schematic", template = "object/tangible/loot/loot_schematic/vehicle/podracer_mawhonical_schematic.iff", cost = {0, 10000}},
 	    },
 }
 
-registerScreenPlay("BackpacksVendorLogic", false)
+registerScreenPlay("VehiclesVendorLogic", false)
 
 --GEN3
-function BackpacksVendorLogic:openSUIBackpacks(pCreatureObject, pUsingObject)
-	local sui = SuiListBox.new(self.scriptName, "defaultCallbackBackpacks")
+function VehiclesVendorLogic:openSUIVehicles(pCreatureObject, pUsingObject)
+	local sui = SuiListBox.new(self.scriptName, "defaultCallbackVehicles")
 
 	if (pUsingObject == nil) then
 		sui.setTargetNetworkId(0)
@@ -29,20 +34,20 @@ function BackpacksVendorLogic:openSUIBackpacks(pCreatureObject, pUsingObject)
 
 	sui.setForceCloseDistance(16)
 
-	sui.setTitle("Backpack Schematics")
+	sui.setTitle("Vehicle Schematics")
 
 	local message = "Please select which item you want to buy."
 	sui.setPrompt(message)
 
-	for i = 1, #self.merchandise_backpacks, 1 do
-		local merchString = self:getMerchandiseStringBackpacks(i)
+	for i = 1, #self.merchandise_vehicles, 1 do
+		local merchString = self:getMerchandiseStringVehicles(i)
 		sui.add(merchString, "")
 	end
 
 	sui.sendTo(pCreatureObject)
 end
 
-function BackpacksVendorLogic:defaultCallbackBackpacks(pPlayer, pSui, eventIndex, args)
+function VehiclesVendorLogic:defaultCallbackVehicles(pPlayer, pSui, eventIndex, args)
 	local cancelPressed = (eventIndex == 1)
 
 	if (cancelPressed) then
@@ -56,11 +61,11 @@ function BackpacksVendorLogic:defaultCallbackBackpacks(pPlayer, pSui, eventIndex
 
 	local selectedOption = tonumber(args) + 1
 
-	self:buyItemBackpacks(pPlayer, selectedOption)
+	self:buyItemVehicles(pPlayer, selectedOption)
 end
 
-function BackpacksVendorLogic:buyItemBackpacks(pPlayer, itemSelected)
-	local merch = self.merchandise_backpacks[itemSelected]
+function VehiclesVendorLogic:buyItemVehicles(pPlayer, itemSelected)
+	local merch = self.merchandise_vehicles[itemSelected]
 	local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
 	local containerSize = SceneObject(pInventory):getContainerObjectsSize()
 	local pGhost = CreatureObject(pPlayer):getPlayerObject()
@@ -74,7 +79,7 @@ function BackpacksVendorLogic:buyItemBackpacks(pPlayer, itemSelected)
 		return
 	end
 
-	local canPurchase = self:hasEnoughCurrencyBackpacks(pPlayer, itemSelected)
+	local canPurchase = self:hasEnoughCurrencyVehicles(pPlayer, itemSelected)
 
 	if (canPurchase) then
 		for i = 1, #merch.cost do
@@ -84,7 +89,7 @@ function BackpacksVendorLogic:buyItemBackpacks(pPlayer, itemSelected)
 			local cost = merch.cost[i]
 			if (cost ~= 0) then
 				if (currency == "token") then
-					self:payTokensBackpacks(pPlayer, itemSelected, i)
+					self:payTokensVehicles(pPlayer, itemSelected, i)
 				end
 				if (currency == "credits") then 
 					if (cost <= CreatureObject(pPlayer):getCashCredits()) then
@@ -117,8 +122,8 @@ function BackpacksVendorLogic:buyItemBackpacks(pPlayer, itemSelected)
 	end
 end
 
-function BackpacksVendorLogic:getMerchandiseStringBackpacks(num)
-	local merch = self.merchandise_backpacks[num]
+function VehiclesVendorLogic:getMerchandiseStringVehicles(num)
+	local merch = self.merchandise_vehicles[num]
 	local merchString = merch.name .. " ("
 
 	for i = 1, #merch.cost do
@@ -144,7 +149,7 @@ function BackpacksVendorLogic:getMerchandiseStringBackpacks(num)
 	merchString = merchString .. ")"
 	return merchString:gsub(", %)", ")")
 end
-function BackpacksVendorLogic:hasEnoughCurrencyBackpacks(pPlayer, num)
+function VehiclesVendorLogic:hasEnoughCurrencyVehicles(pPlayer, num)
 	local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
 	local containerSize = SceneObject(pInventory):getContainerObjectsSize()
 	local pGhost = CreatureObject(pPlayer):getPlayerObject()
@@ -153,7 +158,7 @@ function BackpacksVendorLogic:hasEnoughCurrencyBackpacks(pPlayer, num)
 		return
 	end
 
-	local merch = self.merchandise_backpacks[num]
+	local merch = self.merchandise_vehicles[num]
 
 	for i = 1, #merch.cost do
 		local currency = self.currencies[i].currency
@@ -205,12 +210,12 @@ function BackpacksVendorLogic:hasEnoughCurrencyBackpacks(pPlayer, num)
 
 	return true
 end
-function BackpacksVendorLogic:payTokensBackpacks(pPlayer, selectedItem, num)
+function VehiclesVendorLogic:payTokensVehicles(pPlayer, selectedItem, num)
 	local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
 	local containerSize = SceneObject(pInventory):getContainerObjectsSize()
 	local pGhost = CreatureObject(pPlayer):getPlayerObject()
 	
-	local merch = self.merchandise_backpacks[selectedItem]
+	local merch = self.merchandise_vehicles[selectedItem]
 	local tokenCost = merch.cost[num]
 	deleteItems = 0
 	tokens = 0

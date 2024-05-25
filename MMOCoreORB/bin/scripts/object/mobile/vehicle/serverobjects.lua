@@ -63,3 +63,11 @@ includeFile("mobile/vehicle/flare_s_swoop.lua");
 includeFile("mobile/vehicle/landspeeder_ab1.lua");
 includeFile("mobile/vehicle/landspeeder_v35.lua");
 includeFile("mobile/vehicle/sith_speeder.lua");
+includeFile("mobile/vehicle/podracer_anakin.lua");
+includeFile("mobile/vehicle/podracer_sebulba.lua");
+includeFile("mobile/vehicle/podracer_balta.lua");
+includeFile("mobile/vehicle/podracer_fg_8t8.lua");
+includeFile("mobile/vehicle/podracer_ipg.lua");
+includeFile("mobile/vehicle/podracer_gasgano.lua");
+includeFile("mobile/vehicle/podracer_mawhonical.lua");
+

@@ -1,0 +1,5 @@
+object_intangible_vehicle_podracer_fg_8t8_pcd = object_intangible_vehicle_shared_podracer_fg_8t8_pcd:new {
+
+}
+
+ObjectTemplates:addTemplate(object_intangible_vehicle_podracer_fg_8t8_pcd, "object/intangible/vehicle/podracer_fg_8t8_pcd.iff")

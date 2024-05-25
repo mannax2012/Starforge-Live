@@ -42,6 +42,14 @@
 
 
 schematics = {
+	--Podracers
+	{path="object/draft_schematic/vehicle/civilian/podracer_anakin.iff"},
+	{path="object/draft_schematic/vehicle/civilian/podracer_balta.iff"},
+	{path="object/draft_schematic/vehicle/civilian/podracer_gasgano.iff"},
+	{path="object/draft_schematic/vehicle/civilian/podracer_ipg.iff"},
+	{path="object/draft_schematic/vehicle/civilian/podracer_mawhonical.iff"},
+	{path="object/draft_schematic/vehicle/civilian/podracer_sebulba.iff"},
+
 	--Tusken Clothing
 	{path="object/draft_schematic/clothing/custom/clothing_bandolier_tusken_raider_bag_s01_schematic.iff"},
 	{path="object/draft_schematic/clothing/custom/clothing_bandolier_tusken_raider_bag_s02_schematic.iff"},

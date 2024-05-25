@@ -41,33 +41,13 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_loot_loot_schematic_vehicle_podracer_ipg_schematic = object_tangible_loot_loot_schematic_vehicle_shared_podracer_ipg_schematic:new {
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = "LootSchematicMenuComponent",
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_mechanic_master",
+	targetDraftSchematic = "object/draft_schematic/vehicle/civilian/podracer_ipg.iff",
+	targetUseCount = 1
+}
 
---Children folder includes
-
--- Server Objects
-includeFile("tangible/deed/vehicle_deed/jetpack_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_av21_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_x31_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_x34_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_flash_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_swoop_deed.lua")
-includeFile("tangible/deed/vehicle_deed/vehicle_deed_base.lua")
-includeFile("tangible/deed/vehicle_deed/vehicular_prototype_bike_deed.lua")
-includeFile("tangible/deed/vehicle_deed/vehicular_prototype_deed.lua")
-includeFile("tangible/deed/vehicle_deed/air2_swoop_speeder_deed.lua")
-includeFile("tangible/deed/vehicle_deed/barc_speeder_deed.lua")
-includeFile("tangible/deed/vehicle_deed/flare_s_swoop_deed.lua")
-includeFile("tangible/deed/vehicle_deed/sith_speeder_deed.lua")
-includeFile("tangible/deed/vehicle_deed/a1_deluxe_floater_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_ab1_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_xp38_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_v35_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_anakin_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_sebulba_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_balta_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_ipg_deed.lua")
---includeFile("tangible/deed/vehicle_deed/podracer_fg_8t8_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_gasgano_deed.lua")
-includeFile("tangible/deed/vehicle_deed/podracer_mawhonical_deed.lua")
---
+ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_vehicle_podracer_ipg_schematic, "object/tangible/loot/loot_schematic/vehicle/podracer_ipg_schematic.iff")
