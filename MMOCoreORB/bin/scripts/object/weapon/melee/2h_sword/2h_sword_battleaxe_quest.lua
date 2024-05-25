@@ -63,7 +63,8 @@ object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_s
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",
-				"object/creature/player/general_grievous.iff" },
+				"object/creature/player/general_grievous.iff",
+				"object/creature/player/nk3.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK

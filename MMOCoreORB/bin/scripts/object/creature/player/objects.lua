@@ -129,6 +129,35 @@ clientTemplateFileName = "object/creature/player/shared_general_grievous.iff"}
 ObjectTemplates:addClientTemplate(object_creature_player_shared_general_grievous, 
 "object/creature/player/shared_general_grievous.iff")
 
+object_creature_player_shared_bd1 = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/creature/player/shared_bd1.iff"}
+ObjectTemplates:addClientTemplate(object_creature_player_shared_bd1, 
+"object/creature/player/shared_bd1.iff")
+
+object_creature_player_shared_hk50 = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/creature/player/shared_hk50.iff"}
+ObjectTemplates:addClientTemplate(object_creature_player_shared_hk50, 
+"object/creature/player/shared_hk50.iff")
+
+object_creature_player_shared_ig106 = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/creature/player/shared_ig106.iff"}
+ObjectTemplates:addClientTemplate(object_creature_player_shared_ig106, 
+"object/creature/player/shared_ig106.iff")
+
+object_creature_player_shared_nk3 = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/creature/player/shared_nk3.iff"}
+ObjectTemplates:addClientTemplate(object_creature_player_shared_nk3, 
+"object/creature/player/shared_nk3.iff")
+
+object_creature_player_shared_pit = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/creature/player/shared_pit.iff"}
+ObjectTemplates:addClientTemplate(object_creature_player_shared_pit, 
+"object/creature/player/shared_pit.iff")
+
+object_creature_player_shared_sbd = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/creature/player/shared_sbd.iff"}
+ObjectTemplates:addClientTemplate(object_creature_player_shared_sbd, 
+"object/creature/player/shared_sbd.iff")
 
 object_creature_player_shared_bothan_male = SharedCreatureObjectTemplate:new {
 	clientTemplateFileName = "object/creature/player/shared_bothan_male.iff"

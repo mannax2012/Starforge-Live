@@ -63,7 +63,8 @@ object_weapon_melee_knife_knife_donkuwah = object_weapon_melee_knife_shared_knif
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",
-				"object/creature/player/general_grievous.iff" },
+				"object/creature/player/general_grievous.iff",
+				"object/creature/player/nk3.iff" },
 	
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
