@@ -63,7 +63,13 @@ object_weapon_ranged_carbine_carbine_e11_quest = object_weapon_ranged_carbine_sh
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",
-				"object/creature/player/general_grievous.iff" },
+				"object/creature/player/general_grievous.iff",
+				"object/creature/player/pit.iff",
+				"object/creature/player/sbd.iff",
+				"object/creature/player/bd1.iff",
+				"object/creature/player/nk3.iff",
+				"object/creature/player/ig106.iff",
+				"object/creature/player/hk50.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK, 
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK

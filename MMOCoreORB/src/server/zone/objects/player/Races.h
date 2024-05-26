@@ -29,6 +29,12 @@ const static char* Species[] = {
     "sullustan", // sullustan female
     "ithorian",  // DA E7   -   ithorian female
     "general_grievous" // NK-1 Droid
+    //"bd1" // BD-1 Droid
+    //"hk50" // NK-1 Droid
+    //"ig106" // IG-106 Droid
+    "nk3" // NK-3 Droid
+    "pit" // Pit Droid
+   // "sbd" // Super Battle Droid
 };
 
 const static int TemplateSpecies[] = {
@@ -77,6 +83,12 @@ const static char* Gender[] = {
     "female", // sullustan female
     "female",  // DA E7   -   ithorian female
     "male" // NK-1 Droid Male
+    "male" // BD-1 Droid
+    "male" // NK-1 Droid
+    "male" // IG-106 Droid
+    "male" // NK-3 Droid
+    "male" // Pit Droid
+    "male" // Super Battle Droid
 };
 
 const static char* RaceStrs[] = {
@@ -101,6 +113,12 @@ const static char* RaceStrs[] = {
     "object/creature/player/shared_sullustan_female.iff", // sullustan female
     "object/creature/player/shared_ithorian_female.iff",  // DA E7   -   ithorian female
     "object/creature/player/shared_general_grievous.iff" // NK-1 Droid
+    //"object/creature/player/shared_bd1.iff" // 
+    //"object/creature/player/shared_hk50.iff" // 
+    //"object/creature/player/shared_ig106.iff" // 
+    "object/creature/player/shared_pit.iff" // 
+    //"object/creature/player/shared_sbd.iff" // 
+    "object/creature/player/shared_nk3.iff" // 
 };
 
 const static char* CCRaceStrs[] = {
@@ -125,6 +143,12 @@ const static char* CCRaceStrs[] = {
     "object/creature/player/sullustan_female.iff", // sullustan female
     "object/creature/player/ithorian_female.iff",  // DA E7   -   ithorian female
     "object/creature/player/general_grievous.iff" // NK-1 Droid
+    //"object/creature/player/bd1.iff" // 
+    //"object/creature/player/hk50.iff" // 
+    //"object/creature/player/ig106.iff" // 
+    "object/creature/player/pit.iff" // 
+    //"object/creature/player/sbd.iff" // 
+    "object/creature/player/nk3.iff" // 
 };
 
 static uint32 SharedRace[] = {
@@ -148,7 +172,13 @@ static uint32 SharedRace[] = {
     0x0DAB65E2,
     0x1573341A,
     0xB3E08013,
-    0x968AED64 // NK-1 droid
+    0x968AED64, // NK-1 droid
+    //0x4E9D4617, // bd1
+    //0xFB915871, // hk50
+    //0x8798269F, // ig106
+    0xF33F9675, // nk3
+    0x6E906F52, // pit droid
+    //0xD84B5D2A  // super battle droid
 };
 
 static unsigned int attributeLimits[10][19] = {

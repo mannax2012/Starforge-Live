@@ -59,5 +59,5 @@ professionSpecificItems = {
 	social_entertainer = { }
 }
 
-commonStartingItems = { marojMelon, survivalKnife, speederBike, backpack, marksmanPistol, marksmanCarbine, marksmanRifle, brawlerOneHander, brawlerTwoHander, brawlerPolearm, genericTool, mineralTool, chemicalTool,
-genericTool, mineralTool, foodTool, slitherhorn }
+commonStartingItems = { marojMelon, survivalKnife, speederBike, backpack, marksmanPistol, marksmanCarbine, marksmanRifle, brawlerOneHander, brawlerTwoHander, brawlerPolearm, mineralTool, chemicalTool,
+genericTool, foodTool, slitherhorn }

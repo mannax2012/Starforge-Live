@@ -62,7 +62,12 @@ object_tangible_wearables_backpack_backpack_s06 = object_tangible_wearables_back
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",
-				"object/creature/player/general_grievous.iff" },
+				"object/creature/player/general_grievous.iff",
+				"object/creature/player/sbd.iff",
+				"object/creature/player/bd1.iff",
+				"object/creature/player/nk3.iff",
+				"object/creature/player/ig106.iff",
+				"object/creature/player/hk50.iff" },
 
 	numberExperimentalProperties = {1, 1, 1, 1},
 	experimentalProperties = {"XX", "XX", "XX", "XX"},
