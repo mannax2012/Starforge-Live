@@ -304,14 +304,25 @@ void LootManagerImplementation::setRandomLootValues(TransactionLog& trx, Tangibl
 }
 
 TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx, const LootItemTemplate* templateObject, int level, bool maxCondition) {
+	auto debugAttributes = ConfigManager::instance()->getBool("Core3.LootManager.DebugAttributes", false);
 	int uncappedLevel = level;
 
 #ifdef DEBUG_LOOT_MAN
 	info(true) << " ---------- LootManagerImplementation::createLootObject -- called ----------";
 #endif
 
-	trx.addState("lootVersion", 2);
+	//force lego/exceptional
+	bool forceLegendary = false;
+	bool forceExceptional = false;
 
+	if (level >= 200000) {
+		forceLegendary = true;
+		level %= 1000;
+	}
+	else if (level >= 100000) {
+		forceExceptional = true;
+		level %= 1000;
+	}
 	level = (level < LootManager::LEVELMIN) ? LootManager::LEVELMIN : level;
 	level = (level > LootManager::LEVELMAX) ? LootManager::LEVELMAX : level;
 
@@ -324,10 +335,6 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 #ifdef DEBUG_LOOT_MAN
 	info(true) << "Item Template: " << directTemplateObject << "    Level = " << level << " Uncapped Level = " << uncappedLevel;
 #endif
-
-	if (templateObject->isRandomResourceContainer()) {
-		return createLootResource(templateObject->getTemplateName(), "tatooine");
-	}
 
 	ManagedReference<TangibleObject*> prototype = zoneServer->createObject(directTemplateObject.hashCode(), 2).castTo<TangibleObject*>();
 
@@ -355,6 +362,21 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 		fJunkValue = fJunkValue + (fJunkValue * ((float)level / 100)); // This is the loot value calculation if the item has a level
 	}
 
+	AttributesMap attributesMap = templateObject->getAttributesMapCopy();
+	CraftingValues* craftingValues = new CraftingValues(attributesMap);
+
+#ifdef DEBUG_LOOT_MAN
+	info(true) << "---- Iterating the initial values map copied from Loot Template Object -----";
+
+	for (int i = 0; i < craftingValues->getTotalExperimentalAttributes(); ++i) {
+		String attribute = craftingValues->getAttribute(i);
+
+		info(true) << "Crafting Values Attribute: " << attribute;
+	}
+
+	info(true) << "---- END Iterating the initial values map copied from Loot Template Object -----";
+#endif
+
 	setCustomizationData(templateObject, prototype);
 	setCustomObjectName(prototype, templateObject);
 
@@ -364,9 +386,11 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 
 	trx.addState("lootAdjustment", adjustment);
 
-	if (System::random(legendaryChance) >= legendaryChance - adjustment) {
-		UnicodeString newName = prototype->getDisplayedName() + " (Legendary)";
-		prototype->setCustomObjectName(newName, false);
+	if (System::random(legendaryChance) >= legendaryChance - adjustment || forceLegendary) {
+		if (!prototype->isAttachment()) { 
+			UnicodeString newName = prototype->getDisplayedName() + " (Legendary)";
+			prototype->setCustomObjectName(newName, false);
+		}
 
 		excMod = legendaryModifier;
 
@@ -374,15 +398,18 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 
 		legendaryLooted.increment();
 		trx.addState("lootIsLegendary", true);
-	} else if (System::random(exceptionalChance) >= exceptionalChance - adjustment) {
-		UnicodeString newName = prototype->getDisplayedName() + " (Exceptional)";
-		prototype->setCustomObjectName(newName, false);
+	} else if (System::random(exceptionalChance) >= exceptionalChance - adjustment || forceExceptional) {
+		if (!prototype->isAttachment()) { 
+			UnicodeString newName = prototype->getDisplayedName() + " (Exceptional)";
+			prototype->setCustomObjectName(newName, false);
+		}
 
 		excMod = exceptionalModifier;
 
 		prototype->addMagicBit(false);
 
-		exceptionalLooted.increment();
+				if (!forceExceptional)
+			exceptionalLooted.increment();
 		trx.addState("lootIsExceptional", true);
 	}
 
@@ -399,12 +426,151 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 			crystal->setItemLevel(uncappedLevel);
 	}
 
-	setRandomLootValues(trx, prototype, templateObject, uncappedLevel, excMod);
+	String attribute;
+	bool yellow = false;
+	JSONSerializationType attrDebug;
 
-	if (excMod == 1.f && (prototype->getOptionsBitmask() & OptionBitmask::YELLOW)) {
-		yellowLooted.increment();
-		trx.addState("lootIsYellow", true);
+	for (int i = 0; i < craftingValues->getTotalExperimentalAttributes(); ++i) {
+		attribute = craftingValues->getAttribute(i);
 
+#ifdef DEBUG_LOOT_MAN
+		info(true) << "LootMan:: updating Crafting attribute: " << attribute;
+#endif
+
+		if (attribute == "hitpoints" && !prototype->isComponent()) {
+			continue;
+		}
+
+		float min = craftingValues->getMinValue(attribute);
+		float max = craftingValues->getMaxValue(attribute);
+
+#ifdef DEBUG_LOOT_MAN
+		info(true) << "Base Min = " << min;
+		info(true) << "Base Max = " << max;
+#endif
+
+		if (min == max)
+			continue;
+
+		float percentage = System::random(10000) / 10000.f;
+
+#ifdef DEBUG_LOOT_MAN
+		info(true) << "Percentage = " << percentage;
+#endif
+
+		// If the attribute is represented by an integer (useCount, maxDamage,
+		// range mods, etc), we need to base the percentage on a random roll
+		// of possible values (min -> max), otherwise only an exact roll of
+		// 10000 will result in the top of the range being chosen.
+		// (Mantis #7869)
+		int precision = craftingValues->getPrecision(attribute);
+
+		if (precision == (int)AttributesMap::VALUENOTFOUND) {
+			error ("No precision found for " + attribute);
+		} else if (precision == 0) {
+			int range = abs(max-min);
+			int randomValue = System::random(range);
+			percentage = (float)randomValue / (float)(range);
+
+#ifdef DEBUG_LOOT_MAN
+			info(true) << "Precision is 0. Updating percentage -- Percentage = " << percentage;
+#endif
+		}
+
+		craftingValues->setCurrentPercentage(attribute, percentage);
+
+		if (attribute == "maxrange" || attribute == "midrange" || attribute == "zerorangemod" || attribute == "maxrangemod" || attribute == "forcecost") {
+			continue;
+		}
+
+		if (attribute == "midrangemod" && !prototype->isComponent()) {
+			continue;
+		}
+
+		if (attribute == "useCount" || attribute == "quantity" || attribute == "charges" || attribute == "uses" || attribute == "charge") {
+			continue;
+		}
+
+		float minMod = (max > min) ? 2000.f : -2000.f;
+		float maxMod = (max > min) ? 500.f : -500.f;
+
+		if (max > min && min >= 0) { // Both max and min non-negative, max is higher
+			min = ((min * level / minMod) + min) * excMod;
+			max = ((max * level / maxMod) + max) * excMod;
+
+		} else if (max > min && max <= 0) { // Both max and min are non-positive, max is higher
+			minMod *= -1;
+			maxMod *= -1;
+			min = ((min * level / minMod) + min) / excMod;
+			max = ((max * level / maxMod) + max) / excMod;
+
+		} else if (max > min) { // max is positive, min is negative
+			minMod *= -1;
+			min = ((min * level / minMod) + min) / excMod;
+			max = ((max * level / maxMod) + max) * excMod;
+
+		} else if (max < min && max >= 0) { // Both max and min are non-negative, min is higher
+			min = ((min * level / minMod) + min) / excMod;
+			max = ((max * level / maxMod) + max) / excMod;
+
+		} else if (max < min && min <= 0) { // Both max and min are non-positive, min is higher
+			minMod *= -1;
+			maxMod *= -1;
+			min = ((min * level / minMod) + min) * excMod;
+			max = ((max * level / maxMod) + max) * excMod;
+
+		} else { // max is negative, min is positive
+			maxMod *= -1;
+			min = ((min * level / minMod) + min) / excMod;
+			max = ((max * level / maxMod) + max) * excMod;
+		}
+
+		if (excMod == 1.0 && (yellowChance == 0 || System::random(yellowChance) == 0)) {
+			if (max > min && min >= 0) {
+				min *= yellowModifier;
+				max *= yellowModifier;
+			} else if (max > min && max <= 0) {
+				min /= yellowModifier;
+				max /= yellowModifier;
+			} else if (max > min) {
+				min /= yellowModifier;
+				max *= yellowModifier;
+			} else if (max < min && max >= 0) {
+				min /= yellowModifier;
+				max /= yellowModifier;
+			} else if (max < min && min <= 0) {
+				min *= yellowModifier;
+				max *= yellowModifier;
+			} else {
+				min /= yellowModifier;
+				max *= yellowModifier;
+			}
+
+			yellow = true;
+
+			yellowLooted.increment();
+			trx.addState("lootIsYellow", true);
+		}
+
+		craftingValues->setMinValue(attribute, min);
+		craftingValues->setMaxValue(attribute, max);
+
+		if (debugAttributes) {
+			JSONSerializationType attrDebugEntry;
+			attrDebugEntry["pct"] = percentage;
+			attrDebugEntry["min"] = min;
+			attrDebugEntry["max"] = max;
+			attrDebug[attribute] = attrDebugEntry;
+		}
+
+#ifdef DEBUG_LOOT_MAN
+		info(true) << attribute << " min value = " << min;
+		info(true) << attribute << " max value = " << max;
+#endif
+	}
+
+	if (yellow) {
+		prototype->addMagicBit(false);
 		prototype->setJunkValue((int)(fJunkValue * 1.25));
 	} else {
 		if (excMod == 1.0) {
@@ -416,15 +582,93 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 
 	trx.addState("lootJunkValue", prototype->getJunkValue());
 
+	// Use percentages to recalculate the values
+	craftingValues->recalculateValues(false);
+
+	craftingValues->addExperimentalAttribute("creatureLevel", "creatureLevel", level, level, 0, false, AttributesMap::LINEARCOMBINE);
+	craftingValues->setHidden("creatureLevel");
+
+	//check weapons and weapon components for min damage > max damage
+	if (prototype->isComponent() || prototype->isWeaponObject()) {
+		if (craftingValues->hasExperimentalAttribute("mindamage") && craftingValues->hasExperimentalAttribute("maxdamage")) {
+			float oldMin = craftingValues->getCurrentValue("mindamage");
+			float oldMax = craftingValues->getCurrentValue("maxdamage");
+
+			if (oldMin > oldMax) {
+				craftingValues->setCurrentValue("mindamage", oldMax);
+				craftingValues->setCurrentValue("maxdamage", oldMin);
+			}
+		}
+	}
+
 	// Add Dots to weapon objects.
 	addStaticDots(prototype, templateObject, level);
 	addRandomDots(prototype, templateObject, level, excMod);
 
 	setSkillMods(prototype, templateObject, level, excMod);
 
+	setSockets(prototype, craftingValues);
+
+	// Update the Tano with new values
+	prototype->updateCraftingValues(craftingValues, true);
+
 	//add some condition damage where appropriate
 	if (!maxCondition)
-		addConditionDamage(prototype);
+		addConditionDamage(prototype, craftingValues);
+
+	if (debugAttributes) {
+		for (int i = 0; i < craftingValues->getTotalExperimentalAttributes(); ++i) {
+			attribute = craftingValues->getAttribute(i);
+
+			if (attrDebug.contains(attribute.toCharArray())) {
+				attrDebug[attribute]["final"] = craftingValues->getCurrentValue(attribute);
+			}
+		}
+
+		if (!attrDebug.empty()) {
+			trx.addState("lootAttributeDebug", attrDebug);
+		}
+	}
+
+		if (prototype != nullptr && prototype->isAttachment()) {
+		Attachment* attachment = cast<Attachment*>(prototype.get());
+
+		if (attachment == nullptr)
+			return nullptr;
+
+		// Infinity:   We want to override the UpdateCraftingValues here for Attachments to enable us
+		// to create new specific loot groups for attachments!
+		attachment->updateCraftingValues(craftingValues, true, templateObject->getTemplateName());
+		delete craftingValues;
+
+		HashTable<String, int>* mods = attachment->getSkillMods();
+		HashTableIterator<String, int> iterator = mods->iterator();
+		StringId attachmentName;
+		String key = "";
+		int currentValue = 0;
+		int highest = 0;
+		String attachmentType = "[AA] ";
+		String attachmentCustomName = "";
+
+		if(attachment->isClothingAttachment()){
+			attachmentType = "[CA] ";
+		}
+
+		for(int i = 0; i < mods->size(); ++i) {
+			iterator.getNextKeyAndValue(key, currentValue);
+			if (currentValue > highest){
+				highest = currentValue;
+				attachmentName.setStringId("stat_n", key);
+				prototype->setObjectName(attachmentName, false);
+				attachmentCustomName = attachmentType + prototype->getDisplayedName() + " " + String::valueOf(currentValue);
+			}
+		}
+		prototype->setCustomObjectName(attachmentCustomName, false);	
+
+	}
+	else {
+		delete craftingValues;
+	}
 
 	trx.addState("lootConditionDmg", prototype->getConditionDamage());
 	trx.addState("lootConditionMax", prototype->getMaxCondition());
@@ -507,7 +751,7 @@ TangibleObject* LootManagerImplementation::createLootResource(const String& reso
 	return nullptr;
 }
 
-void LootManagerImplementation::addConditionDamage(TangibleObject* prototype) {
+void LootManagerImplementation::addConditionDamage(TangibleObject* prototype, CraftingValues* craftingValues) {
 	if (!prototype->isWeaponObject() && !prototype->isArmorObject()) {
 		return;
 	}
@@ -558,7 +802,7 @@ void LootManagerImplementation::setSkillMods(TangibleObject* object, const LootI
 			if(mod == 0)
 				mod = 1;
 
-			String modName = getRandomLootableMod( object->getGameObjectType() );
+			String modName = getRandomLootableMod( object->getGameObjectType(), templateObject->getTemplateName());
 			if( !modName.isEmpty() )
 				additionalMods.put(modName, mod);
 		}
@@ -583,11 +827,11 @@ void LootManagerImplementation::setSkillMods(TangibleObject* object, const LootI
 		object->addMagicBit(false);
 }
 
-String LootManagerImplementation::getRandomLootableMod( unsigned int sceneObjectType ) {
+String LootManagerImplementation::getRandomLootableMod( unsigned int sceneObjectType, const String& lootTemplateName ) {
 	if( sceneObjectType == SceneObjectType::ARMORATTACHMENT ){
 		return lootableArmorAttachmentMods.get(System::random(lootableArmorAttachmentMods.size() - 1));
 	}
-	else if( sceneObjectType == SceneObjectType::CLOTHINGATTACHMENT ){
+	else if( sceneObjectType == SceneObjectType::CLOTHINGATTACHMENT && lootTemplateName == "attachment_clothing"){
 		return lootableClothingAttachmentMods.get(System::random(lootableClothingAttachmentMods.size() - 1));
 	}
 	else if( sceneObjectType == SceneObjectType::ARMOR || sceneObjectType == SceneObjectType::BODYARMOR ||
@@ -639,6 +883,14 @@ String LootManagerImplementation::getRandomLootableMod( unsigned int sceneObject
 		return "";
 	}
 
+}
+
+void LootManagerImplementation::setSockets(TangibleObject* object, CraftingValues* craftingValues) {
+	if (object->isWearableObject() && craftingValues->hasExperimentalAttribute("sockets")) {
+		ManagedReference<WearableObject*> wearableObject = cast<WearableObject*>(object);
+		// Round number of sockets to closes integer.
+		wearableObject->setMaxSockets(craftingValues->getCurrentValue("sockets") + 0.5);
+	}
 }
 
 bool LootManagerImplementation::createLoot(TransactionLog& trx, SceneObject* container, AiAgent* creature) {
