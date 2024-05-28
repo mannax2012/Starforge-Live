@@ -4,7 +4,7 @@ nightsister_ascendant = Creature:new {
 	socialGroup = "mercenary",
 	faction = "",
 	mobType = MOB_NPC,
-	level = 300,
+	level = 323,
 	chanceHit = 25.0,
 	damageMin = 1225,
 	damageMax = 1925,
@@ -30,6 +30,29 @@ nightsister_ascendant = Creature:new {
 
 	templates = {"object/mobile/dressed_dathomir_nightsister_protector.iff"},
 	lootGroups = {
+		{
+			groups = {
+				{group = "power_crystals", chance = 500000},
+				{group = "color_crystals", chance = 500000},
+				{group = "nightsister_common", chance = 2300000},
+				{group = "armor_attachments", chance = 350000},
+				{group = "clothing_attachments", chance = 350000},
+				{group = "melee_weapons", chance = 2000000},
+				{group = "rifles", chance = 1000000},
+				{group = "pistols", chance = 1000000},
+				{group = "carbines", chance = 1000000},
+				{group = "wearables_common", chance = 500000},
+				{group = "tailor_components", chance = 500000}
+			},
+			lootChance = 10000000,
+		},
+
+		{
+			groups = {
+				{group = "rakata_skull_totem", chance = 10000000}
+			},
+			lootChance = 500000,
+		},
 	},
 
 	primaryWeapon = "light_jedi_weapons",

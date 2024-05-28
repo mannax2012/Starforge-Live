@@ -53,7 +53,7 @@ object_draft_schematic_chemistry_component_liquid_delivery_suspension = object_d
 	factoryCrateSize = 1000,
 	factoryCrateType = "object/factory/factory_crate_chemicals.iff",
 
-	xpType = "crafting_medicine_general",
+	xpType = "medical",
 	xp = 35,
 
 	assemblySkill = "medicine_assembly",

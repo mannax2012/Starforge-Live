@@ -41,38 +41,10 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_draft_schematic_chemistry_component_liquid_delivery_suspension_advanced = object_draft_schematic_chemistry_component_shared_liquid_delivery_suspension_advanced:new {
-
-	templateType = DRAFTSCHEMATIC,
-
-	customObjectName = "Advanced Liquid Suspension",
-
-	craftingToolTab = 64, -- (See DraftSchematicObjectTemplate.h)
-	complexity = 18,
-	size = 2,
-	factoryCrateSize = 1000,
-	factoryCrateType = "object/factory/factory_crate_chemicals.iff",
-
-	xpType = "medical",
-	xp = 25,
-
-	assemblySkill = "medicine_assembly",
-	experimentingSkill = "medicine_experimentation",
-	customizationSkill = "medicine_customization",
-
-	customizationOptions = {},
-	customizationStringNames = {},
-	customizationDefaults = {},
-
-	ingredientTemplateNames = {"craft_chemical_ingredients_n", "craft_chemical_ingredients_n"},
-	ingredientTitleNames = {"purified_organic_suspension", "suspension_base"},
-	ingredientSlotType = {0, 0},
-	resourceTypes = {"fruit_berries_dantooine", "water_vapor_talus"},
-	resourceQuantities = {6, 6},
-	contribution = {100, 100},
-
-	targetTemplate = "object/tangible/component/chemistry/liquid_delivery_suspension_advanced.iff",
-
-	additionalTemplates = {}
+object_tangible_item_dath_disciple_alter = object_tangible_item_shared_dath_disciple_alter:new {
+    --gameObjectType = 8252,
+    objectMenuComponent = "DathBossMenuComponent",
+	--useCount = 1,
 }
-ObjectTemplates:addTemplate(object_draft_schematic_chemistry_component_liquid_delivery_suspension_advanced, "object/draft_schematic/chemistry/component/liquid_delivery_suspension_advanced.iff")
+
+ObjectTemplates:addTemplate(object_tangible_item_dath_disciple_alter, "object/tangible/item/dath_disciple_alter.iff")
