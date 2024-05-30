@@ -32,7 +32,7 @@ function DathBossMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer, sel
     
             if pSupplies ~= nil then
 
-                if readData("dathBossSpawned") ~= 1 then
+                if readData("dathBossSpawned") == 0 then
                     CreatureObject(pPlayer):sendSystemMessage("You place the skull totem on the altar... Something doesn't feel right...")
                     writeData("dathBossSpawned", 1)
 

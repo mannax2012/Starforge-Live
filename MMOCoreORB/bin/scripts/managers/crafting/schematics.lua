@@ -42,6 +42,51 @@
 
 
 schematics = {
+
+	--Cal Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_cal_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_cal_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_cal_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_cal_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_polearm_cal_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_polearm_cal_gen4.iff"},
+
+	--ezra Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra_gen4.iff"},
+
+	--ezra2 Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra2_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra2_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra2_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra2_gen4.iff"},
+
+	--kanan Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_kanan_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_kanan_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_kanan_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_kanan_gen4.iff"},
+
+	--kylo Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_kylo_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_kylo_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_kylo_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_kylo_gen4.iff"},
+
+	--rahm Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_rahm_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_rahm_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_rahm_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_rahm_gen4.iff"},
+
+	--rey5 Sabers
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_rey5_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_one_hand_rey5_gen4.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_rey5_gen3.iff"},
+	{path="object/draft_schematic/weapon/lightsaber/lightsaber_two_hand_rey5_gen4.iff"},
+
 	--Podracers
 	{path="object/draft_schematic/vehicle/civilian/podracer_anakin.iff"},
 	{path="object/draft_schematic/vehicle/civilian/podracer_balta.iff"},

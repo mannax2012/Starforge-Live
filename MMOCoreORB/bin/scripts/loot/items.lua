@@ -10,10 +10,40 @@ JUNKGUNGAN = 128
 JUNKCORSEC = 256
 
 --custom
+includeFile("items/custom/lightsaber_one_hand_cal_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_one_hand_cal_gen4_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_cal_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_cal_gen4_schematic.lua")
+includeFile("items/custom/lightsaber_polearm_cal_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_polearm_cal_gen4_schematic.lua")
+
+includeFile("items/custom/lightsaber_one_hand_ezra_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_one_hand_ezra_gen4_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_ezra_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_ezra_gen4_schematic.lua")
+
+includeFile("items/custom/lightsaber_one_hand_ezra2_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_one_hand_ezra2_gen4_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_ezra2_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_ezra2_gen4_schematic.lua")
+
+includeFile("items/custom/lightsaber_one_hand_kanan_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_one_hand_kanan_gen4_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_kanan_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_kanan_gen4_schematic.lua")
+
+includeFile("items/custom/lightsaber_one_hand_rahm_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_one_hand_rahm_gen4_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_rahm_gen3_schematic.lua")
+includeFile("items/custom/lightsaber_two_hand_rahm_gen4_schematic.lua")
+
+includeFile("items/custom/vibro_unit_acid.lua")
 includeFile("items/custom/unstable_crystal.lua")
+includeFile("items/custom/rakata_skull.lua")
 includeFile("items/custom/starforge_token.lua")
 includeFile("items/custom/heavy_starforge_token.lua")
 includeFile("items/force_color_crystal_bw.lua")
+includeFile("items/force_color_crystal_rey.lua")
 
 includeFile("items/custom/tusken_belt_schematic.lua")
 includeFile("items/custom/tusken_boots_schematic.lua")

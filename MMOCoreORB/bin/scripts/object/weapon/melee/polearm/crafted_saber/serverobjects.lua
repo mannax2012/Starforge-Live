@@ -47,6 +47,8 @@
 -- Server Objects
 includeFile("weapon/melee/polearm/crafted_saber/sword_lightsaber_polearm_unstable_gen3.lua")
 includeFile("weapon/melee/polearm/crafted_saber/sword_lightsaber_polearm_unstable_gen4.lua")
+includeFile("weapon/melee/polearm/crafted_saber/sword_lightsaber_polearm_cal_gen3.lua")
+includeFile("weapon/melee/polearm/crafted_saber/sword_lightsaber_polearm_cal_gen4.lua")
 
 includeFile("weapon/melee/polearm/crafted_saber/sword_lightsaber_polearm_gen1.lua")
 includeFile("weapon/melee/polearm/crafted_saber/sword_lightsaber_polearm_gen2.lua")

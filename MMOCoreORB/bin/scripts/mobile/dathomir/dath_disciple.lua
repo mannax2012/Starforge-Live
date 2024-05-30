@@ -42,15 +42,22 @@ dath_disciple = Creature:new {
 			{group = "pistols", chance = 1000000},
 			{group = "carbines", chance = 1000000},
 			{group = "wearables_common", chance = 500000},
-			{group = "tailor_components", chance = 500000}
+			{group = "unstable_crystal_pack", chance = 500000}
 		},
 		lootChance = 10000000,
 		},
 
 		{
 		groups = {
-			{group = "unstable_crystal_pack", chance = 10000000}
+			{group = "rebels_lightsaber_schematics", chance = 10000000}
 		},
+		lootChance = 1500000,
+		},
+
+		{
+		groups = {
+			{group = "acid_vibro_unit", chance = 10000000}
+			},
 		lootChance = 1500000,
 		},
 
@@ -65,7 +72,7 @@ dath_disciple = Creature:new {
 	primaryWeapon = "light_jedi_weapons",
 	secondaryWeapon = "light_jedi_weapons",
 	conversationTemplate = "",
-
+	lightsaberColor = 33;
 	primaryAttacks = merge(lightsabermaster,forcepowermaster),
 	secondaryAttacks = merge(lightsabermaster,forcepowermaster)
 }

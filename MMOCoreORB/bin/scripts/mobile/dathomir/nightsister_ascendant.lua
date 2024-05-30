@@ -42,7 +42,7 @@ nightsister_ascendant = Creature:new {
 				{group = "pistols", chance = 1000000},
 				{group = "carbines", chance = 1000000},
 				{group = "wearables_common", chance = 500000},
-				{group = "tailor_components", chance = 500000}
+				{group = "color_crystals_bw", chance = 500000}
 			},
 			lootChance = 10000000,
 		},
@@ -51,7 +51,7 @@ nightsister_ascendant = Creature:new {
 			groups = {
 				{group = "rakata_skull_totem", chance = 10000000}
 			},
-			lootChance = 500000,
+			lootChance = 50000,
 		},
 	},
 

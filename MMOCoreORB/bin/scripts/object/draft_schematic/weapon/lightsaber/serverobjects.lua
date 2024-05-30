@@ -45,14 +45,52 @@
 --Children folder includes
 
 -- Server Objects
+
+
+--Custom
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_r_unstable_s01_gen4.lua")
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_dw_l_unstable_s01_gen4.lua")
+
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen3.lua")
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_unstable_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_kylo_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_kylo_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra2_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_ezra2_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_cal_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_cal_gen4.lua")
+--includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_cal2_gen3.lua")
+--includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_cal2_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_kanan_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_kanan_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_rey5_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_rey5_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_rahm_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_rahm_gen4.lua")
+
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_unstable_gen3.lua")
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_unstable_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_kylo_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_kylo_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra2_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_ezra2_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_cal_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_cal_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_kanan_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_kanan_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_rey5_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_rey5_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_rahm_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_two_hand_rahm_gen4.lua")
+
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen3.lua")
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen4.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_cal_gen3.lua")
+includeFile("draft_schematic/weapon/lightsaber/lightsaber_polearm_cal_gen4.lua")
 
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen1.lua")
 includeFile("draft_schematic/weapon/lightsaber/lightsaber_one_hand_gen2.lua")
