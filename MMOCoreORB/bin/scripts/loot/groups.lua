@@ -1,4 +1,5 @@
 --custom
+includeFile("groups/custom/tusken_king_rare.lua")
 includeFile("groups/custom/rakata_skull_totem.lua")
 includeFile("groups/custom/unstable_crystal_pack.lua")
 includeFile("groups/custom/tusken_raider_schematics.lua")

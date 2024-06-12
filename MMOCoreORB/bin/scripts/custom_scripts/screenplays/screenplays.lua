@@ -1,5 +1,6 @@
 --custom
 includeFile("../custom_scripts/screenplays/starforge_vendor_spawn.lua")
+includeFile("../custom_scripts/screenplays/world_boss/tusken_king_boss.lua")
 
 includeFile("../custom_scripts/screenplays/vendor/starforge_vendor_logic.lua")
 includeFile("../custom_scripts/screenplays/vendor/vendor_weapon_lightsaber.lua")

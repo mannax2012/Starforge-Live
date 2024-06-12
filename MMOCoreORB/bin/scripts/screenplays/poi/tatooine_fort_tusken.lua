@@ -11,7 +11,7 @@ FortTuskenScreenPlay = ScreenPlay:new {
 		7875789
 	},
 
-	lootLevel = 26,
+	lootLevel = 216,
 
 	lootGroups = {
 		{
@@ -136,7 +136,7 @@ function FortTuskenScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "tusken_chief",300,14.0,22.6,5.2,58,1189182)
 	spawnMobile("tatooine", "tusken_warlord",300,25.3,22,11.4,91,1189182)
 	spawnMobile("tatooine", "tusken_brute",300,29.1,21.9,10.1,-88,1189182)
-	spawnMobile("tatooine", "tusken_warlord",300,37.2,22.9,19.7,165,1189182)
+	--spawnMobile("tatooine", "tusken_warlord",300,37.2,22.9,19.7,165,1189182)
 	spawnMobile("tatooine", "tusken_death_hunter",300,38.0,20.8,-3.6,-51,1189182)
 	spawnMobile("tatooine", "tusken_chief",300,31,21.5,-9.4,167,1189182)
 	spawnMobile("tatooine", "tusken_death_hunter",300,32.0,22.1,2.6,90,1189182)

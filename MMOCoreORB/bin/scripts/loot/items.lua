@@ -10,6 +10,8 @@ JUNKGUNGAN = 128
 JUNKCORSEC = 256
 
 --custom
+includeFile("items/custom/lance_trando_pike_schematic.lua")
+includeFile("items/custom/baton_gaderiffi_elite_schematic.lua")
 includeFile("items/custom/lightsaber_one_hand_cal_gen3_schematic.lua")
 includeFile("items/custom/lightsaber_one_hand_cal_gen4_schematic.lua")
 includeFile("items/custom/lightsaber_two_hand_cal_gen3_schematic.lua")
@@ -37,6 +39,9 @@ includeFile("items/custom/lightsaber_one_hand_rahm_gen4_schematic.lua")
 includeFile("items/custom/lightsaber_two_hand_rahm_gen3_schematic.lua")
 includeFile("items/custom/lightsaber_two_hand_rahm_gen4_schematic.lua")
 
+includeFile("items/custom/krayt_bone_shards_rare.lua")
+includeFile("items/custom/reinforcement_core_tusken.lua")
+includeFile("items/custom/krayt_dragon_tissue_rotten.lua")
 includeFile("items/custom/vibro_unit_acid.lua")
 includeFile("items/custom/unstable_crystal.lua")
 includeFile("items/custom/rakata_skull.lua")
