@@ -12,9 +12,9 @@ vibro_unit_advanced = {
 		{"woundchance",15,30,0},
 		{"hitpoints",50,100,0, true},
 		{"midrangemod",15,30,0},
-		{"attackhealthcost",10,0,0},
-		{"attackactioncost",10,0,0},
-		{"attackmindcost",10,0,0},
+		{"attackhealthcost",0,0,0},
+		{"attackactioncost",20,0,0},
+		{"attackmindcost",0,0,0},
 		{"useCount",1,11,0}
 	},
 	customizationStringName = {},

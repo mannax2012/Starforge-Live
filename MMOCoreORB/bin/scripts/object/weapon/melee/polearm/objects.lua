@@ -40,6 +40,10 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_weapon_melee_polearm_shared_lance_trando_pike = SharedWeaponObjectTemplate:new {
+	clientTemplateFileName = "object/weapon/melee/polearm/shared_lance_trando_pike.iff"}
+ObjectTemplates:addClientTemplate(object_weapon_melee_polearm_shared_lance_trando_pike,
+ "object/weapon/melee/polearm/shared_lance_trando_pike.iff")
 
 object_weapon_melee_polearm_shared_lance_controllerfp = SharedWeaponObjectTemplate:new {
 	clientTemplateFileName = "object/weapon/melee/polearm/shared_lance_controllerfp.iff"

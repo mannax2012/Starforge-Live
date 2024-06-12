@@ -107,9 +107,9 @@ object_weapon_ranged_pistol_pistol_scout_blaster_corsec = object_weapon_ranged_p
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 13,
-	actionAttackCost = 26,
-	mindAttackCost = 13,
+	healthAttackCost = 0,
+	actionAttackCost = 320,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,

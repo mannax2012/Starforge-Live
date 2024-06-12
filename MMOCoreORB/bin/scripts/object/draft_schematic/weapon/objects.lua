@@ -40,6 +40,20 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_draft_schematic_weapon_shared_lance_trando_pike = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/weapon/shared_lance_trando_pike.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_shared_lance_trando_pike, 
+"object/draft_schematic/weapon/shared_lance_trando_pike.iff")
+
+object_draft_schematic_weapon_shared_baton_gaderiffi_elite = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/weapon/shared_baton_gaderiffi_elite.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_shared_baton_gaderiffi_elite, 
+"object/draft_schematic/weapon/shared_baton_gaderiffi_elite.iff")
+
+object_draft_schematic_weapon_shared_rifle_e22 = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/weapon/shared_rifle_e22.iff"}
+ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_shared_rifle_e22, 
+"object/draft_schematic/weapon/shared_rifle_e22.iff")
 
 object_draft_schematic_weapon_shared_2h_sword_scythe = SharedDraftSchematicObjectTemplate:new {
 	clientTemplateFileName = "object/draft_schematic/weapon/shared_2h_sword_scythe.iff"

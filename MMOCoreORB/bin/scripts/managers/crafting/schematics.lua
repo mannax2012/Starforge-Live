@@ -178,6 +178,10 @@ schematics = {
 	{path="object/draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen3.iff"},
 	{path="object/draft_schematic/weapon/lightsaber/lightsaber_polearm_unstable_gen4.iff"},
 
+	--Weapons
+	{path="object/draft_schematic/weapon/baton_gaderiffi_elite.iff"},
+	{path="object/draft_schematic/weapon/lance_trando_pike.iff"},
+
 	{path="object/draft_schematic/community_crafting/component/connections.iff"},
 	{path="object/draft_schematic/community_crafting/component/endrost.iff"},
 	{path="object/draft_schematic/community_crafting/component/power_supply.iff"},

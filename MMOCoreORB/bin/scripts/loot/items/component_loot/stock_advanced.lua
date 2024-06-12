@@ -12,9 +12,9 @@ stock_advanced = {
 		{"woundchance",10,20,0},
 		{"hitpoints",50,100,0, true},
 		{"midrangemod",20,60,0},
-		{"attackhealthcost",20,0,0},
+		{"attackhealthcost",0,0,0},
 		{"attackactioncost",20,0,0},
-		{"attackmindcost",20,0,0},
+		{"attackmindcost",0,0,0},
 		{"useCount",1,11,0}
 	},
 	customizationStringName = {},

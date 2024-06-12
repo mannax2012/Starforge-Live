@@ -52,5 +52,6 @@ includeFile("weapon/melee/polearm/serverobjects.lua")
 includeFile("weapon/melee/special/serverobjects.lua")
 includeFile("weapon/melee/sword/serverobjects.lua")
 includeFile("weapon/melee/unarmed/serverobjects.lua")
+includeFile("weapon/melee/dual/serverobjects.lua")
 
 -- Server Objects

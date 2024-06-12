@@ -106,9 +106,9 @@ object_weapon_ranged_grenade_grenade_bug_bomb = object_weapon_ranged_grenade_sha
 
 	combatSpam = "throw_bug_bomb",
 
-	healthAttackCost = 97,
-	actionAttackCost = 97,
-	mindAttackCost = 45,
+	healthAttackCost = 0,
+	actionAttackCost = 320,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,

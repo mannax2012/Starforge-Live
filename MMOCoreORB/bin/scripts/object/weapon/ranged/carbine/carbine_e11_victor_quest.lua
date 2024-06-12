@@ -107,9 +107,9 @@ object_weapon_ranged_carbine_carbine_e11_victor_quest = object_weapon_ranged_car
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 16,
-	actionAttackCost = 26,
-	mindAttackCost = 43,
+	healthAttackCost = 0,
+	actionAttackCost = 320,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,

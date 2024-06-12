@@ -45,6 +45,8 @@
 --Children folder includes
 
 --Custom
+includeFile("tangible/loot/loot_schematic/lance_trando_pike_schematic.lua")
+includeFile("tangible/loot/loot_schematic/baton_gaderiffi_elite_schematic.lua")
 includeFile("tangible/loot/loot_schematic/starforge_backpack_schematic.lua")
 includeFile("tangible/loot/loot_schematic/tusken_raider_bandolier_s01_schematic.lua")
 includeFile("tangible/loot/loot_schematic/tusken_raider_bandolier_s02_schematic.lua")
