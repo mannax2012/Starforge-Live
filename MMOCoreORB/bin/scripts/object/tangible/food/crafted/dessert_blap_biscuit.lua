@@ -60,7 +60,7 @@ object_tangible_food_crafted_dessert_blap_biscuit = object_tangible_food_crafted
 	quantityMax = 6,
 	speciesRestriction = "pets",
 
-	modifiers = { "health", 0 },
+	modifiers = { "health", 0, "action", 0 },
 
 	buffName = "",
 	buffCRC = 0,

@@ -47,7 +47,7 @@ includeFile("draft_schematic/weapon/component/serverobjects.lua")
 includeFile("draft_schematic/weapon/lightsaber/serverobjects.lua")
 
 -- Server Objects
---includeFile("draft_schematic/weapon/rifle_e22.lua")
+includeFile("draft_schematic/weapon/rifle_e22.lua")
 includeFile("draft_schematic/weapon/baton_gaderiffi_elite.lua")
 includeFile("draft_schematic/weapon/lance_trando_pike.lua")
 

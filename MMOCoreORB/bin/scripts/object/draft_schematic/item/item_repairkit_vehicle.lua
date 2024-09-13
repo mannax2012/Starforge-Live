@@ -41,29 +41,40 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_draft_schematic_item_item_repairkit_vehicle = object_draft_schematic_item_shared_item_repairkit_vehicle:new {
 
---Children folder includes
+   templateType = DRAFTSCHEMATIC,
 
--- Server Objects
-includeFile("tangible/wearables/belt/belt_tusken_raider_crafted.lua")
-includeFile("tangible/wearables/belt/belt_jedi_padawan_pouch.lua")
+   customObjectName = "Vehicle Repair Tool",
 
-includeFile("tangible/wearables/belt/aakuan_belt.lua")
-includeFile("tangible/wearables/belt/belt_s01.lua")
-includeFile("tangible/wearables/belt/belt_s02.lua")
-includeFile("tangible/wearables/belt/belt_s03.lua")
-includeFile("tangible/wearables/belt/belt_s04.lua")
-includeFile("tangible/wearables/belt/belt_s05.lua")
-includeFile("tangible/wearables/belt/belt_s05_quest.lua")
-includeFile("tangible/wearables/belt/belt_s07.lua")
-includeFile("tangible/wearables/belt/belt_s09.lua")
-includeFile("tangible/wearables/belt/belt_s11.lua")
-includeFile("tangible/wearables/belt/belt_s12.lua")
-includeFile("tangible/wearables/belt/belt_s13.lua")
-includeFile("tangible/wearables/belt/belt_s14.lua")
-includeFile("tangible/wearables/belt/belt_s15.lua")
-includeFile("tangible/wearables/belt/belt_s16.lua")
-includeFile("tangible/wearables/belt/belt_s17.lua")
-includeFile("tangible/wearables/belt/belt_s18.lua")
-includeFile("tangible/wearables/belt/belt_s19.lua")
-includeFile("tangible/wearables/belt/belt_s20.lua")
+   craftingToolTab = 524288, -- (See DraftSchematicObjectTemplate.h)
+   complexity = 7, 
+   size = 4, 
+   factoryCrateType = "object/factory/factory_crate_electronics.iff",
+
+   xpType = "crafting_general", 
+   xp = 30, 
+
+   assemblySkill = "general_assembly", 
+   experimentingSkill = "general_experimentation", 
+   customizationSkill = "clothing_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_item_ingredients_n", "craft_item_ingredients_n"},
+   ingredientTitleNames = {"assembly_enclosure", "thermal_shielding"},
+   ingredientSlotType = {0, 0},
+   resourceTypes = {"metal", "metal"},
+   resourceQuantities = {10, 5},
+   contribution = {100, 100},
+
+
+   targetTemplate = "object/tangible/crafting/station/vehicle_repair.iff",
+
+   additionalTemplates = {
+             }
+
+}
+ObjectTemplates:addTemplate(object_draft_schematic_item_item_repairkit_vehicle, "object/draft_schematic/item/item_repairkit_vehicle.iff")

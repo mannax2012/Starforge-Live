@@ -9,6 +9,7 @@ function dath_discipleScreenplay:start()
 	if (isZoneEnabled(self.planet)) then
 		self:spawnMobiles()
 		self:spawnSceneObjects()
+		print("Dathomir Disciple Loaded")
 	end
 end
 
@@ -29,7 +30,7 @@ function dath_discipleScreenplay:spawnBoss(pPlayer)
 	CreatureObject(pPlayer):sendSystemMessage("A dark presence emerges from the shadows...")
 
         local creature = CreatureObject(pBoss)
-        AiAgent(pBoss):addObjectFlag(AI_STATIC)
+        CreatureObject(pBoss):engageCombat(pPlayer)
         createObserver(DAMAGERECEIVED, "dath_discipleScreenplay", "npcDamageObserver", pBoss)
         createObserver(OBJECTDESTRUCTION, "dath_discipleScreenplay", "bossDead", pBoss)
 end

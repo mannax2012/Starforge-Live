@@ -43,27 +43,7 @@
 
 
 --Children folder includes
+includeFile("weapon/melee/dual/crafted_saber/serverobjects.lua")
 
 -- Server Objects
-includeFile("tangible/wearables/belt/belt_tusken_raider_crafted.lua")
-includeFile("tangible/wearables/belt/belt_jedi_padawan_pouch.lua")
 
-includeFile("tangible/wearables/belt/aakuan_belt.lua")
-includeFile("tangible/wearables/belt/belt_s01.lua")
-includeFile("tangible/wearables/belt/belt_s02.lua")
-includeFile("tangible/wearables/belt/belt_s03.lua")
-includeFile("tangible/wearables/belt/belt_s04.lua")
-includeFile("tangible/wearables/belt/belt_s05.lua")
-includeFile("tangible/wearables/belt/belt_s05_quest.lua")
-includeFile("tangible/wearables/belt/belt_s07.lua")
-includeFile("tangible/wearables/belt/belt_s09.lua")
-includeFile("tangible/wearables/belt/belt_s11.lua")
-includeFile("tangible/wearables/belt/belt_s12.lua")
-includeFile("tangible/wearables/belt/belt_s13.lua")
-includeFile("tangible/wearables/belt/belt_s14.lua")
-includeFile("tangible/wearables/belt/belt_s15.lua")
-includeFile("tangible/wearables/belt/belt_s16.lua")
-includeFile("tangible/wearables/belt/belt_s17.lua")
-includeFile("tangible/wearables/belt/belt_s18.lua")
-includeFile("tangible/wearables/belt/belt_s19.lua")
-includeFile("tangible/wearables/belt/belt_s20.lua")

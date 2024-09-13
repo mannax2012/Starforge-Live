@@ -49,12 +49,12 @@ object_draft_schematic_weapon_shared_baton_gaderiffi_elite = SharedDraftSchemati
 	clientTemplateFileName = "object/draft_schematic/weapon/shared_baton_gaderiffi_elite.iff"}
 ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_shared_baton_gaderiffi_elite, 
 "object/draft_schematic/weapon/shared_baton_gaderiffi_elite.iff")
---[[
+
 object_draft_schematic_weapon_shared_rifle_e22 = SharedDraftSchematicObjectTemplate:new {
 	clientTemplateFileName = "object/draft_schematic/weapon/shared_rifle_e22.iff"}
 ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_shared_rifle_e22, 
 "object/draft_schematic/weapon/shared_rifle_e22.iff")
-]]
+
 object_draft_schematic_weapon_shared_2h_sword_scythe = SharedDraftSchematicObjectTemplate:new {
 	clientTemplateFileName = "object/draft_schematic/weapon/shared_2h_sword_scythe.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups

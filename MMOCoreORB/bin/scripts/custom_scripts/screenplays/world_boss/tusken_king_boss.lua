@@ -146,7 +146,7 @@ function tusken_king_bossScreenplay:bossDead(pBoss)
 end
 
 function tusken_king_bossScreenplay:KillSpawn()
-		local pBoss = spawnMobile("tatooine", "tusken_king", -1, 37.2, 22.9, 19.7, 165, 1189182)
+		local pBoss = spawnMobile("tatooine", "tusken_king_boss", -1, 37.2, 22.9, 19.7, 165, 1189182)
 		print("Tusken King Respawned")
 		createObserver(DAMAGERECEIVED, "tusken_king_bossScreenplay", "npcDamageObserver", pBoss)
 		createObserver(OBJECTDESTRUCTION, "tusken_king_bossScreenplay", "bossDead", pBoss)

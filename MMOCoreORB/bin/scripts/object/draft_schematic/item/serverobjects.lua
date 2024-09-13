@@ -48,6 +48,7 @@ includeFile("draft_schematic/item/quest_item/serverobjects.lua")
 includeFile("draft_schematic/item/theme_park/serverobjects.lua")
 
 -- Server Objects
+includeFile("draft_schematic/item/item_repairkit_vehicle.lua")
 includeFile("draft_schematic/item/craftable_bug_habitat.lua")
 includeFile("draft_schematic/item/item_agitator_motor.lua")
 includeFile("draft_schematic/item/item_ballot_box_terminal.lua")

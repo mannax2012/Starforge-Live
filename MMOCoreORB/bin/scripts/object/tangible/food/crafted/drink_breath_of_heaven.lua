@@ -50,16 +50,16 @@ object_tangible_food_crafted_drink_breath_of_heaven = object_tangible_food_craft
 
 	effectType = 1,
 
-	fillingMin = 71,
-	fillingMax = 47,
-	flavorMin = 360,
-	flavorMax = 720,
+	fillingMin = 41,
+	fillingMax = 27,
+	flavorMin = 30,
+	flavorMax = 70,
 	nutritionMin = 370,
 	nutritionMax = 600,
 	quantityMin = 1,
 	quantityMax = 6,
 
-	modifiers = { "strength", 0, "quickness", 0, "focus", 0 },
+	modifiers = { "health", 0, "action", 0, "stamina", 0 },
 
 	buffName = "food.drink_breath_of_heaven",
 	buffCRC = 0xF87AA911,

@@ -60,7 +60,7 @@ object_tangible_item_plant_force_melon = object_tangible_item_plant_shared_force
 	quantityMin = 0,
 	quantityMax = 0,
 
-	modifiers = { "health", 0, "action", 0, "mind", 0 },
+	modifiers = { "health", 100, "action", 0, "mind", 0 },
 
 	buffName = "",
 	buffCRC = 0,

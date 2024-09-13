@@ -30,10 +30,6 @@ require("sui.custom.SuiReceiverPuzzle")
 includeFile("helperfuncs.lua")
 includeFile("playerTriggers.lua")
 
---World Bosses
-includeFile("dungeon/world_boss/dath_disciple_boss.lua")
-includeFile("tools/DathBossMenuComponent.lua")
-
 --Mission terminal
 includeFile("tools/mission_direction_choice.lua")
 includeFile("tools/VendorTokenMenuComponent.lua")

@@ -54,12 +54,12 @@ object_tangible_food_crafted_dish_ahrisa = object_tangible_food_crafted_shared_d
 	fillingMax = 25,
 	flavorMin = 1800,
 	flavorMax = 3600,
-	nutritionMin = 150,
-	nutritionMax = 240,
+	nutritionMin = 10,
+	nutritionMax = 25,
 	quantityMin = 3,
 	quantityMax = 4,
 
-	modifiers = { "focus", 2 },
+	modifiers = { 	"onehandmelee_accuracy", 0, "onehandmelee_damage", 0, "onehandmelee_speed", 0 },
 
 	buffName = "food.dish_ahrisa",
 	buffCRC = 0,
@@ -70,8 +70,8 @@ object_tangible_food_crafted_dish_ahrisa = object_tangible_food_crafted_shared_d
 	experimentalWeights = {1, 1, 1, 1, 2, 2, 1, 1, 3, 3, 1},
 	experimentalGroupTitles = {"null", "null", "null", "exp_nutrition", "exp_flavor", "exp_quantity", "exp_filling"},
 	experimentalSubGroupTitles = {"null", "null", "hitpoints", "nutrition", "flavor", "quantity", "filling"},
-	experimentalMin = {0, 0, 1000, 75, 60, 60, 80},
-	experimentalMax = {0, 0, 1000, 120, 120, 100, 120},
+	experimentalMin = {0, 0, 1000, 10, 60, 60, 80},
+	experimentalMax = {0, 0, 1000, 25, 120, 100, 120},
 	experimentalPrecision = {0, 0, 0, 10, 10, 10, 10},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1},
 }
