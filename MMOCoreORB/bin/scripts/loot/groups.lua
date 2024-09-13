@@ -1,4 +1,6 @@
 --custom
+includeFile("groups/custom/lewt_chest_common.lua")
+includeFile("groups/custom/lewt_chest_rare.lua")
 includeFile("groups/custom/tusken_king_rare.lua")
 includeFile("groups/custom/rakata_skull_totem.lua")
 includeFile("groups/custom/unstable_crystal_pack.lua")
