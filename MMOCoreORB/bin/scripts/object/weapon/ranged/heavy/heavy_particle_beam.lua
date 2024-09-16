@@ -65,7 +65,13 @@ object_weapon_ranged_heavy_heavy_particle_beam = object_weapon_ranged_heavy_shar
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",
-				"object/creature/player/general_grievous.iff" },
+				"object/creature/player/general_grievous.iff",
+				"object/creature/player/pit.iff",
+				"object/creature/player/sbd.iff",
+				"object/creature/player/bd1.iff",
+				"object/creature/player/nk3.iff",
+				"object/creature/player/ig106.iff",
+				"object/creature/player/hk50.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -103,9 +109,9 @@ object_weapon_ranged_heavy_heavy_particle_beam = object_weapon_ranged_heavy_shar
 	combatSpam = "particle_beam",
 	animationType = "particle_beam",
 
-	healthAttackCost = 25,
-	actionAttackCost = 85,
-	mindAttackCost = 25,
+	healthAttackCost = 0,
+	actionAttackCost = 320,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -129,8 +135,8 @@ object_weapon_ranged_heavy_heavy_particle_beam = object_weapon_ranged_heavy_shar
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "expEffeciency", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "charges", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 1860, 2100, 9.1, 10, 30, 750, -125, -125, 48, 0, 25, 33, 110, 33},
-	experimentalMax = {0, 0, 2000, 3700, 4, 20, 65, 1500, -95, -95, 48, 60, 50, 17, 59, 17},
+	experimentalMin = {0, 0, 1860, 2100, 9.1, 10, 30, 750, -125, -125, 48, 0, 25, 0, 280, 0},
+	experimentalMax = {0, 0, 2000, 3700, 4, 20, 65, 1500, -95, -95, 48, 60, 50, 0, 350, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }

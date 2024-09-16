@@ -59,7 +59,7 @@ object_tangible_food_crafted_drink_garrmorl = object_tangible_food_crafted_share
 	quantityMin = 6,
 	quantityMax = 10,
 
-	modifiers = { "health", 0, "strength", 0, "constitution", 0 },
+	modifiers = { "health", 0, "stamina", 0, "constitution", 0 },
 
 	buffName = "food.drink_garrmorl",
 	buffCRC = 0,

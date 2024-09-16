@@ -59,7 +59,7 @@ object_tangible_food_crafted_drink_elshandruu_pica_thundercloud = object_tangibl
 	quantityMin = 6,
 	quantityMax = 10,
 
-	modifiers = { "ranged_defense", 0 },
+	modifiers = { "ranged_defense", 0, "melee_defense", 0 },
 
 	buffName = "food.drink_elshandruu_pica_thundercloud",
 	buffCRC = 0,

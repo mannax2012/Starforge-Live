@@ -11,7 +11,7 @@ BackpacksVendorLogic = ScreenPlay:new {
 		        },
 
 		merchandise_backpacks = { -- Displayed name, full template string (without the shared_), cost {} - follow same order as the currencies setup previously
-		{name = "Starforge Backpack", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_unstable_gen3_schematic.iff", cost = {0, 10000}},
+		{name = "Starforge Backpack", template = "object/tangible/loot/loot_schematic/starforge_backpack_schematic.iff", cost = {0, 10000}},
 	    },
 }
 

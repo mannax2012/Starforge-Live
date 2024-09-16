@@ -46,7 +46,7 @@ object_tangible_food_crafted_drink_vasarian_brandy = object_tangible_food_crafte
 
 	useCount = 5,
 	duration = 1800,
-	filling = 49,
+	filling = 39,
 	nutrition = 300,
 
 	effectType = 1,
@@ -60,7 +60,7 @@ object_tangible_food_crafted_drink_vasarian_brandy = object_tangible_food_crafte
 	quantityMin = 6,
 	quantityMax = 10,
 
-	modifiers = { "mind", 0 , "focus", 0 , "willpower", 0 },
+	modifiers = { "health", 0 , "action", 0 , "stamina", 0 },
 
 	buffName = "food.drink_vasarian_brandy",
 	buffCRC = 0,
@@ -71,8 +71,8 @@ object_tangible_food_crafted_drink_vasarian_brandy = object_tangible_food_crafte
 	experimentalWeights = {1, 1, 1, 1, 1, 2, 2, 1, 1, 3, 3, 1, 1},
 	experimentalGroupTitles = {"null", "null", "null", "null", "exp_nutrition", "exp_flavor", "exp_quantity", "exp_filling", "null"},
 	experimentalSubGroupTitles = {"null", "null", "hitpoints", "quantity_bonus", "nutrition", "flavor", "quantity", "filling", "stomach"},
-	experimentalMin = {0, 0, 1000, 0, 75, 60, 60, 80, 1},
-	experimentalMax = {0, 0, 1000, 0, 120, 120, 100, 120, 1},
+	experimentalMin = {0, 0, 1000, 0, 75, 60, 60, 65, 1},
+	experimentalMax = {0, 0, 1000, 0, 120, 120, 100, 90, 1},
 	experimentalPrecision = {0, 0, 0, 0, 0, 10, 0, 0, 0},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1},
 }

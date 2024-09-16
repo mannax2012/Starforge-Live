@@ -1,7 +1,18 @@
 --custom
+includeFile("groups/custom/lewt_chest_common.lua")
+includeFile("groups/custom/lewt_chest_rare.lua")
+includeFile("groups/custom/tusken_king_rare.lua")
+includeFile("groups/custom/rakata_skull_totem.lua")
 includeFile("groups/custom/unstable_crystal_pack.lua")
 includeFile("groups/custom/tusken_raider_schematics.lua")
+includeFile("groups/custom/rebels_lightsaber_schematics.lua")
+includeFile("groups/custom/cal_lightsaber_schematics.lua")
+includeFile("groups/custom/ezra_lightsaber_schematics.lua")
+includeFile("groups/custom/ezra2_lightsaber_schematics.lua")
+includeFile("groups/custom/kanan_lightsaber_schematics.lua")
+includeFile("groups/custom/rahm_lightsaber_schematics.lua")
 includeFile("groups/custom/starforge_vendor_token.lua")
+includeFile("groups/custom/acid_vibro_unit.lua")
 includeFile("groups/custom/heavy_starforge_vendor_token.lua")
 
 includeFile("groups/armor_attachments.lua")

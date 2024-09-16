@@ -59,7 +59,7 @@ object_tangible_food_crafted_dessert_won_won = object_tangible_food_crafted_shar
 	quantityMin = 6,
 	quantityMax = 10,
 
-	modifiers = { "strength", 0, "constitution", 0 },
+	modifiers = { "stamina", 0, "constitution", 0 },
 
 	buffName = "food.dessert_won_won",
 	buffCRC = 0,

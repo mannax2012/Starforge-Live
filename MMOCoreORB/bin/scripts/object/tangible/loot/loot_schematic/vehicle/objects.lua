@@ -1,0 +1,30 @@
+
+object_tangible_loot_loot_schematic_vehicle_shared_podracer_sebulba_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/vehicle/shared_podracer_sebulba_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_vehicle_shared_podracer_sebulba_schematic, 
+"object/tangible/loot/loot_schematic/vehicle/shared_podracer_sebulba_schematic.iff")
+
+object_tangible_loot_loot_schematic_vehicle_shared_podracer_anakin_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/vehicle/shared_podracer_anakin_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_vehicle_shared_podracer_anakin_schematic, 
+"object/tangible/loot/loot_schematic/vehicle/shared_podracer_anakin_schematic.iff")
+
+object_tangible_loot_loot_schematic_vehicle_shared_podracer_balta_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/vehicle/shared_podracer_balta_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_vehicle_shared_podracer_balta_schematic, 
+"object/tangible/loot/loot_schematic/vehicle/shared_podracer_balta_schematic.iff")
+
+object_tangible_loot_loot_schematic_vehicle_shared_podracer_ipg_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/vehicle/shared_podracer_ipg_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_vehicle_shared_podracer_ipg_schematic, 
+"object/tangible/loot/loot_schematic/vehicle/shared_podracer_ipg_schematic.iff")
+
+object_tangible_loot_loot_schematic_vehicle_shared_podracer_gasgano_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/vehicle/shared_podracer_gasgano_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_vehicle_shared_podracer_gasgano_schematic, 
+"object/tangible/loot/loot_schematic/vehicle/shared_podracer_gasgano_schematic.iff")
+
+object_tangible_loot_loot_schematic_vehicle_shared_podracer_mawhonical_schematic = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/loot/loot_schematic/vehicle/shared_podracer_mawhonical_schematic.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_vehicle_shared_podracer_mawhonical_schematic, 
+"object/tangible/loot/loot_schematic/vehicle/shared_podracer_mawhonical_schematic.iff")

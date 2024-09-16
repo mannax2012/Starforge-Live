@@ -45,10 +45,27 @@
 --Children folder includes
 
 -- Server Objects
-includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_dw_right_unstable_s01_gen4.lua")
-includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_dw_left_unstable_s01_gen4.lua")
+--includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_dw_right_unstable_s01_gen4.lua")
+--includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_dw_left_unstable_s01_gen4.lua")
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_gen3.lua")
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_unstable_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_kylo_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_kylo_gen4.lua")
+
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_ezra_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_ezra_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_ezra2_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_ezra2_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_cal_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_cal_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_cal2_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_cal2_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_kanan_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_kanan_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_rey5_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_rey5_gen4.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_rahm_gen3.lua")
+includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_rahm_gen4.lua")
 
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_gen1.lua")
 includeFile("weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_gen2.lua")

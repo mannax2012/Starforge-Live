@@ -14,6 +14,7 @@
 #include "server/zone/managers/skill/SkillModManager.h"
 #include "server/zone/objects/tangible/wearables/ModSortingHelper.h"
 #include "server/zone/objects/transaction/TransactionLog.h"
+#include "server/zone/managers/skill/SkillManager.h"
 
 void WearableObjectImplementation::initializeTransientMembers() {
 	TangibleObjectImplementation::initializeTransientMembers();
@@ -23,13 +24,88 @@ void WearableObjectImplementation::initializeTransientMembers() {
 void WearableObjectImplementation::fillAttributeList(AttributeListMessage* alm, CreatureObject* object) {
 	TangibleObjectImplementation::fillAttributeList(alm, object);
 
-	for(int i = 0; i < wearableSkillMods.size(); ++i) {
+for(int i = 0; i < wearableSkillMods.size(); ++i) {
 		String key = wearableSkillMods.elementAt(i).getKey();
 		String statname = "cat_skill_mod_bonus.@stat_n:" + key;
 		int value = wearableSkillMods.get(key);
 
-		if (value > 0)
+		if (value > 0 && !key.beginsWith("itemset"))
 			alm->insertAttribute(statname, value);
+
+		//update attributelist for set items
+		if (key.beginsWith("itemset")) {
+			if (object != nullptr) {
+				//add set name to attributelist
+				alm->insertAttribute("item_set_name", "stat_n:" + key);
+				//add stats and abilities from set bonuses
+				int maxSetItems = 8;
+				SkillManager* skillManager = SkillManager::instance();
+				String boxName;
+				String setBonusMods;
+				String setBonusAbilities;
+				if (skillManager != nullptr) {
+					for (int i = 0; i <= maxSetItems; i++) {
+						boxName = key + i;
+						Reference<Skill*> skill = skillManager->getSkill(boxName);
+						if (skill != nullptr) {
+							setBonusMods = "set_bonus_skill_mods_" + String::valueOf(i) + ".@stat_n:";
+							auto skillMods = skill->getSkillModifiers();
+							for (int j = 0; j < skillMods->size(); j++) {
+								alm->insertAttribute(setBonusMods + skillMods->elementAt(j).getKey(), skillMods->elementAt(j).getValue());
+							}
+							setBonusAbilities = "set_bonus_abilities_" + String::valueOf(i) + ".@cmd_n:";
+							auto skillAbilities = skill->getAbilities();
+							if (skillAbilities->size() > 0) {
+								for (int k = 0; k < skillAbilities->size(); k++) { 
+									alm->insertAttribute(setBonusAbilities + skillAbilities->elementAt(k), "!");
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//update attributelist for set items: template skill mods
+	SharedTangibleObjectTemplate* tano = dynamic_cast<SharedTangibleObjectTemplate*>(templateObject.get());
+	if (tano != nullptr) {
+		auto mods = tano->getSkillMods();
+		for(int i = 0; i < mods->size(); ++i) {
+			String key = mods->elementAt(i).getKey();
+			if (key.beginsWith("itemset")) {
+				if (object != nullptr) {
+					//add set name to attributelist
+					alm->insertAttribute("item_set_name", "stat_n:" + key);
+					//add stats and abilities from set bonuses
+					int maxSetItems = 8;
+					SkillManager* skillManager = SkillManager::instance();
+					String boxName;
+					String setBonusMods;
+					String setBonusAbilities;
+					if (skillManager != nullptr) {
+						for (int i = 0; i <= maxSetItems; i++) {
+							boxName = key + i;
+							Reference<Skill*> skill = skillManager->getSkill(boxName);
+							if (skill != nullptr) {
+								setBonusMods = "set_bonus_skill_mods_" + String::valueOf(i) + ".@stat_n:";
+								auto skillMods = skill->getSkillModifiers();
+								for (int j = 0; j < skillMods->size(); j++) {
+									alm->insertAttribute(setBonusMods + skillMods->elementAt(j).getKey(), skillMods->elementAt(j).getValue());
+								}
+								setBonusAbilities = "set_bonus_abilities_" + String::valueOf(i) + ".@cmd_n:";
+								auto skillAbilities = skill->getAbilities();
+								if (skillAbilities->size() > 0) {
+									for (int k = 0; k < skillAbilities->size(); k++) { 
+										alm->insertAttribute(setBonusAbilities + skillAbilities->elementAt(k), "!");
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
 	}
 
 	//Anti Decay Kit

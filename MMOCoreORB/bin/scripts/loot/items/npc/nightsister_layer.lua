@@ -8,7 +8,7 @@ nightsister_layer = {
 	craftingValues = {
 		{"hit_points",1000,1000,0, true},
 		{"armor_effectiveness",3,6,10},
-		{"armor_action_encumbrance",-4,-8,0},
+		{"armor_action_encumbrance",-14,-28,0},
 		{"armor_rating",1,1,0, true},
 		{"useCount",1,11,0},
 	},

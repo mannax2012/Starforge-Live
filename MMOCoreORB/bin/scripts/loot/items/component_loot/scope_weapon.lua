@@ -9,9 +9,9 @@ scope_weapon = {
 		{"woundchance",5,10,0},
 		{"hitpoints", 50,100,0, true},
 		{"midrangemod",10,25,0},
-		{"attackhealthcost",10,0,0},
+		{"attackhealthcost",0,0,0},
 		{"attackactioncost",10,0,0},
-		{"attackmindcost",10,0,0},
+		{"attackmindcost",0,0,0},
 		{"useCount",1,11,0}
 	},
 	customizationStringName = {},

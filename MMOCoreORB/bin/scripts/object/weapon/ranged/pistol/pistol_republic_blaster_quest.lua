@@ -63,7 +63,13 @@ object_weapon_ranged_pistol_pistol_republic_blaster_quest = object_weapon_ranged
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",
-				"object/creature/player/general_grievous.iff" },
+				"object/creature/player/general_grievous.iff",
+				"object/creature/player/pit.iff",
+				"object/creature/player/sbd.iff",
+				"object/creature/player/bd1.iff",
+				"object/creature/player/nk3.iff",
+				"object/creature/player/ig106.iff",
+				"object/creature/player/hk50.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK, 
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -101,9 +107,9 @@ object_weapon_ranged_pistol_pistol_republic_blaster_quest = object_weapon_ranged
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 20,
-	actionAttackCost = 52,
-	mindAttackCost = 20,
+	healthAttackCost = 0,
+	actionAttackCost = 320,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,
@@ -127,8 +133,8 @@ object_weapon_ranged_pistol_pistol_republic_blaster_quest = object_weapon_ranged
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "midrangemod", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 21, 98, 4.6, 10, 750, -52, 20, 52, 20},
-	experimentalMax = {0, 0, 39, 182, 3.1, 20, 1500, -28, 10, 28, 10},
+	experimentalMin = {0, 0, 21, 98, 4.6, 10, 750, -52, 0, 280, 0},
+	experimentalMax = {0, 0, 39, 182, 3.1, 20, 1500, -28, 0, 350, 0},
 	experimentalPrecision = {0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

@@ -74,8 +74,12 @@ float VisibilityManager::calculateVisibilityIncrease(CreatureObject* creature) {
 		}
 
 	}
+	//info("Increasing visibility for Knight " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
 
-	//info("Increasing visibility for player " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
+	if (!creature->hasSkill("force_title_jedi_rank_03"))
+	visibilityIncrease = 0;
+	//info("Increasing visibility for Padawan " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
+
 	return visibilityIncrease;
 }
 

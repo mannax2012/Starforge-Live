@@ -45,6 +45,9 @@
 --Children folder includes
 includeFile("weapon/ranged/rifle/base/serverobjects.lua")
 
+--custom 
+includeFile("weapon/ranged/rifle/rifle_e22.lua")
+
 -- Server Objects
 includeFile("weapon/ranged/rifle/rifle_acid_beam.lua")
 includeFile("weapon/ranged/rifle/rifle_beam.lua")

@@ -65,7 +65,7 @@ object_draft_schematic_clothing_custom_clothing_hat_tusken_raider_schematic = ob
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"shell", "liner", "grip_pads"},
    ingredientSlotType = {0, 0, 0},
-   resourceTypes = {"bone_mammal_tatooine", "wooly_hide_tatooine", "fiberplast_tatooine"},
+   resourceTypes = {"bone_mammal_tatooine", "wooly_hide", "fiberplast_tatooine"},
    resourceQuantities = {15, 15, 10},
    contribution = {100, 100, 100},
 

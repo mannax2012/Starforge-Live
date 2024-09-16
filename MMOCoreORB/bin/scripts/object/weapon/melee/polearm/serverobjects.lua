@@ -47,6 +47,7 @@ includeFile("weapon/melee/polearm/base/serverobjects.lua")
 includeFile("weapon/melee/polearm/crafted_saber/serverobjects.lua")
 
 -- Server Objects
+includeFile("weapon/melee/polearm/lance_trando_pike.lua")
 includeFile("weapon/melee/polearm/lance_controllerfp.lua")
 includeFile("weapon/melee/polearm/lance_controllerfp_nightsister.lua")
 includeFile("weapon/melee/polearm/lance_lightsaber_01.lua")

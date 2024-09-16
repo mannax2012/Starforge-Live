@@ -988,3 +988,38 @@ object_mobile_vehicle_shared_sith_speeder = SharedCreatureObjectTemplate:new {
     clientTemplateFileName = "object/mobile/vehicle/shared_sith_speeder.iff"
 }
 ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_sith_speeder, "object/mobile/vehicle/shared_sith_speeder.iff")
+
+object_mobile_vehicle_shared_podracer_anakin = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/mobile/vehicle/shared_podracer_anakin.iff"}
+ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_podracer_anakin, 
+"object/mobile/vehicle/shared_podracer_anakin.iff")
+
+object_mobile_vehicle_shared_podracer_sebulba = SharedCreatureObjectTemplate:new {
+	clientTemplateFileName = "object/mobile/vehicle/shared_podracer_sebulba.iff"}
+	ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_podracer_sebulba, 
+	"object/mobile/vehicle/shared_podracer_sebulba.iff")
+
+object_mobile_vehicle_shared_podracer_ipg = SharedCreatureObjectTemplate:new {
+	clientTemplateFileName = "object/mobile/vehicle/shared_podracer_ipg.iff"}
+	ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_podracer_ipg, 
+	"object/mobile/vehicle/shared_podracer_ipg.iff")
+	
+object_mobile_vehicle_shared_podracer_balta = SharedCreatureObjectTemplate:new {
+	clientTemplateFileName = "object/mobile/vehicle/shared_podracer_balta.iff"}
+	ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_podracer_balta, 
+	"object/mobile/vehicle/shared_podracer_balta.iff")
+
+object_mobile_vehicle_shared_podracer_fg_8t8 = SharedCreatureObjectTemplate:new {
+	clientTemplateFileName = "object/mobile/vehicle/shared_podracer_fg_8t8.iff"}
+	ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_podracer_fg_8t8, 
+	"object/mobile/vehicle/shared_podracer_fg_8t8.iff")
+
+object_mobile_vehicle_shared_podracer_mawhonical = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/mobile/vehicle/shared_podracer_mawhonical.iff"}
+ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_podracer_mawhonical, 
+"object/mobile/vehicle/shared_podracer_mawhonical.iff")
+
+object_mobile_vehicle_shared_podracer_gasgano = SharedCreatureObjectTemplate:new {
+clientTemplateFileName = "object/mobile/vehicle/shared_podracer_gasgano.iff"}
+ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_podracer_gasgano, 
+"object/mobile/vehicle/shared_podracer_gasgano.iff")

@@ -40,6 +40,16 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_tangible_item_shared_dath_disciple_alter = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/item/shared_dath_disciple_alter.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_item_shared_dath_disciple_alter, 
+"object/tangible/item/shared_dath_disciple_alter.iff")
+
+object_tangible_item_shared_dath_disciple_skull = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/item/shared_dath_disciple_skull.iff"}
+ObjectTemplates:addClientTemplate(object_tangible_item_shared_dath_disciple_skull, 
+"object/tangible/item/shared_dath_disciple_skull.iff")
+
 object_tangible_item_shared_starforge_token_generic = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/item/shared_starforge_token_generic.iff"}
 ObjectTemplates:addClientTemplate(object_tangible_item_shared_starforge_token_generic, 

@@ -63,7 +63,12 @@ object_weapon_ranged_rifle_rifle_jawa_ion = object_weapon_ranged_rifle_shared_ri
 				"object/creature/player/wookiee_female.iff",
 				"object/creature/player/zabrak_male.iff",
 				"object/creature/player/zabrak_female.iff",
-				"object/creature/player/general_grievous.iff" },
+				"object/creature/player/general_grievous.iff",
+				"object/creature/player/sbd.iff",
+				"object/creature/player/bd1.iff",
+				"object/creature/player/nk3.iff",
+				"object/creature/player/ig106.iff",
+				"object/creature/player/hk50.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -101,9 +106,9 @@ object_weapon_ranged_rifle_rifle_jawa_ion = object_weapon_ranged_rifle_shared_ri
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 12,
-	actionAttackCost = 26,
-	mindAttackCost = 41,
+	healthAttackCost = 0,
+	actionAttackCost = 320,
+	mindAttackCost = 40,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -127,8 +132,8 @@ object_weapon_ranged_rifle_rifle_jawa_ion = object_weapon_ranged_rifle_shared_ri
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 56, 105, 8.5, 3, 15, 750, -50, -80, 40, -5, 16, 33, 52},
-	experimentalMax = {0, 0, 104, 195, 5.9, 5, 55, 1500, -50, -80, 40, 5, 8, 18, 28},
+	experimentalMin = {0, 0, 56, 105, 8.5, 3, 15, 750, -50, -80, 40, -5, 0, 280, 0},
+	experimentalMax = {0, 0, 104, 195, 5.9, 5, 55, 1500, -50, -80, 40, 5, 0, 350, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

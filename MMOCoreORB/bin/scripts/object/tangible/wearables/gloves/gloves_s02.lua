@@ -81,6 +81,7 @@ object_tangible_wearables_gloves_gloves_s02 = object_tangible_wearables_gloves_s
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff" },
 
+				
 	numberExperimentalProperties = {1, 1, 1, 1},
 	experimentalProperties = {"XX", "XX", "XX", "XX"},
 	experimentalWeights = {1, 1, 1, 1},

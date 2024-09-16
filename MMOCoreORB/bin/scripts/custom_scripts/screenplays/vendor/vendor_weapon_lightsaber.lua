@@ -11,14 +11,22 @@ WeaponsLightsaberVendorLogic = ScreenPlay:new {
 		        },
 
 		merchandise_weapon_lightsaber_gen3 = { -- Displayed name, full template string (without the shared_), cost {} - follow same order as the currencies setup previously
-		{name = "Unstable One Handed Lightsaber Gen3", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_unstable_gen3_schematic.iff", cost = {0, 10000}},
-		{name = "Unstable Two Handed Lightsaber Gen3", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_unstable_gen3_schematic.iff", cost = {0, 10000}},
-		{name = "Unstable Polearm Lightsaber Gen3", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_polearm_unstable_gen3_schematic.iff", cost = {0, 10000}},
+		{name = "Unstable One Handed Lightsaber (Gen3)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_unstable_gen3_schematic.iff", cost = {0, 10000}},
+		{name = "Unstable Two Handed Lightsaber (Gen3)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_unstable_gen3_schematic.iff", cost = {0, 10000}},
+		{name = "Unstable Polearm Lightsaber (Gen3)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_polearm_unstable_gen3_schematic.iff", cost = {0, 10000}},
+		{name = "Kylo Ren's One Handed Lightsaber (Gen3)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_kylo_gen3_schematic.iff", cost = {0, 100000}},
+		{name = "Kylo Ren's Two Handed Lightsaber (Gen3)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_kylo_gen3_schematic.iff", cost = {0, 100000}},
+		{name = "Jedi Knight Rey Skywalker's One-Hand Lightsaber (Gen3)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_rey5_gen3_schematic.iff", cost = {0, 100000}},
+		{name = "Jedi Knight Rey Skywalker's Two-Hand Lightsaber (Gen3)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_rey5_gen3_schematic.iff", cost = {0, 100000}},
 	    },
         merchandise_weapon_lightsaber_gen4 = { -- Displayed name, full template string (without the shared_), cost {} - follow same order as the currencies setup previously
-        {name = "Unstable One Handed Lightsaber Gen4", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_unstable_gen4_schematic.iff", cost = {0, 12000}},
-        {name = "Unstable Two Handed Lightsaber Gen4", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_unstable_gen4_schematic.iff", cost = {0, 12000}},
-        {name = "Unstable Polearm Lightsaber Gen4", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_polearm_unstable_gen4_schematic.iff", cost = {0, 12000}},
+        {name = "Unstable One Handed Lightsaber (Gen4)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_unstable_gen4_schematic.iff", cost = {0, 12000}},
+        {name = "Unstable Two Handed Lightsaber (Gen4)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_unstable_gen4_schematic.iff", cost = {0, 12000}},
+        {name = "Unstable Polearm Lightsaber (Gen4)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_polearm_unstable_gen4_schematic.iff", cost = {0, 12000}},
+		{name = "Kylo Ren's One Handed Lightsaber (Gen4)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_kylo_gen4_schematic.iff", cost = {0, 100000}},
+		{name = "Kylo Ren's Two Handed Lightsaber (Gen4)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_kylo_gen4_schematic.iff", cost = {0, 100000}},
+		{name = "Jedi Knight Rey Skywalker's One-Hand Lightsaber (Gen4)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_one_hand_rey5_gen4_schematic.iff", cost = {0, 100000}},
+		{name = "Jedi Knight Rey Skywalker's Two-Hand Lightsaber (Gen4)", template = "object/tangible/loot/loot_schematic/lightsaber/lightsaber_two_hand_rey5_gen4_schematic.iff", cost = {0, 100000}},
         },
 }
 

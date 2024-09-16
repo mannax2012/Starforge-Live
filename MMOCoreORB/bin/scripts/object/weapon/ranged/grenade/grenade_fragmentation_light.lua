@@ -65,7 +65,13 @@ object_weapon_ranged_grenade_grenade_fragmentation_light = object_weapon_ranged_
 			"object/creature/player/wookiee_female.iff",
 			"object/creature/player/zabrak_male.iff",
 			"object/creature/player/zabrak_female.iff",
-			"object/creature/player/general_grievous.iff" },
+			"object/creature/player/general_grievous.iff",
+			"object/creature/player/pit.iff",
+			"object/creature/player/sbd.iff",
+			"object/creature/player/bd1.iff",
+			"object/creature/player/nk3.iff",
+			"object/creature/player/ig106.iff",
+			"object/creature/player/hk50.iff" },
 
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
@@ -101,9 +107,9 @@ object_weapon_ranged_grenade_grenade_fragmentation_light = object_weapon_ranged_
 
 	combatSpam = "throw_fragmentation",
 
-	healthAttackCost = 50,
-	actionAttackCost = 50,
-	mindAttackCost = 10,
+	healthAttackCost = 0,
+	actionAttackCost = 320,
+	mindAttackCost = 0,
 
 	pointBlankRange = 0,
 	pointBlankAccuracy = -10,
@@ -128,8 +134,8 @@ object_weapon_ranged_grenade_grenade_fragmentation_light = object_weapon_ranged_
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrangemod", "midrange", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 130, 220, 5.5, 7, 1000, -16, -45, 0, 10, 64, 75, 65, 13},
-	experimentalMax = {0, 0, 170, 760, 2.5, 13, 1000, 14, 15, 30, 30, 64, 35, 25, 7},
+	experimentalMin = {0, 0, 130, 220, 5.5, 7, 1000, -16, -45, 0, 10, 64, 0, 280, 0},
+	experimentalMax = {0, 0, 170, 760, 2.5, 13, 1000, 14, 15, 30, 30, 64, 0, 350, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }

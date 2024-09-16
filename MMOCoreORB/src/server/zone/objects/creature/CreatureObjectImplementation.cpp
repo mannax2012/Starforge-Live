@@ -1497,6 +1497,30 @@ void CreatureObjectImplementation::removeSkill(const String& skill,
 	removeSkill(skillObject, notifyClient);
 }
 
+//to create set items modname would be something like setitemuber24 and boxes would be named setitemuber242 and setitemuber244
+void CreatureObjectImplementation::checkForSpecialSkillMods(const String& skillMod, int value) {
+	if (skillMod.beginsWith("itemset")) {
+		SkillManager* manager = SkillManager::instance();
+		if (manager == nullptr)
+			return;
+
+		int modValue = getSkillMod(skillMod);
+		//unequipped, surrender box
+		if (value < 0) {
+			String surrenderBox = skillMod + (modValue + 1);
+			if (hasSkill(surrenderBox)) {
+				manager->surrenderSkill(surrenderBox, asCreatureObject(), true, true);
+			}
+		}
+		else if (modValue > 0) {
+			String boxName = skillMod + modValue;
+			if (!hasSkill(boxName)) {
+				manager->awardSkill(boxName, asCreatureObject(), true, true, true);
+			}
+		}
+	}
+}
+
 void CreatureObjectImplementation::addSkillMod(const int modType, const String& skillMod, int value, bool notifyClient) {
 	Locker locker(&skillModMutex);
 
@@ -1507,6 +1531,9 @@ void CreatureObjectImplementation::addSkillMod(const int modType, const String& 
 	}
 
 	skillModList.add(modType, skillMod, value);
+	
+	//check for special mods
+	checkForSpecialSkillMods(skillMod, value);
 
 	SkillModEntry newMod = skillModList.getVisibleSkillMod(skillMod);
 

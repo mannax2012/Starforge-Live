@@ -62,7 +62,7 @@ object_tangible_food_crafted_drink_spiced_tea = object_tangible_food_crafted_sha
 	quantityMin = 3,
 	quantityMax = 4,
 
-	modifiers = { "mind", 0 },
+	modifiers = { "health", 0 },
 
 	buffName = "food.drink_spiced_tea",
 	buffCRC = 0,

@@ -17,6 +17,7 @@ import server.zone.objects.tangible.TangibleObject;
 include server.zone.managers.loot.LootGroupMap;
 include server.zone.managers.loot.lootgroup.LootGroupCollection;
 include templates.LootItemTemplate;
+include server.zone.objects.manufactureschematic.craftingvalues.CraftingValues;
 include server.zone.managers.loot.CrystalData;
 include system.lang.ref.Reference;
 include engine.log.Logger;
@@ -156,6 +157,9 @@ class LootManager extends ManagedService implements Logger {
 	private native void setCustomObjectName(TangibleObject object, final LootItemTemplate templateObject);
 
 	@local
+	private native void setSockets(TangibleObject object, CraftingValues craftingValues);
+
+	@local
 	private native void addRandomDots(TangibleObject object, final LootItemTemplate templateObject, int level, float excMod);
 
 	@local
@@ -165,7 +169,7 @@ class LootManager extends ManagedService implements Logger {
 	private native float calculateDotValue(float min, float max, float level);
 
 	@local
-	private native void addConditionDamage(TangibleObject loot);
+	private native void addConditionDamage(TangibleObject loot, CraftingValues craftingValues);
 
 	@local
 	private native void loadLootableMods( LuaObject modTable, SortedVector<string> mods );
@@ -180,7 +184,7 @@ class LootManager extends ManagedService implements Logger {
 	public native TangibleObject createLootResource(@dereferenced final string resourceTypeName, @dereferenced final string resourceZoneName);
 
 	@local
-	public native string getRandomLootableMod( unsigned int sceneObjectType );
+	public native string getRandomLootableMod( unsigned int sceneObjectType, final string lootTemplateName);
 
 	public native int calculateLootCredits(int level);
 

@@ -60,7 +60,7 @@ object_tangible_food_crafted_dessert_sweesonberry_rolls = object_tangible_food_c
 	quantityMax = 4,
 	speciesRestriction = "pets",
 
-	modifiers = { "health", 0, "action", 0, "mind", 0 },
+	modifiers = { "health", 0, "action", 0},
 
 	buffName = "food.reduce_spice_downtime",
 	buffCRC = 0,
@@ -70,8 +70,8 @@ object_tangible_food_crafted_dessert_sweesonberry_rolls = object_tangible_food_c
 	experimentalWeights = {1, 1, 1, 1, 2, 2, 1, 1, 3, 3, 1},
 	experimentalGroupTitles = {"null", "null", "null", "exp_nutrition", "exp_flavor", "exp_quantity", "exp_filling"},
 	experimentalSubGroupTitles = {"null", "null", "hitpoints", "nutrition", "flavor", "quantity", "filling"},
-	experimentalMin = {0, 0, 1000, 75, 60, 60, 80},
-	experimentalMax = {0, 0, 1000, 120, 120, 100, 120},
+	experimentalMin = {0, 0, 1000, 1175, 60, 60, 80},
+	experimentalMax = {0, 0, 1000, 12000, 120, 100, 120},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1},
 }

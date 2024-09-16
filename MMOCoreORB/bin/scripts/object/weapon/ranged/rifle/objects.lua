@@ -40,6 +40,10 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+object_weapon_ranged_rifle_shared_rifle_e22 = SharedWeaponObjectTemplate:new {
+clientTemplateFileName = "object/weapon/ranged/rifle/shared_rifle_e22.iff"}
+ObjectTemplates:addClientTemplate(object_weapon_ranged_rifle_shared_rifle_e22, 
+"object/weapon/ranged/rifle/shared_rifle_e22.iff")
 
 object_weapon_ranged_rifle_shared_rifle_acid_beam = SharedWeaponObjectTemplate:new {
 	clientTemplateFileName = "object/weapon/ranged/rifle/shared_rifle_acid_beam.iff"

@@ -8,21 +8,33 @@ registerScreenPlay("dath_discipleScreenplay", true)
 function dath_discipleScreenplay:start()
 	if (isZoneEnabled(self.planet)) then
 		self:spawnMobiles()
+		self:spawnSceneObjects()
+		print("Dathomir Disciple Loaded")
 	end
 end
 
+function dath_discipleScreenplay:spawnSceneObjects()
+	spawnSceneObject(self.planet, "object/tangible/item/dath_disciple_alter.iff", 1074.7, 99.9, -4493.8, 0, math.rad(-168))
+end
 
 function dath_discipleScreenplay:spawnMobiles()
-		local pBoss = spawnMobile("dathomir", "dath_disciple",-1, 1085, 103, -4485.1, -99, 0)
-		spawnMobile("dathomir", "nightsister_ascendant",-1, 1072.3, 103.3, -4472.3, -150, 0)
-		spawnMobile("dathomir", "nightsister_ascendant",-1, 1084, 100.8, -4501.6, -65, 0)
-		spawnMobile("dathomir", "nightsister_ascendant",-1, 1062.8, 96.4, -4508.7, -149, 0)
-		spawnMobile("dathomir", "nightsister_ascendant",-1, 1054.1, 100.2, -4474.2, -113, 0)
-
-		local creature = CreatureObject(pBoss)
-		createObserver(DAMAGERECEIVED, "dath_discipleScreenplay", "npcDamageObserver", pBoss)    
-		createObserver(OBJECTDESTRUCTION, "dath_discipleScreenplay", "bossDead", pBoss)
+	spawnMobile("dathomir", "nightsister_ascendant",300, 1072.3, 103.3, -4472.3, -150, 0)
+	spawnMobile("dathomir", "nightsister_ascendant",300, 1084, 100.8, -4501.6, -65, 0)
+	spawnMobile("dathomir", "nightsister_ascendant",300, 1062.8, 96.4, -4508.7, -149, 0)
+	spawnMobile("dathomir", "nightsister_ascendant",300, 1054.1, 100.2, -4474.2, -113, 0)
 end
+
+function dath_discipleScreenplay:spawnBoss(pPlayer)
+    -- Spawn the boss
+    local pBoss = spawnMobile("dathomir", "dath_disciple", -1, 1085, 103, -4485.1, -99, 0)
+	CreatureObject(pPlayer):sendSystemMessage("A dark presence emerges from the shadows...")
+
+        local creature = CreatureObject(pBoss)
+        CreatureObject(pBoss):engageCombat(pPlayer)
+        createObserver(DAMAGERECEIVED, "dath_discipleScreenplay", "npcDamageObserver", pBoss)
+        createObserver(OBJECTDESTRUCTION, "dath_discipleScreenplay", "bossDead", pBoss)
+end
+
 
 function dath_discipleScreenplay:npcDamageObserver(bossObject, playerObject, damage)
 
@@ -178,11 +190,11 @@ function dath_discipleScreenplay:spawnSupport(bossObject, playerObject)
 end  
 
 function dath_discipleScreenplay:bossDead(pBoss)
-	local creature = CreatureObject(pBoss)
-	local respawn = math.random(7200,10800)
-	createEvent(120 * 1000, "dath_discipleScreenplay", "KillBoss", pBoss, "") -- Corpse Despawn
-	createEvent(respawn * 1000, "dath_discipleScreenplay", "KillSpawn", pBoss, "") -- Respawn
-	return 0
+       -- local respawn = math.random(7200, 10800)
+	   	writeData("dathBossSpawned", 2)
+        createEvent(30 * 1000, "dath_discipleScreenplay", "KillBoss", pBoss, "") -- Corpse Despawn
+       -- createEvent(respawn * 1000, "dath_discipleScreenplay", "spawnBoss", "") -- Respawn boss
+    return 0
 end
 
 function dath_discipleScreenplay:KillSpawn()
@@ -191,6 +203,7 @@ end
 
 function dath_discipleScreenplay:KillBoss(pBoss)
       	writeData("dath_discipleScreenplay:spawnState",0)  
+		writeData("dathBossSpawned", 0)
 	dropObserver(pBoss, OBJECTDESTRUCTION)
 	if SceneObject(pBoss) then
 		SceneObject(pBoss):destroyObjectFromWorld()

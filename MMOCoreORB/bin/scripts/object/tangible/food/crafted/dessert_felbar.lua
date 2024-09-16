@@ -44,26 +44,27 @@
 object_tangible_food_crafted_dessert_felbar = object_tangible_food_crafted_shared_dessert_felbar:new {
 	templateType = CONSUMABLE,
 
-	duration = 45,
-	filling = 10,
-	nutrition = 1000,
+	useCount = 5,
+	duration = 900,
+	filling = 34,
+	nutrition = 35,
 
-	effectType = 1,
+	effectType = 2,
 
-	fillingMin = 23,
-	fillingMax = 15,
-	flavorMin = 1800,
-	flavorMax = 3600,
-	nutritionMin = 675,
-	nutritionMax = 1250,
-	quantityMin = 3,
-	quantityMax = 7, -- 4 on http://swgemu.wikia.com/wiki/Category:Chef 
-	speciesRestriction = "pets",
+	fillingMin = 29,
+	fillingMax = 19,
+	flavorMin = 960,
+	flavorMax = 1920,
+	nutritionMin = 16,
+	nutritionMax = 30,
+	quantityMin = 5,
+	quantityMax = 7,
 
-	modifiers = { "mind", 0 },
+	modifiers = { "dodge_attack", 0 },
 
-	buffName = "",
+	buffName = "food.dodge_attack",
 	buffCRC = 0,
+	speciesRestriction = "pets",
 
 	numberExperimentalProperties = {1, 1, 1, 2, 2, 2, 2},
 	experimentalProperties = {"XX", "XX", "XX", "OQ", "PE", "FL", "OQ", "DR", "PE", "DR", "OQ"},

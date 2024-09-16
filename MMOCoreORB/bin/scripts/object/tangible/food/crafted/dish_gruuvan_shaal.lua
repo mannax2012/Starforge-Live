@@ -59,7 +59,7 @@ object_tangible_food_crafted_dish_gruuvan_shaal = object_tangible_food_crafted_s
 	quantityMin = 3,
 	quantityMax = 4,
 
-	modifiers = { "strength", 0 },
+	modifiers = { "knockdown_defense", 0, "dizzy_defense", 0 },
 
 	buffName = "food.dish_gruuvan_shaal",
 	buffCRC = 0,

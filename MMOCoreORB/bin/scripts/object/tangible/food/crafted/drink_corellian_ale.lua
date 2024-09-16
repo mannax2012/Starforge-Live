@@ -59,7 +59,7 @@ object_tangible_food_crafted_drink_corellian_ale = object_tangible_food_crafted_
 	quantityMin = 6,
 	quantityMax = 12,
 
-	modifiers = { "healing_music_wound", 0 },
+	modifiers = { "healing_music_mind", 0 },
 
 	buffName = "food.drink_corellian_ale",
 	buffCRC = 0,
