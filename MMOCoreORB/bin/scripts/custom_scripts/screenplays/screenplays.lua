@@ -9,4 +9,5 @@ includeFile("../custom_scripts/screenplays/vendor/vendor_vehicles.lua")
 includeFile("../custom_scripts/screenplays/vendor/starforge_vendor_conv_handler.lua")
 
 --World Boss Tools
+includeFile("../custom_scripts/screenplays/tools/LewtBoxMenuComponent.lua")
 includeFile("../custom_scripts/screenplays/tools/DathBossMenuComponent.lua")
