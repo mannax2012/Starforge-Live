@@ -34,6 +34,8 @@ public:
 		const SkillList* skillList = creature->getSkillList();
 		int frsXP = ghost->getExperience("force_rank_xp");
 
+		creature->sendSystemMessage("Gathering FRS Data: " + String::valueOf(frsXP));
+		
 		if (skillList == nullptr)
 			return GENERALERROR;
 
@@ -103,11 +105,14 @@ public:
 			}
 		}
 
+		int frsXP2 = ghost->getExperience("force_rank_xp");
+
 		if (creature->hasSkill("force_title_jedi_rank_03")){
-			if (ghost->getExperience("force_rank_xp") <= 0){
+			if (ghost->getExperience("force_rank_xp") != frsXP){
 
 				creature->sendSystemMessage("Completed. Force Rank Experience has been set to: " + String::valueOf(frsXP));
-
+				
+				frsXP = frsXP - frsXP2;
 				TransactionLog trxExperience(TrxCode::EXPERIENCE, creature);
 				trxExperience.groupWith(trx);
 				ghost->addExperience(trxExperience, "force_rank_xp", frsXP, true);
